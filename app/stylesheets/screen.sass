@@ -75,6 +75,21 @@ form
         +column(4)
       &.contact_us
         +column(3)
+      li
+        display: none
+      &:hover
+        > ul
+          position: relative
+          +column(5)
+          > li
+            display: block
+            background-color: #002C47
+            &:hover
+              background-color: #002C47
+            ul
+              position: relative
+              left: 200px
+
       a
         display: block
         text-align: center
@@ -182,5 +197,3 @@ form
             font-weight: bold
             margin: 0
             text-decoration: none
-            &:hover
-              background-color: #4498C7
