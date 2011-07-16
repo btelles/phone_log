@@ -23,14 +23,10 @@ module PhoneLog
     # config.active_record.observers = :cacher, :garbage_collector, :forum_observer
 
     config.generators do |g|
-      g.test_framework :rspec,
-        :fixture => false,
-        :helper => false,
-        :view => false,
-        :controller => false
+      g.test_framework :rspec, :fixture => false
       g.fixture_replacement :fabrication
       g.template_engine :haml
-
+      g.helper false
     end
     # Set Time.zone default to the specified zone and make Active Record auto-convert to this zone.
     # Run "rake -D time" for a list of tasks for finding time zone names. Default is UTC.
