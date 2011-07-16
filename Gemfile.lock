@@ -1,3 +1,9 @@
+GIT
+  remote: git://github.com/btelles/itslog.git
+  revision: 6e1276649d0b21c21c1a748e69c374268b10b3f9
+  specs:
+    itslog (0.5.0)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -78,7 +84,6 @@ GEM
       rest-client (~> 1.6.1)
       term-ansicolor (~> 1.0.5)
     i18n (0.5.0)
-    itslog (0.5.0)
     jquery-rails (1.0.12)
       railties (~> 3.0)
       thor (~> 0.14)
@@ -174,7 +179,7 @@ DEPENDENCIES
   haml
   haml-rails
   heroku
-  itslog
+  itslog!
   jquery-rails
   launchy
   pg

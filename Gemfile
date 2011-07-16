@@ -11,7 +11,7 @@ gem 'rails', '3.0.9'
 gem 'pg'
 gem 'haml'
 gem 'sass'
-gem 'itslog'
+gem 'itslog', :git => 'git://github.com/btelles/itslog.git'
 gem 'decent_exposure'
 gem 'jquery-rails'
 
