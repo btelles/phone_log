@@ -1,0 +1,501 @@
+#Vanguard-top {
+
+    width: 100%;
+
+	height: 89px;
+
+	background: url(../images/top-bg.png) repeat-x;
+	min-width:1021px;
+
+}
+
+
+
+div.VPG-top {
+
+    width: 1011px;
+
+	margin-left: auto;
+
+	margin-right: auto;
+
+	position: relative;
+
+}
+
+
+
+.top-logo {
+
+    float: left;
+
+	margin-top: 10px;
+
+}
+
+
+
+.top-phone {
+
+    float: right;
+	margin-top: 20px;
+}
+
+
+
+#Vanguard-nav {
+
+    width: 100%;
+	height: 46px;
+
+	background: url(../images/menu-bg.png) repeat-x;
+	min-width:1021px;
+	z-index:5;
+}
+
+
+
+div.VPG-nav {
+
+    width: 1011px;
+
+	margin-left: auto;
+
+	margin-right: auto;
+
+	position: relative;
+	z-index:5;
+
+}
+
+
+#Vanguard-black {
+
+    width: 100%;
+
+	height: 97px;
+	background-color:#000;
+	min-width:1021px;
+}
+
+
+
+div.VPG-black {
+
+    width: 1011px;
+
+	margin-left: auto;
+
+	margin-right: auto;
+
+	position: relative;
+
+}
+
+
+
+
+
+#Vanguard-flash {
+
+    width: 100%;
+
+	background: url(../images/black-bg.png);
+	min-width:1021px;
+}
+
+
+
+div.VPG-flash {
+
+    width: 1011px;
+
+	margin-left: auto;
+
+	margin-right: auto;
+
+	position: relative;
+
+}
+
+
+
+.content-flash {
+
+    float: left;
+	width:644px;
+
+}
+
+.menu-menu {
+    width: 790px;
+	vertical-align:top
+}
+
+.menu-search {
+}
+
+.black-title {
+
+	width:644px;
+	vertical-align:top;
+
+}
+
+.black-right {
+
+	width:367px;
+	vertical-align:top;
+	text-align:right;
+
+}
+
+
+.mod-flash {
+
+	clear: both;
+
+	text-align:left;
+
+}
+
+
+
+
+
+#Vanguard-content {
+
+    width: 100%;
+
+	background-color: #ffffff;
+	min-width:1021px;
+}
+
+
+
+div.VPG-content {
+
+    width: 1011px;
+
+	margin-left: auto;
+
+	margin-right: auto;
+
+	position: relative;
+
+}
+
+
+
+.whitetopleft {
+
+    background: no-repeat right;
+
+	width: 11px;
+
+	height: 33px;
+
+}
+
+
+
+.whitetop {
+
+    background: repeat-x;
+
+	height: 33px;
+
+}
+
+
+
+.whitetopright {
+
+    background: no-repeat;
+
+	width: 10px;
+
+	height: 33px;
+
+}
+
+
+
+.whitemiddleleft {
+
+    background: repeat-y right;
+
+	width: 11px;
+
+}
+
+
+
+.whitemiddle {
+
+    background: url(../images/white-bg.png);
+
+	width: 989px;
+
+}
+
+
+
+.whitemodleft {
+
+
+
+	width: 685px;
+
+	vertical-align:top;
+
+	padding-right:5px;
+
+	padding-left:20px;
+
+}
+
+.whitemodlefttop {
+
+
+
+	width: 685px;
+
+	vertical-align:top;
+
+	padding-right:5px;
+	
+	padding-top:5px;
+
+	padding-left:20px;
+
+}
+
+
+
+.whitemodmiddle {
+	clear:both;
+	
+	background:url(../images/page_line.jpg) repeat-y top left;
+
+	width: 27px;
+
+	vertical-align:top;
+
+}
+
+.whitemodmiddletop {
+
+    float: left;
+
+	width: 27px;
+
+
+	vertical-align:top;
+
+}
+
+
+
+.whitevideo {
+
+	text-align:center;
+
+	vertical-align:top;
+
+	
+
+
+
+}
+
+
+
+.whitemodright {
+
+
+
+	width: 210px;
+
+	padding-right:0px;
+
+	padding-left:0px;
+
+	text-align:left;
+
+	vertical-align:top;
+
+}
+
+
+
+.whitemiddleright {
+
+    background: repeat-y;
+
+	width: 10px;
+
+}
+
+
+
+.whitebottomleft {
+
+    background:  no-repeat  top right;
+
+	width: 11px;
+
+	height: 34px;
+
+}
+
+
+
+.whitebottom {
+
+    background:  repeat-x;
+
+	height: 34px;
+
+}
+
+
+
+.whitebottomright {
+
+    background:  no-repeat left ;
+
+	width: 12px;
+
+	height: 34px;
+
+}
+
+
+
+#Vanguard-footer {
+	width: 100%;
+	height: 30px;
+	background: url(../images/footer-bg-blue-gray.png) repeat-x;
+	min-height: 195px;
+	min-width:1021px;
+}
+
+
+
+div.VPG-footer {
+
+    width: 1011px;
+
+	margin-left: auto;
+
+	margin-right: auto;
+
+	position: relative;
+
+}
+
+
+.footer-logo {
+    width: 135px;
+	padding-top:14px;
+}
+
+.footer-menu {
+	text-align: center;
+	vertical-align:top;
+	padding-top:15px;
+
+}
+
+.footer-phone {
+    width: 200px;
+	padding-top: 10px;
+	vertical-align:top;
+}
+
+.contentnavtop {
+
+	background:url(../images/black_bg_right_nav_top.jpg) no-repeat top left;
+
+	width:334px;
+
+	height:110px; 
+
+}
+
+
+
+.contentnavbot {
+
+	background:url(../images/black_bg_right_nav_bot.jpg) no-repeat top left;
+
+	width:334px;
+
+	height:134px;
+
+}
+
+.navbox {
+
+	background: url(../images/nav-box-smaller-nodrop.png) no-repeat top left;
+
+	width:228px;
+
+	height:193px;
+
+}
+
+.specialtop {
+
+	background: url(../images/spbgtop.png) no-repeat bottom left;
+
+	width:691px;
+
+	height:18px;
+
+}
+
+.specialleft {
+
+	background: url(../images/spleft.png) repeat top right;
+
+	width:19px;
+
+
+}
+
+.specialright {
+
+	background: url(../images/sprit.png) repeat top left;
+
+	width:21px;
+
+
+}
+
+.specialmid {
+
+	background: url(../images/spmid.png)  repeat top left;
+	width:651px;
+
+}
+
+.specialbot {
+
+	background: url(../images/spbot.png)  no-repeat top left;
+	width:691px;
+	height:20px;
+
+}
+
+.specialimage {
+	width:175px;
+	padding-right:5px;
+
+}
+
+.distext {
+	line-height:110%;
+	size:8px;
+}

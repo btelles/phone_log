@@ -1,0 +1,177 @@
+/* Design by Brian Diaz of Media 65 @ http://www.m65.net  All Rights Reserved */
+
+/* #############  CONTENT - SECTIONS & CATEGORIES ###########################*/
+/* Element |ID   | Class 			  |Suffix */
+/* Div     |NA   |contentheading   |pageclass_sfx*/
+/* com_content AKA CORE ARTICLES FOR JOOMLA */
+/* I */
+
+/*  Needs Edit component heading */
+/* Element |ID   | Class 			  |Suffix */
+/* Div     |NA   |contentheading   |YES */
+/* Top of any article is Parameters - Component : Show Article Title*/
+.componentheading {}
+	
+/* Element |ID   | Class 			  |Suffix */
+/* Div     |NA   |contentheading   |YES */
+/* Top of any article is Parameters - Component : Show Article Title*/
+.contentheading {
+	font: "Myriad Pro";
+	font-size:18px;
+	color:#000;
+	line-height:120%;
+	
+	}
+
+/* article rating needs to turn on via the back-end */
+.content_rating {}
+.content_vote {}
+/* .button class to be added see forms css */
+
+
+/* Element |ID   | Class 			    |Suffix */
+/* Div     |NA   |contentpagetitle   |YES */
+/* Top of any article is Parameters - Component : Show Article Title*/
+/* content title and links href links happens if turned on via the back-end*/
+.contentpagetitle {}
+a.contentpagetitle,a.contentpagetitle:link, a.contentpagetitle:visited {}
+a.contentpagetitle:hover {}
+
+/* top box like a category description */
+.contentdescription {}
+
+/* Icons Print E-mail PDF etc.*/
+.buttonheading{}
+
+/* Writen by Authors name can also be seen on search com results href and intro text & Category listing if it has a article count*/
+.small {}
+
+/* Dates */
+.createdate {}
+.modifydate {}
+.newsfeeddate {}
+/* Dates */
+
+
+/* Main Body Text */
+.contentpane {}
+/* Main Body Text */
+.contentpaneopen {}
+/* edit button if you have access to it */
+.contentpaneopen_edit{}
+
+
+/* Article Table of contents */
+table.contenttoc {}
+	
+/* Heading Top TOC */
+table.contenttoc th {}
+
+/* Table Data can add color */
+table.contenttoc td {}
+
+/* Links Article Table of contents index */
+	a.toclink:hover, a.toclink:visited, a.toclink:link {}
+/* End Article Table of contents  */
+
+/* Main Body Text */
+
+/* << Prev - Next >> */
+.pagenavbar{}
+.pagenavcounter{}
+
+/* Page footer nav  « StartPrev12NextEnd » */
+.pagination{}
+.pagination span {}
+a.pagination  a   {} 
+a.pagination:hover {}
+
+/* Table layout types "list"ings  Archived, weblink etc..*/
+.sectiontableheader {}
+	
+/* Table odd and Even Rows */
+.sectiontableentry1 {}
+.sectiontableentry2 {}
+.sectiontablefooter {}
+/* End Sectiontable */
+
+/* Category */
+.category {}
+a.category:link, a.category:visited, a.category:hover  {}
+/* End category */
+
+
+/* blogs Layout Style Top of the page Blog style Layouts */
+.blog {}
+.blog_heading {}
+/*  At the footer of the blog style pages */
+.blog_more{}
+/* UL List at the footer of the Page */
+.blogsection{}
+
+/* Read more link to full article  */
+.readon{}
+
+/* space from bottom of article */
+.article_separator{}
+  
+/* new and Added  */
+ /* This is table's TD tag that goes around the hole frontpage and blog com's 
+ the backround would cover both td's or all colums
+ */
+.article_column{}
+
+/* this class add formating to the right side of the content front page. 
+it will overwrite the hole right and take formating over article_column after the first col
+*/
+.column_separator{}
+/* End blogsection */
+
+
+/* Need to Edit this is not My code See plugins images */
+/* thumbnails */
+div.mosimage         {}
+div.mosimage_caption {}
+
+div.caption       {}
+div.caption img   {}
+div.caption p     {}
+/* Need to Edit this is not My code See plugins images */
+
+/* New added */
+/* com_archive */
+/* 
+li      |row                  | 1
+h4      |title                |
+h5		  |metadata					|
+span    |created-date         |
+span    |author               |
+div     |intro                | */
+
+/* It's LI in a UL list  */
+ .row1{}
+ /* H4 Header tag for Title */
+ .title{}
+ 
+ 
+ /* Plugin content Items Archived Article List */
+ /* It a h5 HTML tag which wraps around the authors name meta etc.. */
+ /* needs div id forul list type layout */
+.author{}
+.created-date{}
+.metadata{}
+.intro{}
+.MsoNormal{}
+
+/*Com Polls*/
+/* Has Styles inside its own com folder */
+/*td      |smalldark          	| */
+.smalldark  {}
+
+/*com_search*/
+.searchintro{}
+/*Search Form keyword highlight*/
+.highlight {}
+
+/* ############# END CONTENT - SECTIONS & CATEGORIES ###########################*/
+

@@ -1,0 +1,375 @@
+/* Design by Brian Diaz of Media 65 @ http://www.m65.net  All Rights Reserved */
+
+/* ##################### MODULE TABLE STYLE  #################*/	
+/* Element |Class 			  |Suffix */
+/* table   |moduletable      | moduleclass_sfx*/
+/* <jdoc:include type="modules" name="left" style="table" /> */
+
+/* Table Control */
+table.moduletable {}
+
+/* Font Control */
+
+/* Title Control */
+table.moduletable th {}
+
+/* Module tbody Control*/
+/*table.moduletable tbody{} */
+
+/* Module Row Control*/
+/*table.moduletable tr {}*/
+table.moduletable tr{}
+
+/* Module table Data Content Control*/
+table.moduletable td {}
+
+/* List Control */
+table.moduletable ul {}
+table.moduletable li {}
+
+/* Link Control*/
+table.moduletable a:link{}
+table.moduletable a:visited {}
+table.moduletable a:hover {}
+table.moduletable a:active {}
+
+
+/* ##################### MODULE TABLE STYLE CUSTOM SUFFIX #################*/
+
+/* ##################### MODULE TABLE STYLE CUSTOM SUFFIX #################*/
+
+/* ##################### END MODULE TABLE STYLE  #################*/
+
+
+/* ##################### MODULE XHTML DIV STYLE #################*/	
+/* Element 	|Class 			  	|Suffix */
+/* div   	|moduletable      | moduleclass_sfx*/
+/* h3    	|moduletable      | 
+/* <jdoc:include type="modules" name="left" style="xhtml" /> */
+
+/* Table Control */
+/* Module Content Control*/
+div.moduletable {}
+
+/* Font Control */
+
+/* Title Control */
+div.moduletable h3 { }
+
+/* List Control */
+div.moduletable ul {}
+div.moduletable li {}
+
+/* Link Control*/
+div.moduletable a:link{}
+div.moduletable a:visited {}
+div.moduletable a:hover {}
+div.moduletable a:active {}
+
+
+/* ##################### MODULE XHTML STYLE CUSTOM SUFFIX #################*/
+/* ##################### MODULE XHTML STYLE CUSTOM SUFFIX #################*/
+
+/* ##################### END MODULE MODULE XHTML STYLE  #################*/
+
+
+/* ##################### MODULE ROUNDED STYLE #################*/
+/* Element 	|Class 			  	|Suffix */
+/* div   	|module           | moduleclass_sfx*/
+/* h3    	|module           | 
+/* <jdoc:include type="modules" name="left" style="rounded" /> */
+
+/* Module Content Control*/
+div.module {}
+
+/* Font Control */
+
+/* Title Control */
+div.module h3 { }
+
+/* List Control */
+.module ul {}
+.module li {}
+
+/* Link Control*/
+.module a:link{}
+.module a:visited {}
+.module a:hover {}
+.module a:active {}
+
+ /* Round Conners example */
+.module {background: url(../images/bl_grey.gif) 0 100% no-repeat #dddddd; width: 20em; margin-bottom: 10px;}
+.module div {background: url(../images/br_grey.gif) 100% 100% no-repeat}
+.module div div {background: url(../images/tl_grey.gif) 0 0 no-repeat}
+.module div div div {background: url(../images/tr_grey.gif) 100% 0 no-repeat; padding:10px; padding-top: 0px; padding-bottom: 2px;}
+.module div div div div {background: none;}
+
+
+/* ##################### MODULE ROUNDED STYLE CUSTOM SUFFIX #################*/
+/* ##################### END MODULE ROUNDED STYLE CUSTOM SUFFIX #################*/
+
+/* ##################### END MODULE ROUNDED STYLE  #################*/
+
+
+/* ##################### MODULE HORZ #################*/	
+/* table   |moduletable      | moduleclass_sfx*>*/
+/* <jdoc:include type="modules" name="left" style="horz" /> */
+/* Its a table module above has most of the control try using a suffix to have more control*/
+.nowrap{}
+
+/* ##################### MODULE HORZ STYLE CUSTOM SUFFIX #################*/
+ 
+
+
+/* ##################### MODULE BANNERS #################*/
+/* mod_banners */
+/*
+div     |bannergroup      | moduleclass_sfx
+div     |bannerheader     | moduleclass_sfx
+div     |banneritem       | moduleclass_sfx 
+div     |bannerfooter     | moduleclass_sfx*/
+
+/* Group */
+div.bannergroup {}
+
+/* Header  */
+div.bannerheader{}
+
+/* Text advert style */
+div.banneritem {}
+
+/* footer */
+div.bannerfooter {}
+
+/* ##################### MODULE BANNERS STYLE CUSTOM SUFFIX #################*/
+/* Group */
+div.bannergroup-ban-sfx{}
+
+/* Header  */
+div.bannerheader-ban-sfx{}
+
+/* Text advert style */
+div.banneritem-ban-sfx{}
+
+/* footer */
+div.bannerfooter-ban-sfx{}
+/*  ##################### END MODULE BANNERS STYLE CUSTOM SUFFIX #################*/
+
+/* ##################### END MODULE BANNERS #################*/
+
+
+/* ##################### MODULE BREADCRUMBS #################*/
+/* mod_breadcrumbs Move to navigation.css*/
+
+/* ##################### MODULE BREADCRUMBS #################*/
+
+/* ##################### MODULE CUSTOM #################*/
+/*  mod_custom No styles at this time */
+/* ##################### MODULE CUSTOM #################*/
+
+
+/* ##################### MODULE FOOTER #################*/
+/* mod_footer No styles at this time */
+/* ##################### END MODULE FOOTER #################*/
+
+/* ##################### MODULE LATESTNEWS #################*/
+/* mod_latestnews */
+/* 
+ul      |latestnews      | moduleclass_sfx
+li      |latestnews      | moduleclass_sfx
+a       |latestnews      | moduleclass_sfx */
+.latestnews{}
+/* List Control */
+.latestnews ul {}
+.latestnews li {}
+
+/* Link Control*/
+.latestnews a:link{}
+.latestnews a:visited {}
+.latestnews a:hover {}
+.latestnews a:active {}
+/* ##################### END MODULE LATESTNEWS STYLE CUSTOM SUFFIX #################*/
+/* mod_latestnews */
+/* 
+ul      |latestnews      | moduleclass_sfx
+li      |latestnews      | moduleclass_sfx
+a       |latestnews      | moduleclass_sfx */
+.latestnews-news-sfx{}
+
+/* ##################### END MODULE LATESTNEWS STYLE CUSTOM SUFFIX #################*/
+
+/* ##################### END MODULE LATESTNEWS #################*/
+
+
+/* ##################### MODULE FEED #################*/
+/*mod_feed
+Element		| ID		| CLASS				| SUFFIX
+table			NA			moduletable			YES
+ul				NA			newsfeed				YES
+*/
+.newsfeed{}
+/* ##################### END MODULE FEED #################*/
+.newsfeed-feed-sfx{}
+/* ##################### MODULE FEED SUFFIX #################*/
+
+/* ##################### END MODULE FEED SUFFIX  #################*/
+
+
+/* ##################### MODULE MAINMENU #################*/
+/* NOTE: see navigation.css */
+/* ##################### END MODULE MAINMENU #################*/
+
+
+/* ##################### MODULE LOGIN #################*/
+/* mod_login */
+/* 
+NOTE: see forms.css
+/* Element 		|ID   				| Class 			  |Suffix 
+input-submit 	|NA					| button			  |NO
+fieldset			|NA					|input			  |NO
+input-text		|modlgn_username	|inputbox		  |NO
+input-password	|modlgn_passwd		|inputbox		  |NO
+input-checkbox	|modlgn_remember	|inputbox		  |NO
+input-submit	|NA					|button			  |NO
+*/
+/* ##################### END MODULE LOGIN #################*/
+form-login{}
+
+/* ##################### MODULE MOSTREAD #################*/
+/* mod_mostread */
+/* 
+ul      |mostread      | moduleclass_sfx
+li      |mostread      | moduleclass_sfx
+a       |mostread      | moduleclass_sfx */
+.mostread{}
+/* ##################### MODULE MOSTREAD STYLE CUSTOM SUFFIX #################*/
+/* ul      |mostread      | moduleclass_sfx
+   li      |mostread      | moduleclass_sfx
+   a       |mostread      | moduleclass_sfx */
+.mostread-read-sfx{}
+/* ##################### END MODULE MOSTREAD STYLE CUSTOM SUFFIX #################*/
+/* ##################### END MODULE MOSTREAD #################*/
+
+
+/* ##################### MODULE NEWSFLASH #################*/
+/* mod_newsflash */
+/* 
+These are the same as the Componet class but if your add a suffix you can control
+with affecting the main Componet class.
+table   |moduletable      | moduleclass_sfx
+table   |contentpaneopen  | moduleclass_sfx
+td      |contentheading   | moduleclass_sfx
+a       |contentpagetitle | moduleclass_sfx
+span    |article_separator|  */
+
+/* ##################### END MODULE NEWSFLASH STYLE CUSTOM SUFFIX #################*/
+/*
+table   |moduletable      | moduleclass_sfx
+table   |contentpaneopen  | moduleclass_sfx
+td      |contentheading   | moduleclass_sfx
+a       |contentpagetitle | moduleclass_sfx
+span    |article_separator|  */
+moduletable-news-sfx{}
+article_separator-news-sfx{}
+contentpaneopen-news-sfx{}
+contentheading-news-sfx{}
+contentpagetitle-news-sfx{}
+contentpaneopen-news-sfx{}
+/* ##################### END MODULE NEWSFLASH STYLE CUSTOM SUFFIX #################*/
+
+/* ##################### END MODULE NEWSFLASH #################*/
+
+/* ##################### MODULE POLL #################*/
+/* mod_poll */
+/* 
+this module has a special style sheet in its front page com 
+loaction: components\com_poll\assets\poll_bars.css
+it calls a Javascript that adds the  class at rendering time of page.
+
+table   |pollstableborder   	|
+
+See" forms.css
+input-submit	|NA	 |button
+
+!Theses classes are component class see components.css!
+div     |componentheading     | pageclass_sfx
+div     |contentpane          | pageclass_sfx
+th      |sectiontableheader 	|
+tr      |sectiontableentry  	| pageclass_sfx |odd color 0 1
+*/
+/* Polls Outside Table Border */
+.pollstableborder {}
+
+/* ##################### MODULE POLL STYLE CUSTOM SUFFIX #################*/
+/* NA */
+/* ##################### END MODULE POLL STYLE CUSTOM SUFFIX #################*/
+
+/* ##################### END MODULE POLL #################*/
+
+
+/* ##################### MODULE RANDOM IMAGE #################*/
+/* mod_random_image No styles at this time*/
+/* ##################### END MODULE RANDOM IMAGE #################*/
+
+
+/* ##################### MODULE REALTED ITEMS #################*/
+/*mod_related_items*/
+/* ul      |relateditems      | moduleclass_sfx */
+relateditems{}
+/* ##################### MODULE REALTED ITEMS STYLE CUSTOM SUFFIX #################*/
+relateditems-related-sfx{}
+/* ##################### END MODULE REALTED ITEMS STYLE CUSTOM SUFFIX #################*/
+/* ##################### END MODULE REALTED ITEMS #################*/
+
+
+/* ##################### MODULE SEARCH #################*/
+/* mod_searc & com_search  */
+/* should add form foramtting in the forms.css sheets */
+/*Element		| ID								| CLASS		| SUFFIX
+input-submit	  mod_search_searchword		 inputbox		YES
+input-image		 NA								 button			YES
+input-submit	 NA								 button	      YES
+div				NA								    search		   YES*/
+
+.search {}
+/* last 2 for search class's are in com_search but added here*/
+/* results if not search google */
+
+/* End Search Form */
+/* ##################### END MODULE SEARCH #################*/
+/* ##################### MODULE SEARCH SUFFIX  #################*/
+.search-sea-sfx {}
+/* last 2 for search class's are in com_search but added here*/
+/* results if not search google */
+/* ##################### END MODULE SEARCH SUFFIX #################*/
+
+
+/* ##################### MODULE SECTIONS #################*/
+/* mod_sections */
+/*
+ ul      |sections      | moduleclass_sfx */
+ .sections{}
+ /* ##################### END MODULE SECTIONS  #################*/
+/* ##################### MODULE SECTIONS SUFFIX  #################*/
+.sections-sec-sfx{}
+/* ##################### END MODULE SECTIONS SUFFIX #################*/
+ 
+/* ##################### MODULE STATS #################*/
+/* mod_stats No styles at this time */
+/* ##################### END MODULE MODULE STATS#################*/
+
+/* ##################### MODULE SYNDICATE #################*/
+/* mod_syndicate No styles at this time */
+/* ##################### END MODULE SYNDICATE #################*/
+
+/* ##################### MODULE WHOSONLINE #################*/
+/* mod_whosonline No styles at this time */
+/* ##################### END MODULE SYNDICATE #################*/
+
+/* ##################### MODULE WRAPPER #################*/
+/* mod_wrapper */
+/*Element	|ID	|CLASS	|SUFFIX
+  iframe	   |NA	|wrapper	|YES*/
+.wrapper{}
+/* ##################### MODULE WRAPPER SUFFIX #################*/
+/* ##################### END MODULE WRAPPER SUFFIX #################*/

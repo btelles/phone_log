@@ -1,0 +1,55 @@
+@import url(layouts.css);
+@import url(components.css);
+@import url(modules.css);
+@import url(navigation.css);
+@import url(misc.css);
+@import url(forms.css);
+
+
+/* #######################  GENERAL SETTINGS ############################ */
+html.body{
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #666;
+	margin-top: 0px;
+	background-color: #CCCCFF;
+}
+
+body {
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #666;
+	margin: 0px;
+	background-color: #b7b6b1;
+	background: url(../images/footer-grey-bg.png);
+}
+
+/*  Global Formatting */
+h1 {font-size:20px;
+line-height: 1em;
+font-weight: 900;
+color: #006BAA;
+font-family: Arial, Helvetica, sans-serif;
+
+}
+h2 {font-size:14px;line-height: 1em;font-weight: 900;}
+h3 {font-size:14px;line-height: 1em;font-weight: 900;}
+h4 {font-size:13px;line-height: 1em;font-weight: 900;}
+h5 {font-size:12px;line-height: 1em;font-weight: 900;}
+h6 {font-size:11px;line-height: 1em;font-weight: 900;}
+td{font-size: 12px;
+line-height:180%;
+}
+th{font-size: 12px;}
+a {
+	color: #006BAA;
+}
+a:hover {color: #659FDE;}
+a:visited {color: #006BAA;}
+a.image, a.image:hover  {border:0;}
+
+
+/* Clears Divs */
+.clr{clear: both;}
+
+/* #######################  END GENERAL SETTINGS ############################ */

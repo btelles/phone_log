@@ -1,0 +1,51 @@
+form{}
+
+table.vpgsearch {
+	height: 23px;
+	margin-top: 10px;
+}
+
+
+
+input {
+
+	color:#000000;
+	margin: 0;
+	padding: 3;
+}
+
+.inputbox {
+	color:#000000;
+	border: # CCC;
+	height: 20px;
+}
+
+.text_area {height: 40px;
+color:#ffffff;}
+
+.selectbox {}
+
+.vpgsearchbuttonleft {
+	background: url(../images/search-button-left.png) no-repeat;
+	width: 10px;
+	height: 23px;
+	position: relative;
+	top: -23px;
+	left: 139px;
+}
+
+.button {
+    height: 23px;
+	margin: 0;
+	padding: 0 3px 0 5px;
+	background: url(../images/search-button-bg.png);
+	border: 0;
+}
+
+.search {
+	height: 23px;
+}
+
+.contact_email {}
+
+.adminform{}
