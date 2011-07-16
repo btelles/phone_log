@@ -1,0 +1,87 @@
+!!! 5
+%html
+  %head
+    %meta{:content => "text/html; charset=utf-8", "http-equiv" => "content-type"}/
+    %meta{:content => "", :name => "keywords"}/
+    %meta{:content => "Retail Loss Prevention Security Systems, Line Alarms | Anti-Shoplifting Security Alarms | Increase Sales in Retail", :name => "title"}/
+    %meta{:content => "Andrew Heard", :name => "author"}/
+    %meta{:content => "Manage log information", :name => "description"}/
+    %title=title
+    %link{:href => "/vanguard/images/favicon.ico", :rel => "shortcut icon", :type => "image/x-icon"}/
+    = stylesheet_link_tag 'screen.css', :media => 'screen, projection'
+    = stylesheet_link_tag 'print.css', :media => 'print'
+    /[if lt IE 8]
+      = stylesheet_link_tag 'ie.css', :media => 'screen, projection'
+    =javascript_include_tag 'jquery.min.js', 'jquery_ujs.js', 'application.js'
+  %body
+    #container
+      %header#header
+        %section.logo
+          %img(src='/vanguard/images/VPG-logo.png' alt='Vanguard Protex Global Logo')
+        %section.shopping
+          %h1 Engaging Customers. Increasing Sales
+          %p.online
+            %a(href="http://www.vpgwebstore.com/")
+              Shop
+              %br
+              Online
+          %p.international_distributors
+            %a(href="http://www.vpgwebstore.com/")
+              International
+              %br
+              Distributors
+        %ul.nav
+          %li.home
+            %a(href="http://www.vanguardproductsgroup.com/") Home
+          %li.solutions
+            %a(href="http://www.vanguardproductsgroup.com/Solutions/solutions.html") Solutions
+          %li.services
+            %a(href="http://www.vanguardproductsgroup.com/Services/we-have-services.html") Services
+          %li.company
+            %a(href="http://www.vanguardproductsgroup.com/Company/company.html") Company
+          %li.customer_resources
+            %a(href="http://www.vanguardproductsgroup.com/Customer-Resources/customer-resources.html") Customer Resources
+          %li.contact_us
+            %a(href="http://www.vanguardproductsgroup.com/Contact-Us/contact-us.html") Contact Us
+        %h2 Call Us Now: 1-877-477-4874
+        %h1
+          %span Phone
+          Logs
+        %ul#breadcrumbs
+          %li
+            %a(href="http://www.vanguardproductsgroup.com/") Home
+          %li.arrow Phone Logs
+      #main
+        #content
+          =yield
+        #sidebar
+    %footer#footer
+      .center_content
+        .cols
+          .logo &nbsp;
+          %ul.nav
+            %li.home
+              %a(href="http://www.vanguardproductsgroup.com/") Home
+            %li.solutions
+              %a(href="http://www.vanguardproductsgroup.com/Solutions/solutions.html") Solutions
+            %li.services
+              %a(href="http://www.vanguardproductsgroup.com/Services/we-have-services.html") Services
+            %li.company
+              %a(href="http://www.vanguardproductsgroup.com/Company/company.html") Company
+            %li.customer_resources
+              %a(href="http://www.vanguardproductsgroup.com/Customer-Resources/customer-resources.html") Customer Resources
+            %li.contact_us
+              %a(href="http://www.vanguardproductsgroup.com/Contact-Us/contact-us.html") Contact Us
+          %h1.number
+            1-877-477-4874
+          %p
+            Vanguard is a leader in retail loss prevention,
+            providing Retail Security Systems, Retail Anti-Theft Devices,
+            Anti-Shoplifting Alarms, Retail Security Devices, Digital 
+            Signage and Video Messaging Solutions, Advanced Line Alarms,
+            Powered Product Alarms, Retail Security Tethers, Retractable Cord Reel Security,
+            Sensor-Based Alarms, as well as Consumer Electronics Retail Displays.
+            With our solutions retailers can effectively display, power and 
+            secure today's hottest products, like iPads, cell phones and smartphones,
+            cameras and camcorders, netbooks, laptops, GPS devices, MP3 players,
+            eReaders (eBook Readers) and media tablet computers.

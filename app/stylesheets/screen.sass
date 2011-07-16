@@ -1,0 +1,186 @@
+// This import applies a global reset to any page that imports this stylesheet.
+@import blueprint/reset
+// To configure blueprint, edit the partials/base.sass file.
+@import partials/base
+// Import all the default blueprint modules so that we can access their mixins.
+@import blueprint
+// Import the non-default scaffolding module.
+@import blueprint/scaffolding
+
+// To generate css equivalent to the blueprint css but with your
+// configuration applied, uncomment:
+// @include blueprint
+
+// If you are doing a lot of stylesheet concatenation, it is suggested
+// that you scope your blueprint styles, so that you can better control
+// what pages use blueprint when stylesheets are concatenated together.
+body
+  +blueprint-typography(true)
+  +blueprint-utilities
+  +blueprint-debug
+  +blueprint-interaction
+  background-image: url('/vanguard/images/header_bg.png')
+  background-position: 0px 89px
+  background-repeat: repeat-x
+form
+  +blueprint-form
+  // You'll probably want to remove the scaffolding once you start styling your site.
+  +blueprint-scaffolding
+
+// Page layout can be done using mixins applied to your semantic classes and IDs:
+#container
+  +container
+  a
+    color: #006BAA
+    &:hover
+      color: #659FDE
+#header
+  margin-top: 16px
+  +column($blueprint-grid-columns, true)
+  .logo
+    +column(16)
+  .shopping
+    +column(8, true)
+    h1
+      font-size: 13pt
+      font-weight: bold
+    .online
+      +prepend(2)
+      +column(2)
+      height: 38px
+      a
+        +prepend(1)
+        +column(1)
+        background-image: url('/vanguard/images/blue_cart_fx_icon.png')
+        background-repeat: no-repeat
+        background-position: top left
+    .international_distributors
+      +column(4, true)
+      height: 38px
+      a
+        +prepend(1)
+        +column(3, true)
+        background-image: url('/vanguard/images/world-map-flat-small.jpg')
+        background-repeat: no-repeat
+        background-position: 20px 0px
+        text-align: right
+  ul.nav
+    margin: -9px 0 0 -20px
+    +column(16)
+    li
+      height: 45px
+      &.home, &.solutions, &.services, &.company
+        +column(2)
+      &.customer_resources
+        +column(4)
+      &.contact_us
+        +column(3)
+      a
+        display: block
+        text-align: center
+        line-height: 45px
+        height: 100%
+        width: 100%
+        color: #fff
+        font-weight: bold
+        margin: 0
+        text-decoration: none
+        &:hover
+          background-color: #4498C7
+  > h2
+    +prepend(3)
+    +column(5, true)
+    color: #fff
+    font-weight: bold
+    font-size: 11pt
+    line-height: 45px
+    margin-top: -9px
+  > h1
+    +column(24, true)
+    color: #207FDE
+    font-size: 18pt
+    height: 60px
+    padding-top: 20px
+    span
+      color: #fff
+  #breadcrumbs
+    +column(24, true)
+    margin-top: -8px
+    margin-left: -19px
+    li
+      display: block
+      float: left
+      &.arrow
+        padding-left: 25px
+        background-image: url('/vanguard/images/arrow.png')
+        background-repeat: no-repeat
+        background-position: 5px 4px
+
+
+
+#main
+  +column(24, true)
+#sidebar
+  // One third of the grid columns, rounding down. With 24 cols, this is 8.
+  $sidebar-columns: floor($blueprint-grid-columns / 3)
+  +column($sidebar-columns)
+  height: 100%
+#content
+  // Two thirds of the grid columns, rounding up.
+  // With 24 cols, this is 16.
+  $content-columns: ceil(2 * $blueprint-grid-columns / 3)
+  // true means it's the last column in the row
+  +column($content-columns, true)
+  height: 100%
+  h1
+    color: #006BAA
+    font-size: 20px
+    font-weight: bold
+#footer
+  background-image: url('/vanguard/images/footer-bg-blue-gray.png')
+  background-repeat: repeat-x
+  height: 203px
+  .center_content
+    +container
+    .cols
+      +column(24, true)
+      height: 123px
+      margin-top: 45px
+      .logo
+        height: 45px
+        +column(4)
+        background-image: url('/vanguard/images/VPG-logo-small.png')
+        background-repeat: no-repeat
+      h1.number
+        line-height: 45px
+        +column(4, true)
+        font-size: 11pt
+        font-weight: bold
+      p
+        text-align: center
+        font-size: 7.5pt
+        +prepend(2)
+        +column(18)
+
+      ul.nav
+        +column(15)
+        margin-bottom: 0
+        li
+          height: 45px
+          &.home, &.solutions, &.services, &.company
+            +column(2)
+          &.customer_resources
+            +column(4)
+          &.contact_us
+            +column(2)
+          a
+            display: block
+            text-align: center
+            line-height: 45px
+            height: 100%
+            width: 100%
+            font-weight: bold
+            margin: 0
+            text-decoration: none
+            &:hover
+              background-color: #4498C7
