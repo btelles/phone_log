@@ -2,6 +2,7 @@
 
 %table
   %tr
+    %th Logged at
     %th Subject
     %th
     %th
@@ -9,6 +10,7 @@
 
   - logs.each do |logg|
     %tr
+      %td= logg.logged_at
       %td= logg.subject
       %td= link_to 'Edit', edit_log_path(logg)
       %td= link_to 'Destroy', logg, :confirm => 'Are you sure?', :method => :delete, :id => "destroy_log_#{logg.id}"

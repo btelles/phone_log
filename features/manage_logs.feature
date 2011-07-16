@@ -16,6 +16,7 @@ Feature: Manage logs
 
   Scenario: Create a new log entry
     Given I am on the new log page
+    And I select "2011-07-16" as the "Logged at" date
     And I fill in "Subject" with "Some new log subject"
     And I press "Save"
     Then I should see the following table rows:

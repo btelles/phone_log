@@ -2,6 +2,7 @@ class CreateLogs < ActiveRecord::Migration
   def self.up
     create_table :logs do |t|
       t.string :subject
+      t.datetime :logged_at
 
       t.timestamps
     end

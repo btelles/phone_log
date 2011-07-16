@@ -7,6 +7,9 @@
           %li= msg
 
   .field
+    = f.label :logged_at
+    = f.datetime_select :logged_at
+  .field
     = f.label :subject
     = f.text_field :subject
   .actions
