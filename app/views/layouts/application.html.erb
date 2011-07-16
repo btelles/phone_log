@@ -16,6 +16,7 @@
     <script type="text/javascript" src="/vanguard/javascripts/mootools.js"></script>
     <script type="text/javascript" src="/vanguard/javascripts/flowplayer-3.2.6.min.js"></script>
     <script type="text/javascript" src="/vanguard/javascripts/caption.js"></script>
+
     <script type="text/javascript" charset="UTF-8">
       /* <![CDATA[ */
     try { if (undefined == xajax.config) xajax.config = {}; } catch (e) { xajax = {}; xajax.config = {}; };
@@ -38,7 +39,7 @@ xajax_bf_com_form_Handler = function() { return xajax.request( { xjxfun: 'bf_com
 <!--[if lt IE 7]>
 <script type="text/javascript" src="/vanguard/javascripts/mootools.dropdown.js"></script>
 <![endif]-->
-
+<%= javascript_include_tag 'jquery.min.js', 'jquery_ujs.js', 'application.js', :cache => 'base' %>
 <link rel="stylesheet" href="/vanguard/stylesheets/system.css" type="text/css" />
 <link rel="stylesheet" href="/vanguard/stylesheets/general.css" type="text/css" />
 <link rel="stylesheet" href="/vanguard/stylesheets/template.css" type="text/css" />
