@@ -1,5 +1,7 @@
 source 'http://rubygems.org'
 
+gem "rake", "0.8.7"
+
 gem 'rails', '3.0.9'
 
 # Bundle edge Rails instead:
@@ -15,6 +17,7 @@ gem 'jquery-rails'
 
 group :development, :test do
 
+  gem 'heroku'
   gem 'haml-rails'
   gem 'rspec-rails'
   gem 'cucumber'
