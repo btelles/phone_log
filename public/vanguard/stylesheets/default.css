@@ -84,7 +84,7 @@
 
 		 padding-right: 15px;
 
-		 background-image: url(images/nav-arrow-right.png);
+		 background-image: url(/vanguard/images/nav-arrow-right.png);
 
 		 background-position: 100% 200%;
 
@@ -96,7 +96,7 @@
 
 		div#sbMenu ul.dropdown ul ul *.dir {
 
-		 background-image: url(images/nav-arrow-right2.png);
+		 background-image: url(/vanguard/images/nav-arrow-right2.png);
 
 		}
 
@@ -110,7 +110,7 @@
 
 	div#sbMenu ul.dropdown-vertical *.dir {
 
-	 background-image: url(images/nav-arrow-right.png);
+	 background-image: url(/vanguard/images/nav-arrow-right.png);
 
 	}
 
@@ -120,7 +120,7 @@
 
 	 padding-right: 15px;
 
-	 background-image: url(images/nav-arrow-left.png);
+	 background-image: url(/vanguard/images/nav-arrow-left.png);
 
 	 background-position: 0 0%;
 
@@ -159,7 +159,7 @@
 
 		div#sbMenu ul.dropdown li {
 
-		  background: url(images/mainbg2.png) top left;
+		  background: url(/vanguard/images/mainbg2.png) top left;
 
 		 color: #fff;
 
@@ -203,7 +203,7 @@
 
 		 background-color: #4698ca;
 
-		 background-image: url(images/comnav-arrowon.png);
+		 background-image: url(/vanguard/images/comnav-arrowon.png);
 
 		 color: #fff;
 		 		 	
@@ -214,7 +214,7 @@
 
 		div#sbMenu ul.dropdown a:active {
 
-		 background: #058acf url(images/nav-sub-press.png) 0 0 repeat-x !important;
+		 background: #058acf url(/vanguard/images/nav-sub-press.png) 0 0 repeat-x !important;
 
 		 color: #fff;
 

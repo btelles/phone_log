@@ -98,10 +98,10 @@ div.module h3 { }
 .module a:active {}
 
  /* Round Conners example */
-.module {background: url(../images/bl_grey.gif) 0 100% no-repeat #dddddd; width: 20em; margin-bottom: 10px;}
-.module div {background: url(../images/br_grey.gif) 100% 100% no-repeat}
-.module div div {background: url(../images/tl_grey.gif) 0 0 no-repeat}
-.module div div div {background: url(../images/tr_grey.gif) 100% 0 no-repeat; padding:10px; padding-top: 0px; padding-bottom: 2px;}
+.module {background: url(/vanguard/images/bl_grey.gif) 0 100% no-repeat #dddddd; width: 20em; margin-bottom: 10px;}
+.module div {background: url(/vanguard/images/br_grey.gif) 100% 100% no-repeat}
+.module div div {background: url(/vanguard/images/tl_grey.gif) 0 0 no-repeat}
+.module div div div {background: url(/vanguard/images/tr_grey.gif) 100% 0 no-repeat; padding:10px; padding-top: 0px; padding-bottom: 2px;}
 .module div div div div {background: none;}
 
 

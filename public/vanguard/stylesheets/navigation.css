@@ -39,7 +39,7 @@ padding: 0px;
 
 .menu ul a {
     color:white;
-	background: url(../images/dropdown-bg.png);
+	background: url(/vanguard/images/dropdown-bg.png);
 	display: block;
 	text-indent: 1em;
 	width: 189px;
@@ -48,7 +48,7 @@ padding: 0px;
 
 .menu  ul li a:hover {
     color:white;
-	background: url(../images/sub-hover.png);
+	background: url(/vanguard/images/sub-hover.png);
 	width: 189px;
 	white-space: nowrap;
 }
@@ -110,7 +110,7 @@ background-color: #990000;
 }
 
 #current {
-/*	list-style: disc url(../images/mw_readon.png);*/
+/*	list-style: disc url(/vanguard/images/mw_readon.png);*/
 /* image issue with the rollover need to be add to others href link */
 }
 

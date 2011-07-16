@@ -79,7 +79,7 @@ table.contentpaneopen-copyright td {
 	border: 0;
 	padding: 17px 1.5em 16px 1em;
 	text-decoration: none;
-	background-image: url(../images/menu-seperator.png);
+	background-image: url(/vanguard/images/menu-seperator.png);
 	background-position: top right;
 	background-repeat: no-repeat;
 }
@@ -90,11 +90,11 @@ table.contentpaneopen-copyright td {
 
 .sf-menu ul {
     margin-top: 0px;
-	background: url(../images/menu-bg.png) repeat-x;
+	background: url(/vanguard/images/menu-bg.png) repeat-x;
 }
 
 .sf-menu li {
-	background: url(../images/menu-bg.png) repeat-x;
+	background: url(/vanguard/images/menu-bg.png) repeat-x;
 }
 
 .sf-menu li li {
@@ -112,12 +112,12 @@ table.contentpaneopen-copyright td {
 }
 
 .sf-menu li:hover, .sf-menu li.sfHover, .sf-menu a:focus, .sf-menu a:hover, .sf-menu a:active {
-	background: url(../images/menu-hover-bg.png) repeat-x;
+	background: url(/vanguard/images/menu-hover-bg.png) repeat-x;
 	outline:		0;
 }
 
 .sf-menu a:hover {
-	background-image: url(../images/menu-seperator.png);
+	background-image: url(/vanguard/images/menu-seperator.png);
 	background-position: top right;
 	background-repeat: no-repeat;
 }
@@ -131,7 +131,7 @@ table.contentpaneopen-copyright td {
 }
 
 .sf-menu #current {
-	background: url(../images/menu-bg.png) repeat-x;
+	background: url(/vanguard/images/menu-bg.png) repeat-x;
 }
 
 .sf-sub-indicator {
@@ -143,5 +143,5 @@ table.contentpaneopen-copyright td {
 	height:			10px;
 	text-indent: 	-999em;
 	overflow:		hidden;
-	background:		url('../images/arrows-ffffff.png') no-repeat -10px -100px; /* 8-bit indexed alpha png. IE6 gets solid image only */
+	background:		url('/vanguard/images/arrows-ffffff.png') no-repeat -10px -100px; /* 8-bit indexed alpha png. IE6 gets solid image only */
 }

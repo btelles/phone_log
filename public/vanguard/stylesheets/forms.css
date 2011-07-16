@@ -26,7 +26,7 @@ color:#ffffff;}
 .selectbox {}
 
 .vpgsearchbuttonleft {
-	background: url(../images/search-button-left.png) no-repeat;
+	background: url(/vanguard/images/search-button-left.png) no-repeat;
 	width: 10px;
 	height: 23px;
 	position: relative;
@@ -38,7 +38,7 @@ color:#ffffff;}
     height: 23px;
 	margin: 0;
 	padding: 0 3px 0 5px;
-	background: url(../images/search-button-bg.png);
+	background: url(/vanguard/images/search-button-bg.png);
 	border: 0;
 }
 

@@ -4,7 +4,7 @@
 
 	height: 89px;
 
-	background: url(../images/top-bg.png) repeat-x;
+	background: url(/vanguard/images/top-bg.png) repeat-x;
 	min-width:1021px;
 
 }
@@ -48,7 +48,7 @@ div.VPG-top {
     width: 100%;
 	height: 46px;
 
-	background: url(../images/menu-bg.png) repeat-x;
+	background: url(/vanguard/images/menu-bg.png) repeat-x;
 	min-width:1021px;
 	z-index:5;
 }
@@ -100,7 +100,7 @@ div.VPG-black {
 
     width: 100%;
 
-	background: url(../images/black-bg.png);
+	background: url(/vanguard/images/black-bg.png);
 	min-width:1021px;
 }
 
@@ -233,7 +233,7 @@ div.VPG-content {
 
 .whitemiddle {
 
-    background: url(../images/white-bg.png);
+    background: url(/vanguard/images/white-bg.png);
 
 	width: 989px;
 
@@ -276,7 +276,7 @@ div.VPG-content {
 .whitemodmiddle {
 	clear:both;
 	
-	background:url(../images/page_line.jpg) repeat-y top left;
+	background:url(/vanguard/images/page_line.jpg) repeat-y top left;
 
 	width: 27px;
 
@@ -376,7 +376,7 @@ div.VPG-content {
 #Vanguard-footer {
 	width: 100%;
 	height: 30px;
-	background: url(../images/footer-bg-blue-gray.png) repeat-x;
+	background: url(/vanguard/images/footer-bg-blue-gray.png) repeat-x;
 	min-height: 195px;
 	min-width:1021px;
 }
@@ -416,7 +416,7 @@ div.VPG-footer {
 
 .contentnavtop {
 
-	background:url(../images/black_bg_right_nav_top.jpg) no-repeat top left;
+	background:url(/vanguard/images/black_bg_right_nav_top.jpg) no-repeat top left;
 
 	width:334px;
 
@@ -428,7 +428,7 @@ div.VPG-footer {
 
 .contentnavbot {
 
-	background:url(../images/black_bg_right_nav_bot.jpg) no-repeat top left;
+	background:url(/vanguard/images/black_bg_right_nav_bot.jpg) no-repeat top left;
 
 	width:334px;
 
@@ -438,7 +438,7 @@ div.VPG-footer {
 
 .navbox {
 
-	background: url(../images/nav-box-smaller-nodrop.png) no-repeat top left;
+	background: url(/vanguard/images/nav-box-smaller-nodrop.png) no-repeat top left;
 
 	width:228px;
 
@@ -448,7 +448,7 @@ div.VPG-footer {
 
 .specialtop {
 
-	background: url(../images/spbgtop.png) no-repeat bottom left;
+	background: url(/vanguard/images/spbgtop.png) no-repeat bottom left;
 
 	width:691px;
 
@@ -458,7 +458,7 @@ div.VPG-footer {
 
 .specialleft {
 
-	background: url(../images/spleft.png) repeat top right;
+	background: url(/vanguard/images/spleft.png) repeat top right;
 
 	width:19px;
 
@@ -467,7 +467,7 @@ div.VPG-footer {
 
 .specialright {
 
-	background: url(../images/sprit.png) repeat top left;
+	background: url(/vanguard/images/sprit.png) repeat top left;
 
 	width:21px;
 
@@ -476,14 +476,14 @@ div.VPG-footer {
 
 .specialmid {
 
-	background: url(../images/spmid.png)  repeat top left;
+	background: url(/vanguard/images/spmid.png)  repeat top left;
 	width:651px;
 
 }
 
 .specialbot {
 
-	background: url(../images/spbot.png)  no-repeat top left;
+	background: url(/vanguard/images/spbot.png)  no-repeat top left;
 	width:691px;
 	height:20px;
 

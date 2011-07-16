@@ -184,7 +184,7 @@ div#sbMenu ul.dropdown ul *.open {
 
  background-color: #4c4c4c;
 
- background-image: url(images/comnav-arrowover.png);
+ background-image: url(/vanguard/images/comnav-arrowover.png);
 
  color: #fff;
 
@@ -194,7 +194,7 @@ div#sbMenu ul.dropdown ul ul *.open {
 
  background-color: #595959;
 
- background-image: url(images/comnav-arrowover2.png);
+ background-image: url(/vanguard/images/comnav-arrowover2.png);
 
  color: #fff;
 
@@ -212,7 +212,7 @@ div#sbMenu ul.dropdown a.open:hover {
 
 div#sbMenu ul.dropdown ul a.open:hover {
 
- background-image: url(images/comnav-arrowon.png);
+ background-image: url(/vanguard/images/comnav-arrowon.png);
 
  color: #fff;
 
@@ -236,7 +236,7 @@ div#sbMenu ul.dropdown ul li:hover > *.dir {
 
  background-color: #4c4c4c;
 
- background-image: url(images/comnav-arrowover.png);
+ background-image: url(/vanguard/images/comnav-arrowover.png);
 
 }
 
@@ -244,7 +244,7 @@ div#sbMenu ul.dropdown ul ul li:hover > *.dir {
 
  background-color: #595959;
 
- background-image: url(images/comnav-arrowover2.png);
+ background-image: url(/vanguard/images/comnav-arrowover2.png);
 
  color: #fff;
 
@@ -264,7 +264,7 @@ div#sbMenu ul.dropdown li:hover > a.dir:hover {
 
 div#sbMenu ul.dropdown ul li:hover > a.dir:hover {
 
- background-image: url(images/comnav-arrowon.png);
+ background-image: url(/vanguard/images/comnav-arrowon.png);
 
  color: #fff;
 
