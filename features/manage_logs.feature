@@ -1,8 +1,8 @@
 Feature: Manage logs
   In order to see which products are most interesting or most problematic, 
-  and decide which are worth spending money on improving
+  and decide which are worth spending money on,
   as a phone operator I want to create, edit and delete phone log entries.
-  
+
   Scenario: View existing log entries
     Given the following logs:
       | Subject |
