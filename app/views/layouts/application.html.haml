@@ -1,13 +1,13 @@
 !!! 5
 %html
   %head
-    %meta{:content => "text/html; charset=utf-8", "http-equiv" => "content-type"}/
-    %meta{:content => "", :name => "keywords"}/
-    %meta{:content => "Retail Loss Prevention Security Systems, Line Alarms | Anti-Shoplifting Security Alarms | Increase Sales in Retail", :name => "title"}/
-    %meta{:content => "Andrew Heard", :name => "author"}/
-    %meta{:content => "Manage log information", :name => "description"}/
+    %meta(content="text/html; charset=utf-8" http-equiv="content-type")/
+    %meta(content="" name="keywords")/
+    %meta(content="Retail Loss Prevention Security Systems, Line Alarms | Anti-Shoplifting Security Alarms | Increase Sales in Retail" name="title")/
+    %meta(content="Andrew Heard" name="author")/
+    %meta(content="Manage log information" name="description")/
     %title=title
-    %link{:href => "/vanguard/images/favicon.ico", :rel => "shortcut icon", :type => "image/x-icon"}/
+    %link(href="/vanguard/images/favicon.ico" rel="shortcut icon" type="image/x-icon")/
     = stylesheet_link_tag 'screen.css', :media => 'screen, projection'
     = stylesheet_link_tag 'print.css', :media => 'print'
     /[if lt IE 8]
@@ -36,19 +36,56 @@
           %li.solutions
             %a(href="http://www.vanguardproductsgroup.com/Solutions/solutions.html") Solutions
             %ul
-              %li
+              %li.parent
                 %a(href="http://www.vanguardproductsgroup.com/Power-Alarm-Solutions/power-alarm-solutions.html") Power and Security Solutions
                 %ul
                   %li
                     %a(href="http://www.vanguardproductsgroup.com/Cell-Phones/solutions-cell-phones.html") Cell Phone
+                  %li
+                    %a(href="http://www.vanguardproductsgroup.com/iPads-and-Tablets/ipad-retail-security-devies-media-tablet-retail-security-systems.html") iPad and Media Tablets
+                  %li
+                    %a(href="http://www.vanguardproductsgroup.com/Camera-and-Camcorders/camera-and-camcorders.html") Camera and Camcorder
+                  %li
+                    %a(href="http://www.vanguardproductsgroup.com/Netbook-and-Laptop/netbook-and-laptop.html") Netbook and Laptop
+                  %li
+                    %a(href="http://www.vanguardproductsgroup.com/iPod-mp3-and-Gps/ipod-mp3-and-gps.html") iPod, eReader and GPS
+              %li
+                %a(href="http://www.vanguardproductsgroup.com/Video-Messaging/video-messaging.html") Video Messaging Solutions
+              %li
+                %a(href="http://www.vanguardproductsgroup.com/Custom-Solutions/custom-solutions-home.html") Custom Solutions
+              %li
+                %a(href="http://www.vanguardproductsgroup.com/Security-Only-Solutions/security-only-solutions.html") Security Only Solutions
           %li.services
             %a(href="http://www.vanguardproductsgroup.com/Services/we-have-services.html") Services
           %li.company
             %a(href="http://www.vanguardproductsgroup.com/Company/company.html") Company
+            %ul
+              %li
+                %a(href="http://www.vanguardproductsgroup.com/Mission/mission.html") Mission
+              %li
+                %a(href="http://www.vanguardproductsgroup.com/Company/team.html") Management Team
+              %li
+                %a(href="http://www.vanguardproductsgroup.com/blog.html") Blog
+              %li
+                %a(href="http://www.vanguardproductsgroup.com/Customers/vanguard-customers.html") Customers
+              %li
+                %a(href="http://www.vanguardproductsgroup.com/International-Distributors/international-vpg-security-distributors.html") International Distributors
+              %li
+                %a(href="http://www.vanguardproductsgroup.com/Careers/careers.html") Careers
+              %li
+                %a(href="http://www.vanguardproductsgroup.com/Company/links.html") Links
           %li.customer_resources
             %a(href="http://www.vanguardproductsgroup.com/Customer-Resources/customer-resources.html") Customer Resources
+            %ul
+              %li
+                %a(href="http://www.vanguardproductsgroup.com/FAQ/faq.html") FAQs
           %li.contact_us
             %a(href="http://www.vanguardproductsgroup.com/Contact-Us/contact-us.html") Contact Us
+            %ul
+              %li
+                %a(href="http://www.vanguardproductsgroup.com/Contact-Us/newsletter.html") VPG eNewsletter Sign Up
+              %li
+                %a(href="http://www.vanguardproductsgroup.com/VPG-Webstore-Sign-Up/vpg-webstore-sign-up.html") Webstore Sign Up
         %h2 Call Us Now: 1-877-477-4874
         %h1
           %span Phone
