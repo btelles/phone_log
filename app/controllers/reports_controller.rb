@@ -3,7 +3,7 @@ class ReportsController < ApplicationController
   respond_to :html
 
   expose(:report)
-  expose(:reports) { Report.scoped }
+  expose(:reports) { Report.order(:name).page params[:page] }
   expose(:results) { report.results }
   expose(:columns) { results[0].try(:attributes).try(:keys) }
 

@@ -1,4 +1,5 @@
 %h1 Listing Reports
+=paginate reports
 %table
   %thead
     %tr
@@ -12,4 +13,6 @@
         %td=report.sql
         %td=link_to 'Edit', edit_report_path(report)
 
+=paginate reports
+%br
 =link_to "New Report", new_report_path

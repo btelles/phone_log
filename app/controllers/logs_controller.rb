@@ -3,7 +3,7 @@ class LogsController < ApplicationController
   respond_to :html
 
   expose(:log)
-  expose(:logs) { Log.includes(:client, :product)}
+  expose(:logs) { Log.includes(:client, :product).order('logged_at desc').page params[:page]}
 
   def title
     %w{Phone Logs}
