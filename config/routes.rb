@@ -1,6 +1,8 @@
 PhoneLog::Application.routes.draw do
+
   root :to => 'logs#index'
   resources :logs
+  resources :reports
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

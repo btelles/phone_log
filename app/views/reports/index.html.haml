@@ -1,0 +1,11 @@
+%h1 Listing Reports
+%table
+  %thead
+    %tr
+      %th Name
+      %th SQL
+  %tbody
+    -reports.each do |report|
+      %tr
+        %td=report.name
+        %td=report.sql

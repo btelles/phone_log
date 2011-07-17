@@ -49,8 +49,8 @@ Feature: Manage logs
       | Subject |
       | Customer Complaint |
       | Customer Comment   |
-      | Super comment|
       | Kudos |
+      | Super comment|
     When I delete the 3rd log
     Then I should see the following logs:
       | Subject |
