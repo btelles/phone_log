@@ -10,11 +10,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110716025416) do
 
   create_table "logs", :force => true do |t|
     t.string   "subject"
     t.datetime "logged_at"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "reports", :force => true do |t|
+    t.string   "name"
+    t.text     "sql"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

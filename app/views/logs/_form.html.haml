@@ -12,5 +12,11 @@
   .field
     = f.label :subject
     = f.text_field :subject
+  .field
+    = f.label :product_id
+    = f.select :product_id, Product.options_with_id
+  .field
+    = f.label :client_id
+    = f.select :client_id, Client.options_with_id
   .actions
     = f.submit 'Save'

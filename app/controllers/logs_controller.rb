@@ -3,7 +3,7 @@ class LogsController < ApplicationController
   respond_to :html
 
   expose(:log)
-  expose(:logs) { Log.scoped }
+  expose(:logs) { Log.includes(:client, :product)}
 
 
   def create

@@ -4,7 +4,8 @@
   %tr
     %th Logged at
     %th Subject
-    %th
+    %th Client
+    %th Product
     %th
     %th
 
@@ -12,6 +13,8 @@
     %tr
       %td= logg.logged_at
       %td= logg.subject
+      %td= logg.client_name
+      %td= logg.product_name
       %td= link_to 'Edit', edit_log_url(logg)
       %td= link_to 'Destroy', logg, :confirm => 'Are you sure?', :method => :delete, :id => "destroy_log_#{logg.id}"
 
