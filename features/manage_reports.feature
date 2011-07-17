@@ -22,16 +22,15 @@ Feature: Manage Reports
       | Name | SQL |
       | Generic Report| select * from logs limit 10 |
 
-  #Scenario: Create a new report entry
-    #Given I am on the new log page
-    #And I select "2011-07-16" as the "Logged at" date
-    #And I fill in "Subject" with "Some new log subject"
-    #And I select "Brace Assembly 3" from "Product"
-    #And I select "Louis Marshall" from "Client"
-    #And I press "Save"
-    #Then I should see the following table rows:
-      #| Subject              | Client | Product |
-      #| Some new log subject | Louis Marshall | Brace Assembly 3 |
+  Scenario: Create a new report entry
+    Given I am on the new report page
+    And I fill in "Name" with "My Fancy Report"
+    And I fill in "SQL" with "select count(*) as log_count from logs"
+    And I press "Save"
+    Then I should see the following table rows:
+      | Name | SQL |
+      | Generic Report| select * from logs limit 10 |
+      | My Fancy Report | select count(*) as log_count from logs |
 
   #Scenario: Edit an existing log entry
     #Given the following log:
