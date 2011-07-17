@@ -51,17 +51,3 @@ Feature: Manage Reports
     Then I should see the following table rows:
       | Name | SQL |
       | Some other report subject | select (count(*)+1) as log_count from logs |
-
-#Scenario: Delete a log entry
-    #Given the following logs:
-      #| Subject |
-      #| Customer Complaint |
-      #| Customer Comment   |
-      #| Super comment|
-      #| Kudos |
-    #When I delete the 3rd log
-    #Then I should see the following logs:
-      #| Subject |
-      #| Customer Complaint |
-      #| Customer Comment   |
-      #| Kudos |
