@@ -4,10 +4,12 @@
     %tr
       %th Name
       %th SQL
+      %th
   %tbody
     -reports.each do |report|
       %tr
         %td=link_to report.name, report
         %td=report.sql
+        %td=link_to 'Edit', edit_report_path(report)
 
 =link_to "New Report", new_report_path

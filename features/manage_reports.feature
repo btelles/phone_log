@@ -38,22 +38,20 @@ Feature: Manage Reports
       | sql  | select count(*) as log_count from logs |
     And I am on the reports page
     And I follow "First Generic Report"
-    Then show me the page
     Then I should see the following table rows:
       | Log Count |
       | 2         |
-  #Scenario: Edit an existing log entry
-    #Given the following log:
-      #| Subject | Customer Complaint |
-    #And I am on the logs page
-    #And I follow "Edit"
-    #And I fill in "Subject" with "Some other log subject"
-    #And I select "Brace Assembly 3" from "Product"
-    #And I select "Louis Marshall" from "Client"
-    #And I press "Save"
-    #Then I should see the following table rows:
-      #| Subject              | Client | Product |
-      #| Some other log subject | Louis Marshall | Brace Assembly 3 |
+
+  Scenario: Edit an existing report entry
+    Given I am on the reports page
+    And I follow "Edit"
+    And I fill in "Name" with "Some other report subject"
+    And I fill in "SQL" with "select (count(*)+1) as log_count from logs"
+    And I press "Save"
+    Then I should see the following table rows:
+      | Name | SQL |
+      | Some other report subject | select (count(*)+1) as log_count from logs |
+
 #Scenario: Delete a log entry
     #Given the following logs:
       #| Subject |
