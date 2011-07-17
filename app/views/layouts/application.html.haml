@@ -6,7 +6,7 @@
     %meta(content="Retail Loss Prevention Security Systems, Line Alarms | Anti-Shoplifting Security Alarms | Increase Sales in Retail" name="title")/
     %meta(content="Andrew Heard" name="author")/
     %meta(content="Manage log information" name="description")/
-    %title=title
+    %title= page_title
     %link(href="/vanguard/images/favicon.ico" rel="shortcut icon" type="image/x-icon")/
     = stylesheet_link_tag 'screen.css', :media => 'screen, projection'
     = stylesheet_link_tag 'print.css', :media => 'print'
@@ -87,17 +87,17 @@
               %li
                 %a(href="http://www.vanguardproductsgroup.com/VPG-Webstore-Sign-Up/vpg-webstore-sign-up.html") Webstore Sign Up
         %h2 Call Us Now: 1-877-477-4874
-        %h1
-          %span Phone
-          Logs
+        %h1= raw full_title
         %ul#breadcrumbs
           %li
             %a(href="http://www.vanguardproductsgroup.com/") Home
-          %li.arrow Phone Logs
+          %li.arrow= raw full_title
       #main
         #content
           =yield
         #sidebar
+          %ul
+            %li=link_to_unless_current 'Logs', logs_path
     %footer#footer
       .center_content
         .cols

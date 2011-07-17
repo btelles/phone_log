@@ -5,6 +5,10 @@ class LogsController < ApplicationController
   expose(:log)
   expose(:logs) { Log.includes(:client, :product)}
 
+  def title
+    %w{Phone Logs}
+  end
+
 
   def create
     if log.save
