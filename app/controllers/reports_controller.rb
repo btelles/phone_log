@@ -4,6 +4,8 @@ class ReportsController < ApplicationController
 
   expose(:report)
   expose(:reports) { Report.scoped }
+  expose(:results) { report.results }
+  expose(:columns) { results[0].try(:attributes).try(:keys) }
 
   def title
     %w{Reports}

@@ -7,5 +7,5 @@
   %tbody
     -reports.each do |report|
       %tr
-        %td=report.name
+        %td=link_to report.name, report
         %td=report.sql

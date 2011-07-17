@@ -32,6 +32,16 @@ Feature: Manage Reports
       | Generic Report| select * from logs limit 10 |
       | My Fancy Report | select count(*) as log_count from logs |
 
+  Scenario: View a report
+    Given the following report:
+      | name | First Generic Report |
+      | sql  | select count(*) as log_count from logs |
+    And I am on the reports page
+    And I follow "First Generic Report"
+    Then show me the page
+    Then I should see the following table rows:
+      | Log Count |
+      | 2         |
   #Scenario: Edit an existing log entry
     #Given the following log:
       #| Subject | Customer Complaint |

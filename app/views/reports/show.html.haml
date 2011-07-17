@@ -1,0 +1,14 @@
+%h1= report.name
+-if results.present?
+  %table
+    %thead
+      %tr
+        -columns.each do |name|
+          %th= name.humanize.titleize
+    %tbody
+      -results.each do |record|
+        %tr
+          -columns.each do |col|
+            %td= record[col]
+-else
+  %p This report doesn't have any records. Maybe your 'WHERE' is too limiting?
