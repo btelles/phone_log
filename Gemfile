@@ -7,16 +7,21 @@ gem 'rails', '3.0.9'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-#gem 'sqlite3'
-gem 'pg'
+gem 'sqlite3', group: [:development, :test]
+gem 'pg', group: [:production]
+
 gem 'haml'
 gem 'sass'
 gem 'itslog', :git => 'git://github.com/btelles/itslog.git'
 gem 'decent_exposure'
 gem 'jquery-rails'
+gem 'kaminari'
 
 group :development, :test do
 
+  gem 'awesome_print'
+  gem 'dirty'
+  gem 'compass'
   gem 'heroku'
   gem 'haml-rails'
   gem 'rspec-rails'
