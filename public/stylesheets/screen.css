@@ -528,8 +528,25 @@ table thead tr th {
 #container a:hover {
   color: #659fde;
 }
-
 /* line 43, ../../app/stylesheets/screen.sass */
+#container .button {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color: #050505;
+  text-decoration: none;
+  padding: 4px 14px;
+  background: -moz-linear-gradient(top, white 0%, #9fc0d4 50%, #a9c5d6 50%, #6194b3);
+  background: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(0.5, #9fc0d4), color-stop(0.5, #a9c5d6), to(#6194b3));
+  border-radius: 7px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  border: 1px solid #3d4b54;
+  -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2), inset 0px 0px 0px white;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2), inset 0px 0px 0px white;
+  text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2), 0px 1px 0px rgba(255, 255, 255, 0.4);
+}
+
+/* line 61, ../../app/stylesheets/screen.sass */
 #header {
   margin-top: 16px;
   display: inline;
@@ -541,7 +558,7 @@ table thead tr th {
 * html #header {
   overflow-x: hidden;
 }
-/* line 46, ../../app/stylesheets/screen.sass */
+/* line 64, ../../app/stylesheets/screen.sass */
 #header .logo {
   display: inline;
   float: left;
@@ -552,7 +569,7 @@ table thead tr th {
 * html #header .logo {
   overflow-x: hidden;
 }
-/* line 48, ../../app/stylesheets/screen.sass */
+/* line 66, ../../app/stylesheets/screen.sass */
 #header .shopping {
   display: inline;
   float: left;
@@ -563,12 +580,12 @@ table thead tr th {
 * html #header .shopping {
   overflow-x: hidden;
 }
-/* line 50, ../../app/stylesheets/screen.sass */
+/* line 68, ../../app/stylesheets/screen.sass */
 #header .shopping h1 {
   font-size: 13pt;
   font-weight: bold;
 }
-/* line 53, ../../app/stylesheets/screen.sass */
+/* line 71, ../../app/stylesheets/screen.sass */
 #header .shopping .online {
   padding-left: 85.833px;
   display: inline;
@@ -581,7 +598,7 @@ table thead tr th {
 * html #header .shopping .online {
   overflow-x: hidden;
 }
-/* line 57, ../../app/stylesheets/screen.sass */
+/* line 75, ../../app/stylesheets/screen.sass */
 #header .shopping .online a {
   padding-left: 42.917px;
   display: inline;
@@ -596,7 +613,7 @@ table thead tr th {
 * html #header .shopping .online a {
   overflow-x: hidden;
 }
-/* line 63, ../../app/stylesheets/screen.sass */
+/* line 81, ../../app/stylesheets/screen.sass */
 #header .shopping .international_distributors {
   display: inline;
   float: left;
@@ -608,7 +625,7 @@ table thead tr th {
 * html #header .shopping .international_distributors {
   overflow-x: hidden;
 }
-/* line 66, ../../app/stylesheets/screen.sass */
+/* line 84, ../../app/stylesheets/screen.sass */
 #header .shopping .international_distributors a {
   padding-left: 42.917px;
   display: inline;
@@ -624,7 +641,7 @@ table thead tr th {
 * html #header .shopping .international_distributors a {
   overflow-x: hidden;
 }
-/* line 73, ../../app/stylesheets/screen.sass */
+/* line 91, ../../app/stylesheets/screen.sass */
 #header ul.nav {
   margin: -9px 0 0 -20px;
   display: inline;
@@ -636,11 +653,11 @@ table thead tr th {
 * html #header ul.nav {
   overflow-x: hidden;
 }
-/* line 76, ../../app/stylesheets/screen.sass */
+/* line 94, ../../app/stylesheets/screen.sass */
 #header ul.nav li {
   height: 45px;
 }
-/* line 78, ../../app/stylesheets/screen.sass */
+/* line 96, ../../app/stylesheets/screen.sass */
 #header ul.nav li.home, #header ul.nav li.solutions, #header ul.nav li.services, #header ul.nav li.company {
   display: inline;
   float: left;
@@ -651,7 +668,7 @@ table thead tr th {
 * html #header ul.nav li.home, * html #header ul.nav li.solutions, * html #header ul.nav li.services, * html #header ul.nav li.company {
   overflow-x: hidden;
 }
-/* line 80, ../../app/stylesheets/screen.sass */
+/* line 98, ../../app/stylesheets/screen.sass */
 #header ul.nav li.customer_resources {
   display: inline;
   float: left;
@@ -662,7 +679,7 @@ table thead tr th {
 * html #header ul.nav li.customer_resources {
   overflow-x: hidden;
 }
-/* line 82, ../../app/stylesheets/screen.sass */
+/* line 100, ../../app/stylesheets/screen.sass */
 #header ul.nav li.contact_us {
   display: inline;
   float: left;
@@ -673,11 +690,11 @@ table thead tr th {
 * html #header ul.nav li.contact_us {
   overflow-x: hidden;
 }
-/* line 84, ../../app/stylesheets/screen.sass */
+/* line 102, ../../app/stylesheets/screen.sass */
 #header ul.nav li li {
   display: none;
 }
-/* line 87, ../../app/stylesheets/screen.sass */
+/* line 105, ../../app/stylesheets/screen.sass */
 #header ul.nav li:hover > ul {
   position: relative;
   padding-left: 0;
@@ -690,34 +707,34 @@ table thead tr th {
 * html #header ul.nav li:hover > ul {
   overflow-x: hidden;
 }
-/* line 91, ../../app/stylesheets/screen.sass */
+/* line 109, ../../app/stylesheets/screen.sass */
 #header ul.nav li:hover > ul a {
   text-align: left;
   padding-left: 5px;
   width: 199px;
 }
-/* line 95, ../../app/stylesheets/screen.sass */
+/* line 113, ../../app/stylesheets/screen.sass */
 #header ul.nav li:hover > ul > li {
   display: block;
   background-color: #002c47;
 }
-/* line 98, ../../app/stylesheets/screen.sass */
+/* line 116, ../../app/stylesheets/screen.sass */
 #header ul.nav li:hover > ul > li a {
   text-align: left;
   padding-left: 5px;
   width: 199px;
 }
-/* line 102, ../../app/stylesheets/screen.sass */
+/* line 120, ../../app/stylesheets/screen.sass */
 #header ul.nav li:hover > ul > li:hover {
   background-color: #002c47;
 }
-/* line 104, ../../app/stylesheets/screen.sass */
+/* line 122, ../../app/stylesheets/screen.sass */
 #header ul.nav li:hover > ul > li ul {
   position: relative;
   left: 200px;
   top: -45px;
 }
-/* line 109, ../../app/stylesheets/screen.sass */
+/* line 127, ../../app/stylesheets/screen.sass */
 #header ul.nav li a {
   display: block;
   text-align: center;
@@ -729,11 +746,11 @@ table thead tr th {
   margin: 0;
   text-decoration: none;
 }
-/* line 119, ../../app/stylesheets/screen.sass */
+/* line 137, ../../app/stylesheets/screen.sass */
 #header ul.nav li a:hover {
   background-color: #4498c7;
 }
-/* line 121, ../../app/stylesheets/screen.sass */
+/* line 139, ../../app/stylesheets/screen.sass */
 #header > h2 {
   padding-left: 128.75px;
   display: inline;
@@ -750,7 +767,7 @@ table thead tr th {
 * html #header > h2 {
   overflow-x: hidden;
 }
-/* line 129, ../../app/stylesheets/screen.sass */
+/* line 147, ../../app/stylesheets/screen.sass */
 #header > h1 {
   display: inline;
   float: left;
@@ -765,11 +782,11 @@ table thead tr th {
 * html #header > h1 {
   overflow-x: hidden;
 }
-/* line 135, ../../app/stylesheets/screen.sass */
+/* line 153, ../../app/stylesheets/screen.sass */
 #header > h1 span {
   color: white;
 }
-/* line 137, ../../app/stylesheets/screen.sass */
+/* line 155, ../../app/stylesheets/screen.sass */
 #header #breadcrumbs {
   display: inline;
   float: left;
@@ -782,12 +799,12 @@ table thead tr th {
 * html #header #breadcrumbs {
   overflow-x: hidden;
 }
-/* line 141, ../../app/stylesheets/screen.sass */
+/* line 159, ../../app/stylesheets/screen.sass */
 #header #breadcrumbs li {
   display: block;
   float: left;
 }
-/* line 144, ../../app/stylesheets/screen.sass */
+/* line 162, ../../app/stylesheets/screen.sass */
 #header #breadcrumbs li.arrow {
   padding-left: 25px;
   background-image: url("/vanguard/images/arrow.png");
@@ -795,7 +812,7 @@ table thead tr th {
   background-position: 5px 4px;
 }
 
-/* line 152, ../../app/stylesheets/screen.sass */
+/* line 170, ../../app/stylesheets/screen.sass */
 #main {
   display: inline;
   float: left;
@@ -807,7 +824,7 @@ table thead tr th {
   overflow-x: hidden;
 }
 
-/* line 154, ../../app/stylesheets/screen.sass */
+/* line 172, ../../app/stylesheets/screen.sass */
 #sidebar {
   display: inline;
   float: left;
@@ -819,8 +836,16 @@ table thead tr th {
 * html #sidebar {
   overflow-x: hidden;
 }
+/* line 177, ../../app/stylesheets/screen.sass */
+#sidebar ul {
+  list-style: none;
+}
+/* line 179, ../../app/stylesheets/screen.sass */
+#sidebar ul li {
+  margin: 15px;
+}
 
-/* line 159, ../../app/stylesheets/screen.sass */
+/* line 182, ../../app/stylesheets/screen.sass */
 #content {
   display: inline;
   float: left;
@@ -832,27 +857,27 @@ table thead tr th {
 * html #content {
   overflow-x: hidden;
 }
-/* line 166, ../../app/stylesheets/screen.sass */
+/* line 189, ../../app/stylesheets/screen.sass */
 #content h1 {
   color: #006baa;
   font-size: 20px;
   font-weight: bold;
 }
 
-/* line 170, ../../app/stylesheets/screen.sass */
+/* line 193, ../../app/stylesheets/screen.sass */
 #footer {
   background-image: url("/vanguard/images/footer-bg-blue-gray.png");
   background-repeat: repeat-x;
   height: 203px;
 }
-/* line 174, ../../app/stylesheets/screen.sass */
+/* line 197, ../../app/stylesheets/screen.sass */
 #footer .center_content {
   width: 1020px;
   margin: 0 auto;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 176, ../../app/stylesheets/screen.sass */
+/* line 199, ../../app/stylesheets/screen.sass */
 #footer .center_content .cols {
   display: inline;
   float: left;
@@ -865,7 +890,7 @@ table thead tr th {
 * html #footer .center_content .cols {
   overflow-x: hidden;
 }
-/* line 180, ../../app/stylesheets/screen.sass */
+/* line 203, ../../app/stylesheets/screen.sass */
 #footer .center_content .cols .logo {
   height: 45px;
   display: inline;
@@ -879,7 +904,7 @@ table thead tr th {
 * html #footer .center_content .cols .logo {
   overflow-x: hidden;
 }
-/* line 185, ../../app/stylesheets/screen.sass */
+/* line 208, ../../app/stylesheets/screen.sass */
 #footer .center_content .cols h1.number {
   line-height: 45px;
   display: inline;
@@ -893,7 +918,7 @@ table thead tr th {
 * html #footer .center_content .cols h1.number {
   overflow-x: hidden;
 }
-/* line 190, ../../app/stylesheets/screen.sass */
+/* line 213, ../../app/stylesheets/screen.sass */
 #footer .center_content .cols p {
   text-align: center;
   font-size: 7.5pt;
@@ -907,7 +932,7 @@ table thead tr th {
 * html #footer .center_content .cols p {
   overflow-x: hidden;
 }
-/* line 196, ../../app/stylesheets/screen.sass */
+/* line 219, ../../app/stylesheets/screen.sass */
 #footer .center_content .cols ul.nav {
   display: inline;
   float: left;
@@ -919,11 +944,11 @@ table thead tr th {
 * html #footer .center_content .cols ul.nav {
   overflow-x: hidden;
 }
-/* line 199, ../../app/stylesheets/screen.sass */
+/* line 222, ../../app/stylesheets/screen.sass */
 #footer .center_content .cols ul.nav li {
   height: 45px;
 }
-/* line 201, ../../app/stylesheets/screen.sass */
+/* line 224, ../../app/stylesheets/screen.sass */
 #footer .center_content .cols ul.nav li.home, #footer .center_content .cols ul.nav li.solutions, #footer .center_content .cols ul.nav li.services, #footer .center_content .cols ul.nav li.company {
   display: inline;
   float: left;
@@ -934,7 +959,7 @@ table thead tr th {
 * html #footer .center_content .cols ul.nav li.home, * html #footer .center_content .cols ul.nav li.solutions, * html #footer .center_content .cols ul.nav li.services, * html #footer .center_content .cols ul.nav li.company {
   overflow-x: hidden;
 }
-/* line 203, ../../app/stylesheets/screen.sass */
+/* line 226, ../../app/stylesheets/screen.sass */
 #footer .center_content .cols ul.nav li.customer_resources {
   display: inline;
   float: left;
@@ -945,7 +970,7 @@ table thead tr th {
 * html #footer .center_content .cols ul.nav li.customer_resources {
   overflow-x: hidden;
 }
-/* line 205, ../../app/stylesheets/screen.sass */
+/* line 228, ../../app/stylesheets/screen.sass */
 #footer .center_content .cols ul.nav li.contact_us {
   display: inline;
   float: left;
@@ -956,7 +981,7 @@ table thead tr th {
 * html #footer .center_content .cols ul.nav li.contact_us {
   overflow-x: hidden;
 }
-/* line 207, ../../app/stylesheets/screen.sass */
+/* line 230, ../../app/stylesheets/screen.sass */
 #footer .center_content .cols ul.nav li a {
   display: block;
   text-align: center;

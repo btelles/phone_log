@@ -40,6 +40,24 @@ table
     color: #006BAA
     &:hover
       color: #659FDE
+  .button
+    font-family: Arial, Helvetica, sans-serif
+    font-size: 12px
+    color: #050505
+    text-decoration: none
+    padding: 4px 14px
+    background: -moz-linear-gradient( top, #ffffff 0%, #9fc0d4 50%, #a9c5d6 50%, #6194b3)
+    background: -webkit-gradient( linear, left top, left bottom, from(#ffffff), color-stop(0.50, #9fc0d4), color-stop(0.50, #a9c5d6), to(#6194b3))
+    border-radius: 7px
+    -moz-border-radius: 7px
+    -webkit-border-radius: 7px
+    border: 1px solid #3d4b54
+    -moz-box-shadow: 0px 1px 3px rgba(000,000,000,0.2), inset 0px 0px 0px rgba(255,255,255,1)
+    -webkit-box-shadow: 0px 1px 3px rgba(000,000,000,0.2), inset 0px 0px 0px rgba(255,255,255,1)
+    text-shadow: 0px 0px 0px rgba(000,000,000,0.2), 0px 1px 0px rgba(255,255,255,0.4)
+
+
+
 #header
   margin-top: 16px
   +column($blueprint-grid-columns, true)
@@ -156,6 +174,11 @@ table
   $sidebar-columns: floor($blueprint-grid-columns / 3)
   +column($sidebar-columns)
   height: 100%
+  ul
+    list-style: none
+    li
+      margin: 15px
+
 #content
   // Two thirds of the grid columns, rounding up.
   // With 24 cols, this is 16.
@@ -213,4 +236,4 @@ table
             font-weight: bold
             margin: 0
             text-decoration: none
-
+#container
