@@ -1,13 +1,13 @@
 source 'http://rubygems.org'
 
-gem "rake", "0.8.7"
+gem "rake", "0.9.2"
 
 gem 'rails', '3.0.9'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'mysql'
+gem 'pg'
 
 gem 'haml'
 gem 'sass'
@@ -16,7 +16,7 @@ gem 'decent_exposure'
 gem 'jquery-rails'
 gem 'kaminari'
 gem 'devise'
-gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git'
+gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git', :branch => 'rails-3.0'
 
 group :development, :test do
 
