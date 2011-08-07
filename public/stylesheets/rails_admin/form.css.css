@@ -1,0 +1,130 @@
+/* line 2, ../../../app/assets/stylesheets/rails_admin/form.css.sass */
+form fieldset {
+  border: none;
+}
+/* line 4, ../../../app/assets/stylesheets/rails_admin/form.css.sass */
+form legend {
+  width: 100%;
+  clear: both;
+  margin-top: 2px;
+  margin-bottom: 3px;
+  border-bottom: 1px solid #b9b9b9;
+  padding-bottom: 4px;
+  color: #9e988e;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 10px;
+}
+/* line 15, ../../../app/assets/stylesheets/rails_admin/form.css.sass */
+form a.createAssociatedRecord {
+  line-height: 24px;
+  margin-left: 10px;
+}
+/* line 18, ../../../app/assets/stylesheets/rails_admin/form.css.sass */
+form .field > label, form .field > .field_with_errors > label {
+  display: block;
+  float: left;
+  margin-top: 6px;
+  font-size: 11px;
+  font-weight: bold;
+  margin-left: 2px;
+  width: 100px;
+}
+/* line 26, ../../../app/assets/stylesheets/rails_admin/form.css.sass */
+form label.inline {
+  display: inline;
+  float: none;
+  font-weight: normal;
+}
+
+/* line 31, ../../../app/assets/stylesheets/rails_admin/form.css.sass */
+.field {
+  padding: 15px 0 0 0;
+}
+/* line 33, ../../../app/assets/stylesheets/rails_admin/form.css.sass */
+.field .date, .field .datetime, .field .hasDatepicker, .field .hasTimepicker, .field .decimal, .field .float, .field .integer, .field .text, .field .time, .field .timestamp, .field .password, .field .string {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 12px;
+  padding: 5px;
+  width: 250px;
+  border-left: 1px solid #e2e3ea;
+  border-top: 1px solid #abadb3;
+  border-bottom: 1px solid #e3e9ef;
+  border-right: 1px solid #dbdfe6;
+}
+/* line 42, ../../../app/assets/stylesheets/rails_admin/form.css.sass */
+.field .decimal {
+  width: 170px;
+}
+/* line 44, ../../../app/assets/stylesheets/rails_admin/form.css.sass */
+.field .float {
+  width: 120px;
+}
+/* line 46, ../../../app/assets/stylesheets/rails_admin/form.css.sass */
+.field .date, .field .timestamp, .field .time, .field .datetime, .field .hasDatepicker {
+  padding-right: 20px;
+  width: 150px;
+}
+/* line 49, ../../../app/assets/stylesheets/rails_admin/form.css.sass */
+.field .date, .field .datetime, .field .hasDatepicker {
+  background: url("../../images/rails_admin/calendar.png") no-repeat right;
+}
+/* line 51, ../../../app/assets/stylesheets/rails_admin/form.css.sass */
+.field .time, .field .timestamp, .field .hasTimepicker {
+  background: url("../../images/rails_admin/clock.png") no-repeat right;
+}
+/* line 53, ../../../app/assets/stylesheets/rails_admin/form.css.sass */
+.field .integer {
+  width: 90px;
+}
+/* line 55, ../../../app/assets/stylesheets/rails_admin/form.css.sass */
+.field .text {
+  height: 100px;
+  width: 450px;
+}
+
+/* line 59, ../../../app/assets/stylesheets/rails_admin/form.css.sass */
+.errorField {
+  border: 1px solid #bd2b14;
+}
+
+/* line 62, ../../../app/assets/stylesheets/rails_admin/form.css.sass */
+.errorMessage {
+  display: block;
+  margin-top: 5px;
+  margin-left: 103px;
+  color: #bd2b14;
+}
+
+/* line 68, ../../../app/assets/stylesheets/rails_admin/form.css.sass */
+#main .block .content p.help, p.help {
+  clear: both;
+  font-size: 11px;
+  margin-left: 103px;
+  display: block;
+  color: #999999;
+  margin-bottom: 0;
+  margin-top: 6px;
+  font-style: italic;
+}
+
+/* line 78, ../../../app/assets/stylesheets/rails_admin/form.css.sass */
+.cke_skin_kama {
+  margin-left: 100px;
+}
+
+/* line 81, ../../../app/assets/stylesheets/rails_admin/form.css.sass */
+.createAssociatedRecordDialog {
+  padding: 10px;
+}
+/* line 83, ../../../app/assets/stylesheets/rails_admin/form.css.sass */
+.createAssociatedRecordDialog div.secondary-navigation, .createAssociatedRecordDialog span.extra_buttons {
+  display: none;
+}
+
+/* line 86, ../../../app/assets/stylesheets/rails_admin/form.css.sass */
+.group.navform.wat-cf {
+  /* position the submit_buttons correctly: */
+  margin-top: 30px;
+  margin-bottom: 0;
+}

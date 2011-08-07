@@ -1,0 +1,127 @@
+/* line 1, ../../../app/assets/stylesheets/rails_admin/list.css.sass */
+.grid {
+  width: 100%;
+  border-collapse: collapse;
+}
+/* line 4, ../../../app/assets/stylesheets/rails_admin/list.css.sass */
+.grid thead th {
+  padding: 9px 0 9px 5px;
+}
+/* line 6, ../../../app/assets/stylesheets/rails_admin/list.css.sass */
+.grid thead th a {
+  background-repeat: no-repeat;
+  background-position: right;
+  /* so as to not strech when selected: */
+  padding: 0 20px 0 0;
+}
+/* line 11, ../../../app/assets/stylesheets/rails_admin/list.css.sass */
+.grid thead th.selected a {
+  /* to accomodate the sort arrow: */
+  padding: 0 20px 0 0;
+  font-weight: bold;
+}
+/* line 16, ../../../app/assets/stylesheets/rails_admin/list.css.sass */
+.grid thead th a.ascending {
+  background-image: url(../../images/rails_admin/bullet_arrow_up.png);
+}
+/* line 18, ../../../app/assets/stylesheets/rails_admin/list.css.sass */
+.grid thead th a.descending {
+  background-image: url(../../images/rails_admin/bullet_arrow_down.png);
+}
+/* line 20, ../../../app/assets/stylesheets/rails_admin/list.css.sass */
+.grid tr.link:hover {
+  background-color: #b9dafc;
+  cursor: pointer;
+}
+/* line 23, ../../../app/assets/stylesheets/rails_admin/list.css.sass */
+.grid .checker {
+  padding: 0px 5px;
+}
+/* line 26, ../../../app/assets/stylesheets/rails_admin/list.css.sass */
+.grid tbody .boolean {
+  margin-bottom: -5px;
+}
+/* line 28, ../../../app/assets/stylesheets/rails_admin/list.css.sass */
+.grid tbody .date, .grid tbody .datetime, .grid tbody .time, .grid tbody .timestamp {
+  white-space: nowrap;
+}
+/* line 30, ../../../app/assets/stylesheets/rails_admin/list.css.sass */
+.grid tbody .other a {
+  padding-left: 2px;
+  padding-right: 2px;
+  text-decoration: none;
+  border: 1px solid #b9b9b9;
+  background: white;
+  color: #494949;
+}
+/* line 37, ../../../app/assets/stylesheets/rails_admin/list.css.sass */
+.grid tbody .other a:hover {
+  border: 1px solid #494949;
+}
+/* line 39, ../../../app/assets/stylesheets/rails_admin/list.css.sass */
+.grid tbody td.last {
+  white-space: nowrap;
+}
+/* line 41, ../../../app/assets/stylesheets/rails_admin/list.css.sass */
+.grid thead th.first {
+  padding-left: 5px;
+}
+/* line 43, ../../../app/assets/stylesheets/rails_admin/list.css.sass */
+.grid tbody td {
+  padding: 7px 5px;
+}
+/* line 45, ../../../app/assets/stylesheets/rails_admin/list.css.sass */
+.grid tbody td.boolean {
+  text-align: center;
+}
+/* line 47, ../../../app/assets/stylesheets/rails_admin/list.css.sass */
+.grid thead th.boolean {
+  text-align: center;
+}
+/* line 49, ../../../app/assets/stylesheets/rails_admin/list.css.sass */
+.grid tbody td.boolean {
+  padding: 0 20px 0 0;
+}
+
+/* line 52, ../../../app/assets/stylesheets/rails_admin/list.css.sass */
+.content > .content-header {
+  overflow: hidden;
+}
+
+/* line 55, ../../../app/assets/stylesheets/rails_admin/list.css.sass */
+#filters_box {
+  margin-top: 10px;
+}
+
+/* line 58, ../../../app/assets/stylesheets/rails_admin/list.css.sass */
+.filter {
+  display: block;
+  float: left;
+  margin-bottom: 10px;
+}
+
+/* line 63, ../../../app/assets/stylesheets/rails_admin/list.css.sass */
+.filter > * {
+  display: block;
+  float: left;
+}
+
+/* line 68, ../../../app/assets/stylesheets/rails_admin/list.css.sass */
+.filter input, .filter select {
+  padding: 0px;
+  margin-left: 8px;
+}
+/* line 71, ../../../app/assets/stylesheets/rails_admin/list.css.sass */
+.filter label {
+  color: black;
+  width: 140px;
+  margin: 7px 7px 0 10px;
+}
+/* line 75, ../../../app/assets/stylesheets/rails_admin/list.css.sass */
+.filter .delete-box {
+  margin-top: 3px;
+}
+/* line 77, ../../../app/assets/stylesheets/rails_admin/list.css.sass */
+.filter .delete {
+  padding: 1px 0 1px 1px;
+}

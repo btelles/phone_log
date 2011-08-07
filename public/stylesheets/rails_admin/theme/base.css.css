@@ -1,0 +1,498 @@
+/*This is the original web-app-theme main stylesheet */
+/* line 3, ../../../../app/assets/stylesheets/rails_admin/theme/base.css.sass */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 7, ../../../../app/assets/stylesheets/rails_admin/theme/base.css.sass */
+.clear {
+  clear: both;
+  height: 0;
+}
+
+/* line 11, ../../../../app/assets/stylesheets/rails_admin/theme/base.css.sass */
+.wat-cf {
+  display: inline-block;
+}
+/* line 12, ../../../../app/assets/stylesheets/rails_admin/theme/base.css.sass */
+.wat-cf:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/* Hides from IE-mac \ */
+/* line 22, ../../../../app/assets/stylesheets/rails_admin/theme/base.css.sass */
+* html .wat-cf {
+  height: 1%;
+}
+
+/* line 25, ../../../../app/assets/stylesheets/rails_admin/theme/base.css.sass */
+.wat-cf {
+  display: block;
+}
+
+/* End hide from IE-mac */
+/* line 30, ../../../../app/assets/stylesheets/rails_admin/theme/base.css.sass */
+h1 {
+  margin: 15px 0;
+  font-size: 22px;
+  font-weight: normal;
+}
+
+/* line 35, ../../../../app/assets/stylesheets/rails_admin/theme/base.css.sass */
+h2 {
+  font-size: 22px;
+  margin: 15px 0;
+  font-weight: normal;
+}
+
+/* line 40, ../../../../app/assets/stylesheets/rails_admin/theme/base.css.sass */
+h3 {
+  font-size: 18px;
+  margin: 10px 0;
+  font-weight: normal;
+}
+
+/* line 45, ../../../../app/assets/stylesheets/rails_admin/theme/base.css.sass */
+h4 {
+  font-size: 16px;
+  margin: 10px 0;
+  font-weight: normal;
+}
+
+/* line 50, ../../../../app/assets/stylesheets/rails_admin/theme/base.css.sass */
+hr {
+  height: 1px;
+  border: 0;
+}
+
+/* line 54, ../../../../app/assets/stylesheets/rails_admin/theme/base.css.sass */
+p {
+  margin: 15px 0;
+}
+
+/* line 57, ../../../../app/assets/stylesheets/rails_admin/theme/base.css.sass */
+a img {
+  border: none;
+}
+
+/* line 60, ../../../../app/assets/stylesheets/rails_admin/theme/base.css.sass */
+body {
+  font-size: 12px;
+  font-family: sans-serif;
+}
+
+/* line 64, ../../../../app/assets/stylesheets/rails_admin/theme/base.css.sass */
+#container {
+  min-width: 960px;
+}
+
+/* line 67, ../../../../app/assets/stylesheets/rails_admin/theme/base.css.sass */
+#header, #wrapper {
+  padding: 0 20px;
+}
+
+/* line 70, ../../../../app/assets/stylesheets/rails_admin/theme/base.css.sass */
+#header {
+  position: relative;
+  padding-top: 1px;
+}
+/* line 73, ../../../../app/assets/stylesheets/rails_admin/theme/base.css.sass */
+#header h1 {
+  margin: 0;
+  padding: 10px 0;
+  font-size: 26px;
+}
+/* line 78, ../../../../app/assets/stylesheets/rails_admin/theme/base.css.sass */
+#header h1 a:link, #header h1 a:active, #header h1 a:hover, #header h1 a:visited {
+  text-decoration: none;
+}
+
+/* line 81, ../../../../app/assets/stylesheets/rails_admin/theme/base.css.sass */
+#main {
+  width: 70%;
+  float: left;
+}
+
+/* line 85, ../../../../app/assets/stylesheets/rails_admin/theme/base.css.sass */
+.actions-bar {
+  padding: 10px 1px;
+}
+/* line 87, ../../../../app/assets/stylesheets/rails_admin/theme/base.css.sass */
+.actions-bar .actions {
+  float: left;
+}
+/* line 89, ../../../../app/assets/stylesheets/rails_admin/theme/base.css.sass */
+.actions-bar .pagination {
+  float: right;
+  padding: 1px 0;
+}
+
+/* line 93, ../../../../app/assets/stylesheets/rails_admin/theme/base.css.sass */
+#sidebar {
+  width: 25%;
+  float: right;
+}
+/* line 96, ../../../../app/assets/stylesheets/rails_admin/theme/base.css.sass */
+#sidebar h3 {
+  padding: 10px 15px;
+  margin: 0;
+  font-size: 13px;
+}
+/* line 100, ../../../../app/assets/stylesheets/rails_admin/theme/base.css.sass */
+#sidebar .block {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+/* line 103, ../../../../app/assets/stylesheets/rails_admin/theme/base.css.sass */
+#sidebar .block .content {
+  padding: 0 15px;
+}
+/* line 106, ../../../../app/assets/stylesheets/rails_admin/theme/base.css.sass */
+#sidebar ul.navigation li a:link, #sidebar ul.navigation li a:visited {
+  display: block;
+  padding: 10px 15px;
+}
+/* line 109, ../../../../app/assets/stylesheets/rails_admin/theme/base.css.sass */
+#sidebar .block .sidebar-block, #sidebar .notice {
+  padding: 10px;
+}
+
+/* line 112, ../../../../app/assets/stylesheets/rails_admin/theme/base.css.sass */
+#wrapper {
+  padding-top: 20px;
+}
+
+/* line 116, ../../../../app/assets/stylesheets/rails_admin/theme/base.css.sass */
+#main .block {
+  margin-bottom: 20px;
+  padding-top: 1px;
+}
+/* line 119, ../../../../app/assets/stylesheets/rails_admin/theme/base.css.sass */
+#main .block .content .inner {
+  padding: 0 15px 15px;
+}
+/* line 121, ../../../../app/assets/stylesheets/rails_admin/theme/base.css.sass */
+#main .main p.first {
+  margin-top: 0;
+}
+
+/* line 124, ../../../../app/assets/stylesheets/rails_admin/theme/base.css.sass */
+#user-navigation {
+  position: absolute;
+  top: 0px;
+  right: 20px;
+}
+
+/* line 129, ../../../../app/assets/stylesheets/rails_admin/theme/base.css.sass */
+#main-navigation {
+  width: 100%;
+}
+
+/* line 132, ../../../../app/assets/stylesheets/rails_admin/theme/base.css.sass */
+#user-navigation ul, #main-navigation ul, .secondary-navigation ul, #sidebar ul.navigation {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+/* line 137, ../../../../app/assets/stylesheets/rails_admin/theme/base.css.sass */
+#user-navigation ul li, #main-navigation ul li, .secondary-navigation ul li {
+  float: left;
+}
+
+/* line 140, ../../../../app/assets/stylesheets/rails_admin/theme/base.css.sass */
+#main-navigation ul li {
+  margin-right: 5px;
+}
+
+/* line 143, ../../../../app/assets/stylesheets/rails_admin/theme/base.css.sass */
+#user-navigation ul li {
+  padding: 5px 10px;
+}
+
+/* line 147, ../../../../app/assets/stylesheets/rails_admin/theme/base.css.sass */
+#main-navigation ul li a:link, #main-navigation ul li a:visited, #main-navigation ul li a:hover, #main-navigation ul li a:active {
+  text-decoration: none;
+}
+
+/* line 151, ../../../../app/assets/stylesheets/rails_admin/theme/base.css.sass */
+.secondary-navigation ul li a:link, .secondary-navigation ul li a:visited, .secondary-navigation ul li a:hover, .secondary-navigation ul li a:active {
+  text-decoration: none;
+}
+
+/* line 155, ../../../../app/assets/stylesheets/rails_admin/theme/base.css.sass */
+#user-navigation ul li a:link, #user-navigation ul li a:visited, #user-navigation ul li a:hover, #user-navigation ul li a:active {
+  text-decoration: none;
+}
+
+/* line 158, ../../../../app/assets/stylesheets/rails_admin/theme/base.css.sass */
+#main-navigation ul li a {
+  font-size: 14px;
+  line-height: 14px;
+  display: block;
+  padding: 8px 15px;
+}
+
+/* line 164, ../../../../app/assets/stylesheets/rails_admin/theme/base.css.sass */
+.secondary-navigation {
+  font-size: 13px;
+  border-bottom-width: 10px;
+  border-bottom-style: solid;
+}
+/* line 168, ../../../../app/assets/stylesheets/rails_admin/theme/base.css.sass */
+.secondary-navigation ul li a {
+  display: block;
+  padding: 10px 15px;
+}
+
+/* line 172, ../../../../app/assets/stylesheets/rails_admin/theme/base.css.sass */
+#footer {
+  padding-bottom: 20px;
+}
+
+/* pagination */
+/* line 178, ../../../../app/assets/stylesheets/rails_admin/theme/base.css.sass */
+.pagination a {
+  padding: 2px 5px;
+  margin-right: 5px;
+  display: block;
+  float: left;
+  border-style: solid;
+  border-width: 1px;
+}
+/* line 185, ../../../../app/assets/stylesheets/rails_admin/theme/base.css.sass */
+.pagination span {
+  padding: 2px 5px;
+  margin-right: 5px;
+  display: block;
+  float: left;
+  border-style: solid;
+  border-width: 1px;
+}
+/* line 192, ../../../../app/assets/stylesheets/rails_admin/theme/base.css.sass */
+.pagination span.current {
+  font-weight: bold;
+}
+/* line 194, ../../../../app/assets/stylesheets/rails_admin/theme/base.css.sass */
+.pagination a {
+  text-decoration: none;
+}
+
+/* tables */
+/* line 199, ../../../../app/assets/stylesheets/rails_admin/theme/base.css.sass */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 15px;
+}
+/* line 203, ../../../../app/assets/stylesheets/rails_admin/theme/base.css.sass */
+.table th {
+  padding: 10px;
+  font-weight: bold;
+  text-align: left;
+}
+/* line 207, ../../../../app/assets/stylesheets/rails_admin/theme/base.css.sass */
+.table th.first {
+  width: 30px;
+}
+/* line 209, ../../../../app/assets/stylesheets/rails_admin/theme/base.css.sass */
+.table th.last {
+  width: 200px;
+}
+/* line 211, ../../../../app/assets/stylesheets/rails_admin/theme/base.css.sass */
+.table .checkbox {
+  margin-left: 10px;
+}
+/* line 213, ../../../../app/assets/stylesheets/rails_admin/theme/base.css.sass */
+.table td {
+  padding: 10px;
+}
+/* line 215, ../../../../app/assets/stylesheets/rails_admin/theme/base.css.sass */
+.table td.last {
+  text-align: right;
+}
+
+/* forms */
+/* line 220, ../../../../app/assets/stylesheets/rails_admin/theme/base.css.sass */
+input.checkbox {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 225, ../../../../app/assets/stylesheets/rails_admin/theme/base.css.sass */
+.form .group {
+  margin-bottom: 15px;
+}
+/* line 228, ../../../../app/assets/stylesheets/rails_admin/theme/base.css.sass */
+.form div.left {
+  width: 20%;
+  float: left;
+}
+/* line 231, ../../../../app/assets/stylesheets/rails_admin/theme/base.css.sass */
+.form div.right {
+  width: 75%;
+  float: right;
+}
+/* line 235, ../../../../app/assets/stylesheets/rails_admin/theme/base.css.sass */
+.form .columns .column {
+  width: 48%;
+}
+/* line 237, ../../../../app/assets/stylesheets/rails_admin/theme/base.css.sass */
+.form .columns .left {
+  float: left;
+}
+/* line 239, ../../../../app/assets/stylesheets/rails_admin/theme/base.css.sass */
+.form .columns .right {
+  float: right;
+}
+/* line 241, ../../../../app/assets/stylesheets/rails_admin/theme/base.css.sass */
+.form label.label, .form input.text_field, .form textarea.text_area {
+  font-size: 1.2em;
+  padding: 1px 0;
+  margin: 0;
+}
+/* line 245, ../../../../app/assets/stylesheets/rails_admin/theme/base.css.sass */
+.form label.right {
+  text-align: right;
+}
+/* line 248, ../../../../app/assets/stylesheets/rails_admin/theme/base.css.sass */
+.form input.checkbox, .form input.radio {
+  margin-right: 5px;
+}
+/* line 251, ../../../../app/assets/stylesheets/rails_admin/theme/base.css.sass */
+.form label.checkbox, .form label.radio {
+  line-height: 1.5em;
+}
+/* line 253, ../../../../app/assets/stylesheets/rails_admin/theme/base.css.sass */
+.form label.label {
+  display: block;
+  padding-bottom: 2px;
+  font-weight: bold;
+}
+/* line 257, ../../../../app/assets/stylesheets/rails_admin/theme/base.css.sass */
+.form div.fieldWithErrors label.label {
+  display: inline;
+}
+/* line 259, ../../../../app/assets/stylesheets/rails_admin/theme/base.css.sass */
+.form .fieldWithErrors .error {
+  color: red;
+}
+/* line 261, ../../../../app/assets/stylesheets/rails_admin/theme/base.css.sass */
+.form input.text_field, .form textarea.text_area {
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+}
+
+/* lists */
+/* line 268, ../../../../app/assets/stylesheets/rails_admin/theme/base.css.sass */
+ul.list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+/* line 272, ../../../../app/assets/stylesheets/rails_admin/theme/base.css.sass */
+ul.list li {
+  clear: left;
+  padding-bottom: 5px;
+}
+/* line 275, ../../../../app/assets/stylesheets/rails_admin/theme/base.css.sass */
+ul.list li .left {
+  float: left;
+}
+/* line 277, ../../../../app/assets/stylesheets/rails_admin/theme/base.css.sass */
+ul.list li .left .avatar {
+  width: 50px;
+  height: 50px;
+}
+/* line 280, ../../../../app/assets/stylesheets/rails_admin/theme/base.css.sass */
+ul.list li .item {
+  margin-left: 80px;
+}
+/* line 282, ../../../../app/assets/stylesheets/rails_admin/theme/base.css.sass */
+ul.list li .item .avatar {
+  float: left;
+  margin: 0 5px 5px 0;
+  width: 30px;
+  height: 30px;
+}
+
+/* box */
+/* line 290, ../../../../app/assets/stylesheets/rails_admin/theme/base.css.sass */
+#box {
+  width: 500px;
+  margin: 50px auto;
+}
+/* line 293, ../../../../app/assets/stylesheets/rails_admin/theme/base.css.sass */
+#box .block {
+  margin-bottom: 20px;
+}
+/* line 295, ../../../../app/assets/stylesheets/rails_admin/theme/base.css.sass */
+#box .block h2 {
+  padding: 10px 15px;
+  margin: 0;
+}
+/* line 298, ../../../../app/assets/stylesheets/rails_admin/theme/base.css.sass */
+#box .block .content {
+  padding: 10px 20px;
+}
+
+/*  Inspired by http://particletree.com/features/rediscovering-the-button-element */
+/* line 304, ../../../../app/assets/stylesheets/rails_admin/theme/base.css.sass */
+a.button:link, a.button:visited, a.button:hover, a.button:active {
+  color: #222222;
+  display: block;
+  float: left;
+  margin: 0 7px 0 0;
+  background-color: #eeeeee;
+  border: 1px solid #bfbfbf;
+  font-size: 1em;
+  line-height: 26px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 0 10px;
+  height: 26px;
+}
+
+/* line 319, ../../../../app/assets/stylesheets/rails_admin/theme/base.css.sass */
+button.button {
+  color: #222222;
+  display: block;
+  float: left;
+  margin: 0 7px 0 0;
+  background-color: #eeeeee;
+  border: 1px solid #bfbfbf;
+  font-size: 1em;
+  line-height: 26px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 0 10px;
+  height: 26px;
+  height: 28px;
+}
+
+/* line 335, ../../../../app/assets/stylesheets/rails_admin/theme/base.css.sass */
+.button img {
+  vertical-align: middle;
+  margin: 0 0 2px -3px;
+  border: none;
+  width: 16px;
+  height: 16px;
+}
+
+/* line 342, ../../../../app/assets/stylesheets/rails_admin/theme/base.css.sass */
+button.button:hover, a.button:hover {
+  background-color: #dedede;
+}
+
+/* line 345, ../../../../app/assets/stylesheets/rails_admin/theme/base.css.sass */
+button.button:active, a.button:active {
+  background-color: #e5e5e5;
+}

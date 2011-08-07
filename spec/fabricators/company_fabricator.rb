@@ -1,0 +1,18 @@
+Fabricator(:company) do
+  name "MyString"
+  first_name "MyString"
+  last_name "MyString"
+  email "MyString"
+  job_title "MyString"
+  business_phone "MyString"
+  home_phone "MyString"
+  mobile_phone "MyString"
+  fax_number "MyString"
+  address "MyString"
+  city "MyString"
+  state "MyString"
+  zip "MyString"
+  country "MyString"
+  web_page "MyString"
+  notes "MyString"
+end

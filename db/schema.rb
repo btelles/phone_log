@@ -10,10 +10,25 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110805023103) do
+ActiveRecord::Schema.define(:version => 20110805034258) do
 
-  create_table "clients", :force => true do |t|
+  create_table "companies", :force => true do |t|
     t.string   "name"
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "email"
+    t.string   "job_title"
+    t.string   "business_phone"
+    t.string   "home_phone"
+    t.string   "mobile_phone"
+    t.string   "fax_number"
+    t.string   "address"
+    t.string   "city"
+    t.string   "state"
+    t.string   "zip"
+    t.string   "country"
+    t.string   "web_page"
+    t.string   "notes"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -39,16 +54,20 @@ ActiveRecord::Schema.define(:version => 20110805023103) do
   end
 
   create_table "logs", :force => true do |t|
-    t.string   "subject"
+    t.string   "title"
+    t.integer  "assigned_to_id"
+    t.integer  "inbound_id"
+    t.integer  "company_id"
+    t.integer  "opened_at_id"
+    t.string   "store_number"
+    t.integer  "reason_code_id"
+    t.integer  "additional_reason_code_id"
+    t.integer  "product_code_id"
+    t.boolean  "escalated"
+    t.integer  "escalated_to_id"
+    t.integer  "duration_id"
+    t.string   "order_rma"
     t.datetime "logged_at"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.integer  "product_id"
-    t.integer  "client_id"
-  end
-
-  create_table "products", :force => true do |t|
-    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

@@ -1,0 +1,80 @@
+/* Code is poetry */
+/* line 3, ../../../app/assets/stylesheets/rails_admin/base.css.sass */
+#container #header {
+  background-image: none;
+}
+
+/* line 6, ../../../app/assets/stylesheets/rails_admin/base.css.sass */
+#header h1.title {
+  float: left;
+  padding: 15px 5px;
+  text-shadow: 1px 1px 1px black;
+  font-family: Tahoma, "Arial Black", Arial "MS Trebuchet", sans-serif;
+  font-weight: bold;
+}
+
+/* line 13, ../../../app/assets/stylesheets/rails_admin/base.css.sass */
+.red {
+  color: #cc0000;
+}
+
+/* Sidebar hacks, mostly applies specificly to Activo2 */
+/* line 18, ../../../app/assets/stylesheets/rails_admin/base.css.sass */
+ul#nav li.active > a {
+  font-weight: bold;
+}
+
+/* line 22, ../../../app/assets/stylesheets/rails_admin/base.css.sass */
+#sidebar ul#nav ul {
+  padding-left: 10px;
+}
+/* line 24, ../../../app/assets/stylesheets/rails_admin/base.css.sass */
+#sidebar ul#nav li a {
+  color: inherit;
+}
+/* line 26, ../../../app/assets/stylesheets/rails_admin/base.css.sass */
+#sidebar ul#nav ul li {
+  border-bottom: none;
+}
+
+/* Fix for uniform.js checkbox css: */
+/* line 31, ../../../app/assets/stylesheets/rails_admin/base.css.sass */
+div.checker input.checkbox {
+  margin: 0;
+}
+
+/* Buttons on the list pages bottom right can be aligned hard right: */
+/* line 36, ../../../app/assets/stylesheets/rails_admin/base.css.sass */
+.form .columns .column {
+  width: inherit;
+}
+
+/* line 39, ../../../app/assets/stylesheets/rails_admin/base.css.sass */
+.filter input.text_field {
+  width: 150px;
+  height: 20px;
+}
+
+/* Override activo styles to make the search box smaller */
+/* line 46, ../../../app/assets/stylesheets/rails_admin/base.css.sass */
+.control .search {
+  width: 200px;
+}
+/* line 48, ../../../app/assets/stylesheets/rails_admin/base.css.sass */
+.control .search_box {
+  width: 166px;
+}
+/* line 50, ../../../app/assets/stylesheets/rails_admin/base.css.sass */
+.control .search_submit {
+  left: 173px;
+}
+
+/* Make the select box in the list page's controls area smaller */
+/* line 55, ../../../app/assets/stylesheets/rails_admin/base.css.sass */
+.selector.small {
+  width: 132px;
+}
+/* line 57, ../../../app/assets/stylesheets/rails_admin/base.css.sass */
+.selector.small span {
+  width: 100px;
+}

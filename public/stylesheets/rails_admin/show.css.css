@@ -1,0 +1,44 @@
+/* line 1, ../../../app/assets/stylesheets/rails_admin/show.css.sass */
+.fieldset h4 {
+  clear: both;
+  margin-top: 2px;
+  margin-bottom: 3px;
+  border-bottom: 1px solid #b9b9b9;
+  padding-bottom: 4px;
+  color: #9e988e;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 10px;
+}
+
+/* line 13, ../../../app/assets/stylesheets/rails_admin/show.css.sass */
+div.label {
+  display: block;
+  clear: left;
+  float: left;
+  margin-left: 2px;
+  font-size: 11px;
+  font-weight: bold;
+  line-height: 12px;
+  min-height: 16px;
+  width: 100px;
+}
+/* line 23, ../../../app/assets/stylesheets/rails_admin/show.css.sass */
+div.value {
+  margin-left: 100px;
+  display: block;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  min-height: 16px;
+}
+/* line 30, ../../../app/assets/stylesheets/rails_admin/show.css.sass */
+div.field {
+  overflow: hidden;
+  margin-bottom: 12px;
+  margin-top: 12px;
+}
+/* line 34, ../../../app/assets/stylesheets/rails_admin/show.css.sass */
+div.fieldset {
+  margin-bottom: 20px;
+}

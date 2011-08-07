@@ -1,0 +1,61 @@
+@charset "UTF-8";
+/*  Stylesheet for attrtastic
+ *
+ *  David Marquês Francisco
+ *  (dfrancisc[at]gmail.com)
+ *
+ */
+/* line 9, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/attrtastic_changes.sass */
+.attrtastic {
+  /* COLUNAS */
+}
+/* line 10, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/attrtastic_changes.sass */
+.attrtastic .attributes > ol {
+  list-style: none;
+}
+/* line 14, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/attrtastic_changes.sass */
+.attrtastic .attributes > ol > li.attribute {
+  margin-bottom: 10px;
+  line-height: 18px;
+  margin-right: -6px;
+}
+/* line 20, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/attrtastic_changes.sass */
+.attrtastic .attributes > ol > li.attribute .label {
+  color: #666666;
+  width: 100%;
+  display: block;
+  font-size: 14px;
+}
+/* line 28, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/attrtastic_changes.sass */
+.attrtastic .attributes > ol > li.attribute .value {
+  background-color: #f6f6f6;
+  padding: 2px;
+  padding-left: 4px;
+  display: block;
+  min-height: 18px;
+  font-size: 13px;
+}
+/* line 37, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/attrtastic_changes.sass */
+.attrtastic hr {
+  height: 1px;
+  border-bottom: solid #e8e8e8 1px;
+  margin-bottom: 15px;
+  background-color: white;
+}
+/* line 47, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/attrtastic_changes.sass */
+.attrtastic .attributes > ol {
+  float: left;
+  width: 100%;
+}
+/* line 52, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/attrtastic_changes.sass */
+.attrtastic .column_left {
+  float: left;
+  width: 47%;
+  margin-left: 0px;
+}
+/* line 58, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/attrtastic_changes.sass */
+.attrtastic .column_right {
+  float: right;
+  width: 48%;
+  margin-right: 0px;
+}

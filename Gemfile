@@ -2,7 +2,7 @@ source 'http://rubygems.org'
 
 gem "rake", "0.9.2"
 
-gem 'rails', '3.0.9'
+gem 'rails', '3.1.0.rc5'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -10,20 +10,20 @@ gem 'rails', '3.0.9'
 gem 'pg'
 
 gem 'haml'
-gem 'sass'
+gem 'sass-rails', '3.1.0.rc.5'
 gem 'itslog', :git => 'git://github.com/btelles/itslog.git'
 gem 'decent_exposure'
 gem 'jquery-rails'
 gem 'kaminari'
 gem 'devise'
-gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git', :branch => 'rails-3.0'
+gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git', :branch => 'master'
+gem 'compass', :git => 'git://github.com/chriseppstein/compass.git', :branch => 'rails31'
 
 group :development, :test do
 
   gem 'rails-erd'
   gem 'awesome_print'
   gem 'dirty'
-  gem 'compass'
   gem 'heroku'
   gem 'haml-rails'
   gem 'rspec-rails'

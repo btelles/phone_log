@@ -1,0 +1,169 @@
+@charset "UTF-8";
+/*  Stylesheet for formtastic
+ *
+ *  David Marquês Francisco
+ *  (dfrancisc[at]gmail.com)
+ *
+ */
+/* line 9, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/formtastic_changes.sass */
+#main .block .content .inner form.formtastic {
+  padding-right: 7px;
+}
+
+/* line 12, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/formtastic_changes.sass */
+form.formtastic {
+  /* COLUMNS */
+}
+/* line 13, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/formtastic_changes.sass */
+form.formtastic hr {
+  height: 1px;
+  border-bottom: solid #eaeaea 1px;
+  padding-top: 10px;
+  margin-bottom: 15px;
+  background-color: white;
+  margin-right: -5px;
+}
+/* line 21, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/formtastic_changes.sass */
+form.formtastic .wat-cf {
+  padding-top: 10px;
+}
+/* line 26, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/formtastic_changes.sass */
+form.formtastic fieldset {
+  font-size: 14px;
+  width: 100%;
+  /* LABELS */
+}
+/* line 31, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/formtastic_changes.sass */
+form.formtastic fieldset.column_left {
+  float: left;
+  width: 47%;
+  margin-left: 0px;
+}
+/* line 37, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/formtastic_changes.sass */
+form.formtastic fieldset.column_right {
+  float: right;
+  width: 48%;
+  margin-right: 0px;
+}
+/* line 45, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/formtastic_changes.sass */
+form.formtastic fieldset > ol > li {
+  /* FIELDS */
+}
+/* line 46, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/formtastic_changes.sass */
+form.formtastic fieldset > ol > li label {
+  color: #666666;
+  width: 100%;
+}
+/* line 50, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/formtastic_changes.sass */
+form.formtastic fieldset > ol > li fieldset ol {
+  padding: 20px 0 0 0;
+}
+/* line 56, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/formtastic_changes.sass */
+form.formtastic fieldset > ol > li.string input, form.formtastic fieldset > ol > li.password input, form.formtastic fieldset > ol > li.numeric input, form.formtastic fieldset > ol > li.text textarea, form.formtastic fieldset > ol > li.datepicker input {
+  width: 100%;
+  max-width: 100%;
+  border: 1px solid #dddddd;
+  padding: 2px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+/* line 65, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/formtastic_changes.sass */
+form.formtastic fieldset > ol > li.select select, form.formtastic fieldset > ol > li.file input {
+  width: 100%;
+  max-width: 100%;
+}
+/* line 70, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/formtastic_changes.sass */
+form.formtastic fieldset > ol > li.datepicker input {
+  background: url("images/icons/calendar.png") no-repeat right;
+}
+/* line 74, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/formtastic_changes.sass */
+form.formtastic fieldset > ol > li.string input:focus, form.formtastic fieldset > ol > li.password input:focus, form.formtastic fieldset > ol > li.numeric input:focus, form.formtastic fieldset > ol > li.text textarea:focus {
+  border: 1px solid #a2a294;
+}
+/* line 77, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/formtastic_changes.sass */
+form.formtastic fieldset > ol > li.datepicker input:focus {
+  border: 1px solid #a2a294;
+  background: url("images/icons/calendar-hover.png") no-repeat right;
+}
+/* line 82, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/formtastic_changes.sass */
+form.formtastic fieldset > ol > li.string input[disabled='disabled'], form.formtastic fieldset > ol > li.password input[disabled='disabled'], form.formtastic fieldset > ol > li.numeric input[disabled='disabled'], form.formtastic fieldset > ol > li.text textarea[disabled='disabled'], form.formtastic fieldset > ol > li.datepicker input[disabled='disabled'] {
+  background-color: #f6f6f6;
+  border: 1px solid #f6f6f6;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+}
+/* line 89, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/formtastic_changes.sass */
+form.formtastic fieldset > ol > li.boolean label {
+  padding-left: 0px;
+}
+
+/* line 93, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/formtastic_changes.sass */
+#box .block .content form.formtastic fieldset > ol > li input {
+  /* caixas (como a de login) têm tamanho fixo. Definir o
+   * width de text fields dá problemas no IE. Desta forma,
+   * ficou funcional */
+  width: auto;
+  max-width: 430px;
+}
+
+/* line 100, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/formtastic_changes.sass */
+form.formtastic {
+  /* BUTTON */
+}
+/* line 101, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/formtastic_changes.sass */
+form.formtastic fieldset > ol > li {
+  margin-bottom: 10px;
+  /* HINT */
+}
+/* line 105, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/formtastic_changes.sass */
+form.formtastic fieldset > ol > li.date fieldset ol li, form.formtastic fieldset > ol > li.time fieldset ol li, form.formtastic fieldset > ol > li.datetime fieldset ol li {
+  height: 20px;
+}
+/* line 109, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/formtastic_changes.sass */
+form.formtastic fieldset > ol > li.error input {
+  border: 1px solid #ffbbbb;
+}
+/* line 113, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/formtastic_changes.sass */
+form.formtastic fieldset > ol > li.radio fieldset ol li {
+  margin-bottom: 4px;
+}
+/* line 116, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/formtastic_changes.sass */
+form.formtastic fieldset > ol > li.radio fieldset ol li label {
+  color: #222222;
+  font-size: 13px;
+  font-weight: normal;
+}
+/* line 122, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/formtastic_changes.sass */
+form.formtastic fieldset > ol > li.datepicker input {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+}
+/* line 127, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/formtastic_changes.sass */
+form.formtastic fieldset > ol > li select {
+  margin-bottom: 4px;
+}
+/* line 133, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/formtastic_changes.sass */
+form.formtastic fieldset > ol > li p.inline-hints {
+  font-style: italic;
+  color: #8c8c8c;
+  font-size: 0.9em;
+  margin: 2px 0 0 0;
+}
+/* line 142, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/formtastic_changes.sass */
+form.formtastic button.button, form.formtastic a.button {
+  font-size: 12px;
+}
+
+/* CHECK_BOXES */
+/* line 148, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/formtastic_changes.sass */
+#box .block .content form.formtastic fieldset > ol > li.check_boxes fieldset ol {
+  width: 440px;
+}
+/* line 150, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/formtastic_changes.sass */
+#box .block .content form.formtastic fieldset > ol > li.check_boxes fieldset ol li label {
+  color: #222222;
+  font-size: 13px;
+  font-weight: normal;
+  padding-right: 50px;
+}

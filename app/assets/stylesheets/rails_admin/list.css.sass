@@ -1,0 +1,78 @@
+.grid
+  width: 100%
+  border-collapse: collapse
+  thead th
+    padding: 9px 0 9px 5px
+    a
+      background-repeat: no-repeat
+      background-position: right
+      /* so as to not strech when selected:
+      padding: 0 20px 0 0
+    &.selected a
+      /* to accomodate the sort arrow:
+      padding: 0 20px 0 0
+      font-weight: bold
+    a
+      &.ascending
+        background-image: url(../../images/rails_admin/bullet_arrow_up.png)
+      &.descending
+        background-image: url(../../images/rails_admin/bullet_arrow_down.png)
+  tr.link:hover
+    background-color: #B9DAFC
+    cursor: pointer
+  .checker
+    padding: 0px 5px
+  tbody
+    .boolean
+      margin-bottom: -5px
+    .date, .datetime, .time, .timestamp
+      white-space: nowrap
+    .other a
+      padding-left: 2px
+      padding-right: 2px
+      text-decoration: none
+      border: 1px solid #B9B9B9
+      background: #FFF
+      color: #494949
+      &:hover
+        border: 1px solid #494949
+    td.last
+      white-space: nowrap
+  thead th.first
+    padding-left: 5px
+  tbody td
+    padding: 7px 5px
+    &.boolean
+      text-align: center
+  thead th.boolean
+    text-align: center
+  tbody td.boolean
+    padding: 0 20px 0 0
+
+.content>.content-header
+  overflow: hidden
+
+#filters_box
+  margin-top: 10px
+
+.filter
+  display: block
+  float: left
+  margin-bottom: 10px
+
+.filter>*
+  display: block
+  float: left
+
+.filter
+  input, select
+    padding: 0px
+    margin-left: 8px
+  label
+    color: black
+    width: 140px
+    margin: 7px 7px 0 10px
+  .delete-box
+    margin-top: 3px
+  .delete
+    padding: 1px 0 1px 1px

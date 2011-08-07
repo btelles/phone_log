@@ -22,11 +22,20 @@ Feature: Manage logs
 
   Scenario: Create a new log entry
     Given I am on the new log page
-    And I select "2011-07-16" as the "Logged at" date
-    And I fill in "Subject" with "Some new log subject"
-    And I select "Brace Assembly 3" from "Product"
-    And I select "Louis Marshall" from "Client"
-    And I press "Save"
+    And   I fill in "Title" with "Call Log entry"
+    And   I select "Bob Smith" from "Assigned To"
+    #And   I select "Outbound" from "Inbound/Outbound"
+    #And   I select "Louis Marshall" from "Company"
+    #And   I select "2011-07-16" as the "Opened Date" date
+    #And   I fill in "Store Number" with "111"
+    #And   I select "Advise RMA Result" from "Reason Code"
+    #And   I select "Can I get a track #" from "Additional Reason Codes"
+    #And   I select "Brace Assembly 3" from "Product Code"
+    #And   I select "Yes" from "Escalated"
+    #And   I select "Account Services" from "Escalated To"
+    #And   I select "< 3 Minutes" from "Duration"
+    #And   I fill in "Order/RMA Number" with "AB34"
+    And   I press "Save"
     Then I should see the following table rows:
       | Subject              | Client | Product |
       | Some new log subject | Louis Marshall | Brace Assembly 3 |

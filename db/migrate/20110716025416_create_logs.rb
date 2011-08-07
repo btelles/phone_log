@@ -1,8 +1,20 @@
 class CreateLogs < ActiveRecord::Migration
   def self.up
     create_table :logs do |t|
-      t.string :subject
-      t.datetime :logged_at
+      t.string     :title
+      t.references :assigned_to
+      t.references :inbound
+      t.references :company
+      t.references :opened_at
+      t.string     :store_number
+      t.references :reason_code
+      t.references :additional_reason_code
+      t.references :product_code
+      t.boolean    :escalated
+      t.references :escalated_to
+      t.references :duration
+      t.string     :order_rma
+      t.datetime   :logged_at
 
       t.timestamps
     end
