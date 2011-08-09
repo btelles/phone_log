@@ -28,7 +28,7 @@ Feature: Manage logs
     And   I select "Outbound" from "In/Outbound"
     And   I select "Louis Marshall" from "Company"
     And   I select "2011-07-16" as the "Opened Date" date
-    #And   I fill in "Store Number" with "111"
+    And   I fill in "Store Number" with "111"
     #And   I select "Advise RMA Result" from "Reason Code"
     #And   I select "Can I get a track #" from "Additional Reason Codes"
     #And   I select "Brace Assembly 3" from "Product Code"

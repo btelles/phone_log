@@ -10,3 +10,4 @@ en:
         assigned_to_id: 'Assigned To'
         bound: 'In/Outbound'
         opened_on: 'Opened Date'
+        store_number: 'Store Number'

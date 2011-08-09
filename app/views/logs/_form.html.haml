@@ -21,6 +21,9 @@
   .field
     = f.label :company_id
     = f.select :company_id, Company.options_with_id
+  .field
+    = f.label :store_number
+    = f.text_field :store_number
   -#.field
     -#= f.label :product_code_id
     -#= f.select :product_code_id, Product.options_with_id
