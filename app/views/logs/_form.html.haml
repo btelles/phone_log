@@ -10,13 +10,16 @@
     = f.label :logged_at
     = f.datetime_select :logged_at
   .field
-    = f.label :subject
-    = f.text_field :subject
+    = f.label :title
+    = f.text_field :title
   .field
-    = f.label :product_id
-    = f.select :product_id, Product.options_with_id
-  .field
-    = f.label :client_id
-    = f.select :client_id, Client.options_with_id
+    = f.label :assigned_to_id
+    = f.select :assigned_to_id, Employee.options_with_id
+  -#.field
+    -#= f.label :product_code_id
+    -#= f.select :product_code_id, Product.options_with_id
+  -#.field
+    -#= f.label :company_id
+    -#= f.select :company_id, Client.options_with_id
   .actions
     = f.submit 'Save'

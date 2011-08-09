@@ -1,22 +1,23 @@
 Feature: Manage logs
-  In order to see which products are most interesting or most problematic, 
+  In order to see which products are most interesting or most problematic,
   and decide which are worth spending money on,
   as a phone operator I want to create, edit and delete phone log entries.
 
   Background:
-    Given the following product:
-      | name | Brace Assembly 3 |
-    And the following client:
-      | name | Louis Marshall |
+    #Given the following product:
+      #| Name | Brace Assembly 3 |
+    Given the following employee:
+       | First Name | Bob   |
+       | Last Name  | Smith |
 
   Scenario: View existing log entries
     Given the following logs:
-      | Subject |
-      | Customer Complaint | 
+      | Title |
+      | Customer Complaint |
       | Customer Comment   |
     And I am on the logs page
     Then I should see the following table rows:
-      | Subject |
+      | Title |
       | Customer Complaint |
       | Customer Comment   |
 
@@ -36,33 +37,34 @@ Feature: Manage logs
     #And   I select "< 3 Minutes" from "Duration"
     #And   I fill in "Order/RMA Number" with "AB34"
     And   I press "Save"
+    Then show me the page
     Then I should see the following table rows:
-      | Subject              | Client | Product |
-      | Some new log subject | Louis Marshall | Brace Assembly 3 |
+      | Title          |
+      | Call Log entry |
 
   Scenario: Edit an existing log entry
     Given the following log:
-      | Subject | Customer Complaint |
+      | Title | Customer Complaint |
     And I am on the logs page
     And I follow "Edit"
-    And I fill in "Subject" with "Some other log subject"
-    And I select "Brace Assembly 3" from "Product"
-    And I select "Louis Marshall" from "Client"
+    And I fill in "Title" with "Some other log subject"
+    #And I select "Brace Assembly 3" from "Product"
+    #And I select "Louis Marshall" from "Client"
     And I press "Save"
     Then I should see the following table rows:
-      | Subject              | Client | Product |
-      | Some other log subject | Louis Marshall | Brace Assembly 3 |
+      | Title              |
+      | Some other log subject |
 
   Scenario: Delete a log entry
     Given the following logs:
-      | Subject |
+      | Title |
       | Customer Complaint |
       | Customer Comment   |
       | Kudos |
       | Super comment|
     When I delete the 3rd log
     Then I should see the following logs:
-      | Subject |
+      | Title |
       | Customer Complaint |
       | Customer Comment   |
       | Kudos |
