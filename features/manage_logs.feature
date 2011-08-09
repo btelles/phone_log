@@ -25,7 +25,7 @@ Feature: Manage logs
     Given I am on the new log page
     And   I fill in "Title" with "Call Log entry"
     And   I select "Bob Smith" from "Assigned To"
-    #And   I select "Outbound" from "Inbound/Outbound"
+    And   I select "Outbound" from "In/Outbound"
     #And   I select "Louis Marshall" from "Company"
     #And   I select "2011-07-16" as the "Opened Date" date
     #And   I fill in "Store Number" with "111"

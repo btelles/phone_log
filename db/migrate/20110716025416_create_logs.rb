@@ -3,7 +3,7 @@ class CreateLogs < ActiveRecord::Migration
     create_table :logs do |t|
       t.string     :title
       t.references :assigned_to
-      t.references :inbound
+      t.string     :bound
       t.references :company
       t.references :opened_at
       t.string     :store_number

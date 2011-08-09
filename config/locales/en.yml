@@ -8,3 +8,4 @@ en:
     attributes:
       log:
         assigned_to_id: 'Assigned To'
+        bound: 'In/Outbound'

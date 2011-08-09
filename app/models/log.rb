@@ -4,4 +4,6 @@ class Log < ActiveRecord::Base
 
   paginates_per 50
 
+  BOUND_OPTIONS= %w{Inbound Outbound}
+
 end

@@ -56,7 +56,7 @@ ActiveRecord::Schema.define(:version => 20110805034258) do
   create_table "logs", :force => true do |t|
     t.string   "title"
     t.integer  "assigned_to_id"
-    t.integer  "inbound_id"
+    t.string   "bound"
     t.integer  "company_id"
     t.integer  "opened_at_id"
     t.string   "store_number"
