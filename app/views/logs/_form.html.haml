@@ -18,6 +18,9 @@
   .field
     = f.label :bound
     = f.select :bound, Log::BOUND_OPTIONS
+  .field
+    = f.label :company_id
+    = f.select :company_id, Company.options_with_id
   -#.field
     -#= f.label :product_code_id
     -#= f.select :product_code_id, Product.options_with_id

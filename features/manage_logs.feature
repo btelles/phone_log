@@ -4,8 +4,8 @@ Feature: Manage logs
   as a phone operator I want to create, edit and delete phone log entries.
 
   Background:
-    #Given the following product:
-      #| Name | Brace Assembly 3 |
+    Given the following company:
+      | Name | Louis Marshall |
     Given the following employee:
        | First Name | Bob   |
        | Last Name  | Smith |
@@ -26,7 +26,7 @@ Feature: Manage logs
     And   I fill in "Title" with "Call Log entry"
     And   I select "Bob Smith" from "Assigned To"
     And   I select "Outbound" from "In/Outbound"
-    #And   I select "Louis Marshall" from "Company"
+    And   I select "Louis Marshall" from "Company"
     #And   I select "2011-07-16" as the "Opened Date" date
     #And   I fill in "Store Number" with "111"
     #And   I select "Advise RMA Result" from "Reason Code"
