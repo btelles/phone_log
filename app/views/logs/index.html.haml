@@ -11,7 +11,7 @@
   %tbody
     - logs.each do |logg|
       %tr
-        %td= logg.logged_at
+        %td= logg.opened_on
         %td= logg.title
         %td= link_to 'Edit', edit_log_url(logg)
         %td= link_to 'Destroy', logg, :confirm => 'Are you sure?', :method => :delete, :id => "destroy_log_#{logg.id}"

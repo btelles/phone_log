@@ -67,7 +67,7 @@ ActiveRecord::Schema.define(:version => 20110805034258) do
     t.integer  "escalated_to_id"
     t.integer  "duration_id"
     t.string   "order_rma"
-    t.datetime "logged_at"
+    t.date     "opened_on"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
