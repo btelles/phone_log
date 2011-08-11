@@ -27,6 +27,9 @@
   .field
     = f.label :reason_code_id
     = f.select :reason_code_id, ReasonCode.options_with_id
+  .field
+    = f.label :additional_reason_code_id
+    = f.select :additional_reason_code_id, ReasonCode.options_with_id
   -#.field
     -#= f.label :product_code_id
     -#= f.select :product_code_id, Product.options_with_id

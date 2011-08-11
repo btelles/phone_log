@@ -12,3 +12,4 @@ en:
         opened_on: 'Opened Date'
         store_number: 'Store Number'
         reason_code_id: 'Reason Code'
+        additional_reason_code_id: 'Additional Reason Code'
