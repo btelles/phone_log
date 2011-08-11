@@ -42,5 +42,8 @@
   .field
     = f.label :duration_id
     = f.select :duration_id, Duration.options_with_id, include_blank: true
+  .field
+    = f.label :order_rma
+    = f.text_field :order_rma
   .actions
     = f.submit 'Save'

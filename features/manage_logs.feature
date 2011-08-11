@@ -45,7 +45,8 @@ Feature: Manage logs
     And   I select "Yes" from "Escalated"
     And   I select "Account Services" from "Escalated To"
     And   I select "< 3 Minutes" from "Duration"
-    #And   I fill in "Order/RMA Number" with "AB34"
+    And   I fill in "Order/RMA Number" with "AB34"
+
     And   I press "Save"
     Then I should see the following table rows:
       | Title          |
