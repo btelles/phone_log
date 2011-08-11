@@ -34,6 +34,7 @@ group :development, :test do
   gem 'ruby-debug19'
   gem 'ruby-debug-ide19'
   gem 'database_cleaner'
+  gem 'fuubar'
   gem 'launchy'
 
 end
