@@ -9,6 +9,8 @@ Feature: Manage logs
     Given the following employee:
        | First Name | Bob   |
        | Last Name  | Smith |
+     Given the following reason code:
+       | Name | Advise RMA Result |
 
   Scenario: View existing log entries
     Given the following logs:
@@ -29,7 +31,7 @@ Feature: Manage logs
     And   I select "Louis Marshall" from "Company"
     And   I select "2011-07-16" as the "Opened Date" date
     And   I fill in "Store Number" with "111"
-    #And   I select "Advise RMA Result" from "Reason Code"
+    And   I select "Advise RMA Result" from "Reason Code"
     #And   I select "Can I get a track #" from "Additional Reason Codes"
     #And   I select "Brace Assembly 3" from "Product Code"
     #And   I select "Yes" from "Escalated"
@@ -37,7 +39,6 @@ Feature: Manage logs
     #And   I select "< 3 Minutes" from "Duration"
     #And   I fill in "Order/RMA Number" with "AB34"
     And   I press "Save"
-    Then show me the page
     Then I should see the following table rows:
       | Title          |
       | Call Log entry |

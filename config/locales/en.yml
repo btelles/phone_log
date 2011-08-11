@@ -11,3 +11,4 @@ en:
         bound: 'In/Outbound'
         opened_on: 'Opened Date'
         store_number: 'Store Number'
+        reason_code_id: 'Reason Code'
