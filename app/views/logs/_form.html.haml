@@ -14,27 +14,30 @@
     = f.text_field :title
   .field
     = f.label :assigned_to_id
-    = f.select :assigned_to_id, Employee.options_with_id
+    = f.select :assigned_to_id, Employee.options_with_id, include_blank: true
   .field
     = f.label :bound
     = f.select :bound, Log::BOUND_OPTIONS
   .field
     = f.label :company_id
-    = f.select :company_id, Company.options_with_id
+    = f.select :company_id, Company.options_with_id, include_blank: true
   .field
     = f.label :store_number
     = f.text_field :store_number
   .field
     = f.label :reason_code_id
-    = f.select :reason_code_id, ReasonCode.options_with_id
+    = f.select :reason_code_id, ReasonCode.options_with_id, include_blank: true
   .field
     = f.label :additional_reason_code_id
-    = f.select :additional_reason_code_id, ReasonCode.options_with_id
+    = f.select :additional_reason_code_id, ReasonCode.options_with_id, include_blank: true
   .field
     = f.label :product_id
-    = f.select :product_id, Product.options_with_id
+    = f.select :product_id, Product.options_with_id, include_blank: true
   .field
     = f.label :escalated
     = f.select :escalated, [['Yes', 1],['No', 0]]
+  .field
+    = f.label :escalated_to_id
+    = f.select :escalated_to_id, EscalationType.options_with_id, include_blank: true
   .actions
     = f.submit 'Save'

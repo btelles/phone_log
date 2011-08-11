@@ -14,3 +14,4 @@ en:
         reason_code_id: 'Reason Code'
         additional_reason_code_id: 'Additional Reason Code'
         product_id: 'Product Code'
+        escalated_to_id: 'Escalated To'
