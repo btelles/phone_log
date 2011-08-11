@@ -17,6 +17,8 @@ Feature: Manage logs
      | Name | Brace Assembly 3 |
    Given the following escalation type:
      | Name | Account Services |
+   Given the following duration:
+     | Name | < 3 Minutes |
 
   Scenario: View existing log entries
     Given the following logs:
@@ -42,7 +44,7 @@ Feature: Manage logs
     And   I select "Brace Assembly 3" from "Product Code"
     And   I select "Yes" from "Escalated"
     And   I select "Account Services" from "Escalated To"
-    #And   I select "< 3 Minutes" from "Duration"
+    And   I select "< 3 Minutes" from "Duration"
     #And   I fill in "Order/RMA Number" with "AB34"
     And   I press "Save"
     Then I should see the following table rows:

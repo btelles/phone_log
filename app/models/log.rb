@@ -6,6 +6,7 @@ class Log < ActiveRecord::Base
   belongs_to :additional_reason_code, :class_name => 'ReasonCode'
   belongs_to :product
   belongs_to :escalated_to, :class_name => 'EscalationType', :foreign_key => :escalated_to_id
+  belongs_to :duration
 
   paginates_per 50
 

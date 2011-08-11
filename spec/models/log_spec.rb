@@ -6,4 +6,5 @@ describe Log do
   specify { subject.should respond_to :company }
   specify { subject.should respond_to :product}
   specify { subject.should respond_to :escalated_to }
+  specify { subject.should respond_to :duration }
 end

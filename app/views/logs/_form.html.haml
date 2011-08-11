@@ -39,5 +39,8 @@
   .field
     = f.label :escalated_to_id
     = f.select :escalated_to_id, EscalationType.options_with_id, include_blank: true
+  .field
+    = f.label :duration_id
+    = f.select :duration_id, Duration.options_with_id, include_blank: true
   .actions
     = f.submit 'Save'
