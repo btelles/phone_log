@@ -9,7 +9,7 @@ class CreateLogs < ActiveRecord::Migration
       t.string     :store_number
       t.references :reason_code
       t.references :additional_reason_code
-      t.references :product_code
+      t.references :product
       t.boolean    :escalated
       t.references :escalated_to
       t.references :duration

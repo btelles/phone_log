@@ -9,10 +9,12 @@ Feature: Manage logs
     Given the following employee:
        | First Name | Bob   |
        | Last Name  | Smith |
-   Given the following reason code:
-       | Name | Advise RMA Result |
-   Given the following reason code:
-       | Name | Can I get a track # |
+   Given the following reason codes:
+     | Name |
+     | Advise RMA Result |
+     | Can I get a track # |
+   Given the following product:
+     | Name | Brace Assembly 3 |
 
   Scenario: View existing log entries
     Given the following logs:
@@ -35,7 +37,7 @@ Feature: Manage logs
     And   I fill in "Store Number" with "111"
     And   I select "Advise RMA Result" from "Reason Code"
     And   I select "Can I get a track #" from "Additional Reason Code"
-    #And   I select "Brace Assembly 3" from "Product Code"
+    And   I select "Brace Assembly 3" from "Product Code"
     #And   I select "Yes" from "Escalated"
     #And   I select "Account Services" from "Escalated To"
     #And   I select "< 3 Minutes" from "Duration"
