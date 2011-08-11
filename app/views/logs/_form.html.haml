@@ -33,8 +33,8 @@
   .field
     = f.label :product_id
     = f.select :product_id, Product.options_with_id
-  -#.field
-    -#= f.label :company_id
-    -#= f.select :company_id, Client.options_with_id
+  .field
+    = f.label :escalated
+    = f.select :escalated, [['Yes', 1],['No', 0]]
   .actions
     = f.submit 'Save'

@@ -38,7 +38,7 @@ Feature: Manage logs
     And   I select "Advise RMA Result" from "Reason Code"
     And   I select "Can I get a track #" from "Additional Reason Code"
     And   I select "Brace Assembly 3" from "Product Code"
-    #And   I select "Yes" from "Escalated"
+    And   I select "Yes" from "Escalated"
     #And   I select "Account Services" from "Escalated To"
     #And   I select "< 3 Minutes" from "Duration"
     #And   I fill in "Order/RMA Number" with "AB34"
