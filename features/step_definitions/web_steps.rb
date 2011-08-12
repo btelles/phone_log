@@ -99,7 +99,7 @@ When /^(?:|I )choose "([^"]*)"$/ do |field|
 end
 
 When /^(?:|I )attach the file "([^"]*)" to "([^"]*)"$/ do |path, field|
-  attach_file(field, File.expand_path(path))
+  attach_file(field, File.expand_path("../../support/files/#{path}", __FILE__))
 end
 
 Then /^(?:|I )should see "([^"]*)"$/ do |text|

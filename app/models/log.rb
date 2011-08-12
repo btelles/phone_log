@@ -8,6 +8,8 @@ class Log < ActiveRecord::Base
   belongs_to :escalated_to, :class_name => 'EscalationType', :foreign_key => :escalated_to_id
   belongs_to :duration
 
+  mount_uploader :attachment, FileUploader
+
   paginates_per 50
 
   BOUND_OPTIONS= %w{Inbound Outbound}

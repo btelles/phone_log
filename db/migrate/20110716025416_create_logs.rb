@@ -15,6 +15,7 @@ class CreateLogs < ActiveRecord::Migration
       t.references :duration
       t.string     :order_rma
       t.date       :opened_on
+      t.string     :attachment
 
       t.timestamps
     end

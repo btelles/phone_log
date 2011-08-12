@@ -80,6 +80,7 @@ ActiveRecord::Schema.define(:version => 20110811225809) do
     t.integer  "duration_id"
     t.string   "order_rma"
     t.date     "opened_on"
+    t.string   "attachment"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
