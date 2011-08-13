@@ -31,7 +31,7 @@ group :development, :test do
   gem 'cucumber'
   gem 'cucumber-rails'
   gem 'fabrication'
-  gem 'capybara-webkit'
+  gem 'capybara-webkit', :git => 'git://github.com/thoughtbot/capybara-webkit.git'
   gem 'ruby-debug19'
   gem 'ruby-debug-ide19'
   gem 'database_cleaner'
