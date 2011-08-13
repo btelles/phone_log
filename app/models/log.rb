@@ -10,7 +10,14 @@ class Log < ActiveRecord::Base
   has_and_belongs_to_many :related_logs, join_table: 'logs_logs',
                                  foreign_key: :log_1_id,
                                  association_foreign_key: :log_2_id,
-                                 finder_sql: 'SELECT * FROM logs_logs where (log_id_1 = #{id} OR log_id_2 = #{id})'
+                                 finder_sql: proc { "SELECT logs.* FROM logs_logs
+                                                     INNER JOIN `logs` ON logs_logs.log_2_id = logs.id 
+                                                     WHERE log_1_id = #{self.id}
+                                                     UNION ALL 
+                                                     SELECT logs.* FROM logs_logs
+                                                     INNER JOIN `logs` ON logs_logs.log_1_id = logs.id 
+                                                     WHERE log_2_id = #{self.id}" },
+                                 class_name: 'Log'
 
   mount_uploader :attachment, FileUploader
 

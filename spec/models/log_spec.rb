@@ -20,4 +20,17 @@ describe Log do
       specify { subject.first.should == target  }
     end
   end
+
+  describe "#related_logs" do
+    let!(:old) { Fabricate(:log, title: 'old') }
+    let!(:new) { Fabricate(:log, title: 'new') }
+    subject { new.related_logs }
+
+    before do
+      new.related_logs= [old]
+    end
+
+    specify { should == [old] }
+    specify { old.related_logs[0].should == new }
+  end
 end
