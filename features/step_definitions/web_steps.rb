@@ -65,6 +65,27 @@ When /^(?:|I )fill in "([^"]*)" for "([^"]*)"$/ do |value, field|
   fill_in(field, :with => value)
 end
 
+stuff_that_should_appear = {
+  'dialog box' => '.ui-dialog-title',
+  'table row'  => 'table tr td'
+}
+stuff_that_should_appear.each do |descriptor, selector|
+  When /^(?:|I )wait for the (?:"([^"]*)") #{descriptor} to appear$/ do |title|
+    wait_until do
+      if title.present?
+        page.should have_css(selector, :text => title, :visible => true)
+      else
+        page.should have_css(selector, :visible => true)
+      end
+    end
+  end
+
+end
+
+When /I close the dialog/ do
+  debugger
+  find("a.ui-dialog-titlebar-close").click
+end
 # Use this to fill in an entire form with data from a table. Example:
 #
 #   When I fill in the following:

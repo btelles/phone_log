@@ -49,11 +49,11 @@
   .side
     #accordion
       %h3
-        %a Notes
+        %a(href="#show_notes") Notes
       %div 
         = f.text_area :notes
       %h3
-        %a Attachment
+        %a(href="#show_attachment") Attachment
       %div
         = f.file_field :attachment
         = f.hidden_field :attachment_cache
@@ -62,15 +62,16 @@
         -if log.attachment
           =link_to log.attachment_identifier, log.attachment.url
       %h3
-        %a Related Calls
+        %a(href="#show_related_calls") Related Calls
       %div
-        =link_to "Add a Related Call", '#add_related_call', id: 'open_related_calls_dialog'
+        =link_to "Add Related Calls", '#add_related_call', id: 'open_related_calls_dialog'
         %ul#related_calls
-          = f.fields_for(log.related_logs) do |rel_log_form|
-            %li
-              = rel_log_form.hidden_field :id
-              %span= rel_log_form.object.title
-              =rel_log_form.object.company.try(:name)
+          -if log.related_logs.present?
+            = f.fields_for(log.related_logs) do |rel_log_form|
+              %li
+                = rel_log_form.hidden_field :id
+                %span= rel_log_form.object.title
+                =rel_log_form.object.company.try(:name)
 
 
         %table
