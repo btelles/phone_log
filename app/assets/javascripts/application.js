@@ -1,1 +1,4 @@
-$(document).ready( function() { $('#accordion').accordion(); });
+//= require jquery_min
+//= require jquery_ui
+//= require jquery_ujs
+//= require logs

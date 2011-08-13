@@ -1,0 +1,11 @@
+-if log_search.empty?
+  %tr
+    %td(colspan=3) 
+      We couldn't find any logs with that criteria.
+      %br
+      Try removing either the title or the company.
+-log_search.each do |log|
+  %tr
+    %td.title= log.title
+    %td.name= log.name
+    %td= link_to "Add", {id: log.id}, class: 'add_related_call', rel: log.id

@@ -1,10 +1,4 @@
 GIT
-  remote: git://github.com/btelles/itslog.git
-  revision: 6e1276649d0b21c21c1a748e69c374268b10b3f9
-  specs:
-    itslog (0.5.0)
-
-GIT
   remote: git://github.com/chriseppstein/compass.git
   revision: 91a748a916360057b5caf6ea85cd38441d3b257a
   branch: rails31
@@ -255,7 +249,6 @@ DEPENDENCIES
   haml
   haml-rails
   heroku
-  itslog!
   jquery-rails
   kaminari
   launchy

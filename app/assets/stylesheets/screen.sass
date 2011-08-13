@@ -7,7 +7,7 @@
 @import blueprint
 // Import the non-default scaffolding module.
 @import blueprint/scaffolding
-@import 'jquery-accordion.sass'
+@import 'jquery-ui.sass'
 // To generate css equivalent to the blueprint css but with your
 // configuration applied, uncomment:
 // @include blueprint
@@ -23,7 +23,7 @@ body
   background-image: url('/images/vanguard/header_bg.png')
   background-position: 0px 89px
   background-repeat: repeat-x
-form
+form  
   +blueprint-form
   // You'll probably want to remove the scaffolding once you start styling your site.
   +blueprint-scaffolding
@@ -39,6 +39,14 @@ form
     +column(20, true)
   #log_notes
     +column(6, true)
+  &#log_search
+    input
+      width: 9em
+    #search_button
+      width: 4.5em
+    
+
+
 table
   thead tr th
     border-bottom: 1px solid #999
@@ -217,4 +225,3 @@ table
             font-weight: bold
             margin: 0
             text-decoration: none
-

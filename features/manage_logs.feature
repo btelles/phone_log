@@ -32,8 +32,10 @@ Feature: Manage logs
       | Customer Comment   |
 
   Scenario: Create a new log entry
+    Given an existing log:
+      | Title | Older Call |
     Given I am on the new log page
-    And   I fill in "Title" with "Call Log entry"
+    When  I fill in "Title" with "Call Log entry"
     And   I select "Bob Smith" from "Assigned To"
     And   I select "Outbound" from "In/Outbound"
     And   I select "Louis Marshall" from "Company"
@@ -47,8 +49,13 @@ Feature: Manage logs
     And   I select "< 3 Minutes" from "Duration"
     And   I fill in "Order/RMA Number" with "AB34"
     And   I fill in "log_notes" with "The customer's notes"
+    And   I follow "Related Calls"
+    And   I follow "Add a Related Call"
+    And   I fill in "Title" with "Older Call"
+    And   I follow "Add"
+    Then  I should see "Older Call"
     #And   I attach the file "MyAttachment.txt" to "Attachment"
-    And   I press "Save"
+    When I press "Save"
     Then I should see the following table rows:
       | Title          |
       | Call Log entry |

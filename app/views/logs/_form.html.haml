@@ -46,8 +46,6 @@
     .field
       = f.label :order_rma
       = f.text_field :order_rma
-    .field
-      = f.label :attachment
   .side
     #accordion
       %h3
@@ -66,9 +64,28 @@
       %h3
         %a Related Calls
       %div
-        =link_to "Add a Related Call"
+        =link_to "Add a Related Call", '#add_related_call', id: 'open_related_calls_dialog'
+        %ul#related_calls
 
         %table
           %thead
   .actions
     = f.submit 'Save'
+#add_related_calls
+  =form_tag '/log_search', method: 'put', remote: true, id: 'log_search' do |f|
+    %table
+      %thead
+        %tr
+          %td Title has:
+          %td Company has:
+          %td
+        %tr
+          %td= text_field_tag 'log[title_like]'
+          %td= text_field_tag 'log[company_like]'
+          %td= submit_tag 'Search', id: 'search_button'
+      %tbody
+        %tr
+          %td
+      %tfoot
+        %tr
+          %td(colspan=2) &nbsp;

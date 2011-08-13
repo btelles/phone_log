@@ -11,7 +11,7 @@ gem 'mysql'
 
 gem 'haml'
 gem 'sass-rails', '3.1.0.rc.5'
-gem 'itslog', :git => 'git://github.com/btelles/itslog.git'
+#gem 'itslog', :git => 'git://github.com/btelles/itslog.git'
 gem 'decent_exposure'
 gem 'jquery-rails'
 gem 'kaminari'
