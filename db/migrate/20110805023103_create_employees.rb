@@ -4,6 +4,7 @@ class CreateEmployees < ActiveRecord::Migration
       t.string :first_name
       t.string :last_name
       t.string :company
+      t.string :email
       t.string :job_title
       t.string :business_phone
       t.string :home_phone
