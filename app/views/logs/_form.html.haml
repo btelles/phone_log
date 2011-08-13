@@ -48,7 +48,7 @@
       = f.text_field :order_rma
     .field
       = f.label :attachment
-  .sidebar
+  .side
     #accordion
       %h3
         %a Notes
@@ -65,5 +65,10 @@
           =link_to log.attachment_identifier, log.attachment.url
       %h3
         %a Related Calls
+      %div
+        =link_to "Add a Related Call"
+
+        %table
+          %thead
   .actions
     = f.submit 'Save'

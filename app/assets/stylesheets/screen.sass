@@ -32,10 +32,13 @@ form
     padding-top: 9px
   .main
     +column(12)
-  .sidebar
-    +column(7, true)
+  .side
+    +column(8, true)
+  .actions
+    text-align: center
+    +column(20, true)
   #log_notes
-    +column(5, last)
+    +column(6, true)
 table
   thead tr th
     border-bottom: 1px solid #999
@@ -159,16 +162,10 @@ table
 #main
   +column(24, true)
 #sidebar
-  // One third of the grid columns, rounding down. With 24 cols, this is 8.
-  $sidebar-columns: floor($blueprint-grid-columns / 5)
-  +column($sidebar-columns)
+  +column(3)
   height: 100%
 #content
-  // Two thirds of the grid columns, rounding up.
-  // With 24 cols, this is 16.
-  $content-columns: ceil(4 * $blueprint-grid-columns / 5)
-  // true means it's the last column in the row
-  +column($content-columns, true)
+  +column(21, true)
   height: 100%
   h1
     color: #006BAA
