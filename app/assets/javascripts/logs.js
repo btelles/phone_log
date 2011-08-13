@@ -23,7 +23,7 @@ function addRelatedCallsDialog() {
 }
 
 function addRelatedCall(id, title, name) {
-  var input = "<input type='hidden' name='log[related_calls][]' value='"+id+"' />";
+  var input = "<input type='hidden' name='log[related_log_ids][]' value='"+id+"' />";
   var description = "<span>"+title+"</span>"+name;
   $('#related_calls').append("<li rel='"+id+"'>"+input+description+"</li>");
 }

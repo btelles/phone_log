@@ -11,13 +11,18 @@ describe Log do
 
   describe ".search" do
     let!(:target) { Fabricate(:log, title: 'hello', company: Fabricate(:company, name: 'ACME'))}
-    before do
-      Fabricate(:log, title: 'yellow', company: Fabricate(:company, name: 'Rockets'))
-    end
+    let!(:second_target) {Fabricate(:log, title: 'yellow', company: Fabricate(:company, name: 'Rockets')) }
+
     context "when searching for titles with one possible result" do
       subject { Log.search({title_like: 'hello'}) }
       specify { subject.count.should == 1 }
       specify { subject.first.should == target  }
+    end
+
+    context "excludes related logs" do
+      subject { Log.search({related_logs: [target.id.to_s]}) }
+      specify { subject.should_not include target }
+      specify { subject.should include second_target }
     end
   end
 
