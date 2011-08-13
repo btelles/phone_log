@@ -16,6 +16,7 @@ class CreateLogs < ActiveRecord::Migration
       t.string     :order_rma
       t.date       :opened_on
       t.string     :attachment
+      t.text       :notes
 
       t.timestamps
     end

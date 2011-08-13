@@ -16,3 +16,4 @@ en:
         product_id: 'Product Code'
         escalated_to_id: 'Escalated To'
         order_rma: 'Order/RMA Number'
+        notes: 'Note'

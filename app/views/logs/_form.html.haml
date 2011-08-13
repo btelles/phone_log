@@ -6,48 +6,64 @@
         - log.errors.full_messages.each do |msg|
           %li= msg
 
-  .field
-    = f.label :opened_on
-    = f.datetime_select :opened_on
-  .field
-    = f.label :title
-    = f.text_field :title
-  .field
-    = f.label :assigned_to_id
-    = f.select :assigned_to_id, Employee.options_with_id, include_blank: true
-  .field
-    = f.label :bound
-    = f.select :bound, Log::BOUND_OPTIONS
-  .field
-    = f.label :company_id
-    = f.select :company_id, Company.options_with_id, include_blank: true
-  .field
-    = f.label :store_number
-    = f.text_field :store_number
-  .field
-    = f.label :reason_code_id
-    = f.select :reason_code_id, ReasonCode.options_with_id, include_blank: true
-  .field
-    = f.label :additional_reason_code_id
-    = f.select :additional_reason_code_id, ReasonCode.options_with_id, include_blank: true
-  .field
-    = f.label :product_id
-    = f.select :product_id, Product.options_with_id, include_blank: true
-  .field
-    = f.label :escalated
-    = f.select :escalated, [['Yes', 1],['No', 0]]
-  .field
-    = f.label :escalated_to_id
-    = f.select :escalated_to_id, EscalationType.options_with_id, include_blank: true
-  .field
-    = f.label :duration_id
-    = f.select :duration_id, Duration.options_with_id, include_blank: true
-  .field
-    = f.label :order_rma
-    = f.text_field :order_rma
-  .field
-    = f.label :attachment
-    = f.file_field :attachment
-    = f.hidden_field :attachment_cache
+  .main
+    .field
+      = f.label :opened_on
+      = f.datetime_select :opened_on
+    .field
+      = f.label :title
+      = f.text_field :title
+    .field
+      = f.label :assigned_to_id
+      = f.select :assigned_to_id, Employee.options_with_id, include_blank: true
+    .field
+      = f.label :bound
+      = f.select :bound, Log::BOUND_OPTIONS
+    .field
+      = f.label :company_id
+      = f.select :company_id, Company.options_with_id, include_blank: true
+    .field
+      = f.label :store_number
+      = f.text_field :store_number
+    .field
+      = f.label :reason_code_id
+      = f.select :reason_code_id, ReasonCode.options_with_id, include_blank: true
+    .field
+      = f.label :additional_reason_code_id
+      = f.select :additional_reason_code_id, ReasonCode.options_with_id, include_blank: true
+    .field
+      = f.label :product_id
+      = f.select :product_id, Product.options_with_id, include_blank: true
+    .field
+      = f.label :escalated
+      = f.select :escalated, [['Yes', 1],['No', 0]]
+    .field
+      = f.label :escalated_to_id
+      = f.select :escalated_to_id, EscalationType.options_with_id, include_blank: true
+    .field
+      = f.label :duration_id
+      = f.select :duration_id, Duration.options_with_id, include_blank: true
+    .field
+      = f.label :order_rma
+      = f.text_field :order_rma
+    .field
+      = f.label :attachment
+  .sidebar
+    #accordion
+      %h3
+        %a Notes
+      %div 
+        = f.text_area :notes
+      %h3
+        %a Attachment
+      %div
+        = f.file_field :attachment
+        = f.hidden_field :attachment_cache
+        %br
+
+        -if log.attachment
+          =link_to log.attachment_identifier, log.attachment.url
+      %h3
+        %a Related Calls
   .actions
     = f.submit 'Save'
