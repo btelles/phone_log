@@ -22,6 +22,7 @@ gem 'compass', :git => 'git://github.com/chriseppstein/compass.git', :branch => 
 gem 'carrierwave', :git => 'git://github.com/jnicklas/carrierwave.git', :branch => 'master'
 gem 'uglifier'
 gem 'execjs'
+gem 'therubyracer'
 gem 'capistrano'
 
 group :development, :test do
