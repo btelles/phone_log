@@ -7,8 +7,8 @@ gem 'rails', :git => 'git://github.com/rails/rails.git', :branch => '3-1-stable'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-#gem 'mysql'
-gem 'pg'
+gem 'mysql'
+#gem 'pg'
 
 gem 'haml'
 gem 'sass-rails', :git => 'git://github.com/rails/sass-rails.git', :branch => '3-1-stable'

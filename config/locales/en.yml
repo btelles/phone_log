@@ -9,7 +9,7 @@ en:
       log:
         assigned_to_id: 'Assigned To'
         bound: 'In/Outbound'
-        opened_on: 'Opened Date'
+        opened_at: 'Opened Date'
         store_number: 'Store Number'
         reason_code_id: 'Reason Code'
         additional_reason_code_id: 'Additional Reason Code'

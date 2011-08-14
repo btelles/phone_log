@@ -14,7 +14,7 @@ class CreateLogs < ActiveRecord::Migration
       t.references :escalated_to
       t.references :duration
       t.string     :order_rma
-      t.date       :opened_on
+      t.datetime   :opened_at
       t.string     :attachment
       t.text       :notes
 
