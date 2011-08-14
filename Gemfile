@@ -7,8 +7,8 @@ gem 'rails', '3.1.0.rc5'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-#gem 'mysql'
-gem 'pg'
+gem 'mysql'
+#gem 'pg'
 
 gem 'haml'
 gem 'sass-rails', '3.1.0.rc.5'
@@ -21,6 +21,7 @@ gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git', :branch =>
 gem 'compass', :git => 'git://github.com/chriseppstein/compass.git', :branch => 'rails31'
 gem 'carrierwave', :git => 'git://github.com/jnicklas/carrierwave.git', :branch => 'master'
 gem 'uglifier'
+gem 'vlad'
 
 group :development, :test do
 
