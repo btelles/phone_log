@@ -3,7 +3,7 @@ class LogsController < ApplicationController
   respond_to :html, :js
 
   expose(:log)
-  expose(:logs) { Log.order('opened_on desc').page params[:page]}
+  expose(:logs) { Log.order('opened_at desc').page params[:page]}
   expose(:log_search) { Log.search(params[:log]) }
 
   def title

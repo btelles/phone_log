@@ -40,7 +40,7 @@ Feature: Manage logs
     And   I select "Bob Smith" from "Assigned To"
     And   I select "Outbound" from "In/Outbound"
     And   I select "Louis Marshall" from "Company"
-    And   I select "2011-07-16" as the "Opened Date" date
+    And   I select "2011-07-16 03:01" as the "Opened Date" date
     And   I fill in "Store Number" with "111"
     And   I select "Advise RMA Result" from "Reason Code"
     And   I select "Can I get a track #" from "Additional Reason Code"
@@ -59,10 +59,10 @@ Feature: Manage logs
     #And   I close the dialog box
     #Then  I should see "Older Call"
     #And   I attach the file "MyAttachment.txt" to "Attachment"
-    When I press "Save"
+    When I press "Save and List"
     Then I should see the following table rows:
-      | Title          |
-      | Call Log entry |
+      | Logged at        | Title          |
+      #| 07/16/2011 03:01 | Call Log entry |
 
   Scenario: Edit an existing log entry
     Given the following log:
