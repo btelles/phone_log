@@ -11,11 +11,11 @@ class Log < ActiveRecord::Base
                                  foreign_key: :log_1_id,
                                  association_foreign_key: :log_2_id,
                                  finder_sql: proc { "SELECT logs.* FROM logs_logs
-                                                     INNER JOIN `logs` ON logs_logs.log_2_id = logs.id 
+                                                     INNER JOIN logs ON logs_logs.log_2_id = logs.id 
                                                      WHERE log_1_id = #{self.id}
                                                      UNION ALL 
                                                      SELECT logs.* FROM logs_logs
-                                                     INNER JOIN `logs` ON logs_logs.log_1_id = logs.id 
+                                                     INNER JOIN logs ON logs_logs.log_1_id = logs.id 
                                                      WHERE log_2_id = #{self.id}" },
                                  class_name: 'Log'
 
