@@ -21,6 +21,7 @@ gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git', :branch =>
 gem 'compass', :git => 'git://github.com/chriseppstein/compass.git', :branch => 'rails31'
 gem 'carrierwave', :git => 'git://github.com/jnicklas/carrierwave.git', :branch => 'master'
 gem 'uglifier'
+gem 'execjs'
 gem 'capistrano'
 
 group :development, :test do

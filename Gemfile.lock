@@ -265,6 +265,7 @@ DEPENDENCIES
   decent_exposure
   devise
   dirty
+  execjs
   fabrication
   fuubar
   haml
