@@ -79,6 +79,8 @@ table
     &:hover
       color: #659FDE
 #header
+  position: relative
+  z-index: 2
   margin-top: 16px
   +column($blueprint-grid-columns, true)
   .logo
@@ -189,6 +191,8 @@ table
 
 #main
   +column(24, true)
+  position: relative
+  z-index: 1
 #sidebar
   +column(3)
   height: 100%
