@@ -97,10 +97,9 @@
           =yield
         #sidebar
           %ul
-            %li=link_to_unless_current 'Logs', logs_path
-            %li=link_to_unless_current 'Reports', reports_path
-            %li=link_to_unless_current 'Admin', '/admin'
-            %li=link_to_unless_current 'Data Structure', '/images/PhoneLogDataStructure.jpg', :target => '_new'
+            %li=link_to_unless_current 'Log Entries', logs_path, class: 'button_button'
+            %li=link_to_unless_current 'Reports', reports_path, class: 'button_button'
+            %li=link_to_unless_current 'Admin', '/admin', class: 'button_button'
     %footer#footer
       .center_content
         .cols

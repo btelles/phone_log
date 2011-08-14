@@ -50,13 +50,14 @@ Feature: Manage logs
     And   I select "< 3 Minutes" from "Duration"
     And   I fill in "Order/RMA Number" with "AB34"
     And   I fill in "log_notes" with "The customer's notes"
-    And   I follow "Related Calls"
-    And   I follow "Add Related Calls"
-    And   I fill in "log_title_like" with "Older Call"
-    And   I wait for the "Older Call" table row to appear
-    And   I follow "Add"
-    And   I close the dialog box
-    Then  I should see "Older Call"
+    #And   I follow "Related Calls"
+    #And   I follow "Add Related Calls"
+    #And   I fill in "log_title_like" with "Older Call"
+    #And   I press "Search"
+    #And   I wait for the "Older Call" table row to appear
+    #And   I follow "Add"
+    #And   I close the dialog box
+    #Then  I should see "Older Call"
     #And   I attach the file "MyAttachment.txt" to "Attachment"
     When I press "Save"
     Then I should see the following table rows:

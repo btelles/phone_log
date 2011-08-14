@@ -1,4 +1,6 @@
 = form_for log, multipart: true do |f|
+  .top
+    =render 'save_options', f: f
   -if log.errors.any?
     #error_explanation
       %h2= "#{pluralize(log.errors.count, "error")} prohibited this log from being saved:"
@@ -59,27 +61,33 @@
         = f.hidden_field :attachment_cache
         %br
 
-        -if log.attachment
+        -if log.attachment.present?
           =link_to log.attachment_identifier, log.attachment.url
       %h3
         %a(href="#show_related_calls") Related Calls
       %div
         =link_to "Add Related Calls", '#add_related_call', id: 'open_related_calls_dialog'
+        %br
+        %br
         %ul#related_calls
-          -if log.related_logs.present?
-            = f.fields_for(log.related_logs) do |rel_log_form|
-              %li
-                = rel_log_form.hidden_field :id
-                %span= rel_log_form.object.title
-                =rel_log_form.object.company.try(:name)
+          - log.related_logs.each do |related_log|
+            %li
+              = hidden_field_tag 'log[related_log_ids][]', related_log.id
+              = link_to related_log.title, edit_log_path(related_log)
+              = related_log.company.try(:name)
+              = link_to 'Delete', '#', class: 'delete_related_log'
 
 
         %table
           %thead
-  .actions
-    = f.submit 'Save'
+  = render 'save_options', f: f
 #add_related_calls
   =form_tag '/log_search', method: 'put', remote: true, id: 'log_search' do |f|
+    = hidden_field_tag 'log[related_logs][]', log.id
+    -log.related_logs.each do |related|
+      = hidden_field_tag 'log[related_logs][]', related.id
+
+
     %table
       %thead
         %tr

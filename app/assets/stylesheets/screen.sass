@@ -1,4 +1,5 @@
 // This import applies a global reset to any page that imports this stylesheet.
+@import 'compass/css3'
 @import "_blueprint"
 @import blueprint/reset
 // To configure blueprint, edit the partials/base.sass file.
@@ -27,6 +28,12 @@ form
   +blueprint-form
   // You'll probably want to remove the scaffolding once you start styling your site.
   +blueprint-scaffolding
+  position: relative
+  .actions
+    position: relative
+    left: -13px
+  .top .actions
+    top: -35px
   label
     +column(4)
     padding-top: 9px
@@ -44,7 +51,20 @@ form
       width: 9em
     #search_button
       width: 4.5em
-    
+  #related_calls
+    margin-left: 0
+    padding-left: 0
+    li
+      list-style: none
+      border: 1px transparent
+      padding: 5px
+      margin: 2px
+      &:hover
+        background: url("/images/jquery-ui/ui-bg_glass_75_e6e6e6_1x400.png") repeat-x scroll 50% 50% #E6E6E6
+        border: 1px solid #D3D3D3
+        +border-radius(2px)
+  .delete_related_log
+    float: right
 
 
 table
@@ -172,6 +192,14 @@ table
 #sidebar
   +column(3)
   height: 100%
+  li
+    list-style: none
+    margin: 2px
+    a
+      display: block
+      width: 100%
+.right
+  float: right
 #content
   +column(21, true)
   height: 100%
@@ -225,3 +253,93 @@ table
             font-weight: bold
             margin: 0
             text-decoration: none
+
+=ui-state-default
+  border: 1px solid #d3d3d3
+  +border-radius(3px)
+  background: #e6e6e6 url(/images/jquery-ui/ui-bg_glass_75_e6e6e6_1x400.png) 50% 50% repeat-x
+  font-weight: normal
+  color: #555555
+  a
+    &:link, &:visited
+      color: #555555
+      text-decoration: none !important
+
+=ui-state-focus
+  border: 1px solid #999999
+  +border-radius(3px)
+  background: #dadada url(/images/jquery-ui/ui-bg_glass_75_dadada_1x400.png) 50% 50% repeat-x
+  font-weight: normal
+  color: #212121
+
+=ui-state-hover
+  border: 1px solid #999999
+  +border-radius(3px)
+  background: #dadada url(/images/jquery-ui/ui-bg_glass_75_dadada_1x400.png) 50% 50% repeat-x
+  font-weight: normal
+  color: #212121
+
+  a
+    color: #212121
+    text-decoration: none
+    &:hover
+      color: #212121
+      text-decoration: none
+
+=ui-state-active
+  border: 1px solid #aaaaaa
+  +border-radius(3px)
+  background: white url(/images/jquery-ui/ui-bg_glass_65_ffffff_1x400.png) 50% 50% repeat-x
+  font-weight: normal
+  color: #212121
+
+  a
+    color: #212121
+    text-decoration: none
+    &:link, &:visited
+      color: #212121
+      text-decoration: none
+
+/* Interaction Cues
+ *----------------------------------
+
+=ui-state-highlight
+  border: 1px solid #fcefa1
+  +border-radius(3px)
+  background: #fbf9ee url(/images/jquery-ui/ui-bg_glass_55_fbf9ee_1x400.png) 50% 50% repeat-x
+  color: #363636
+
+  a
+    color: #363636
+
+=ui-state-error
+  border: 1px solid #cd0a0a
+  +border-radius(3px)
+  background: #fef1ec url(/images/jquery-ui/ui-bg_glass_95_fef1ec_1x400.png) 50% 50% repeat-x
+  color: #cd0a0a
+
+  a
+    color: #cd0a0a
+button, input[type=submit], input[type=button], .button_button
+  +ui-state-default
+  text-decoration: none
+  padding: 3px 7px
+  font: -moz-button
+  &:visited
+    color: #2e6e9e
+  &:hover
+    +ui-state-hover
+  &:focus
+    +ui-state-focus
+  &:active
+    +ui-state-active
+  &.disabled
+    background-color: #eee
+    background-image: none
+    border-color: #ddd
+    color: #ddd
+    &:hover, &:focus, &:active
+      background-color: #eee
+      background-image: none
+      border-color: #ddd
+      color: #ddd

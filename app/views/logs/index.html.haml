@@ -1,5 +1,6 @@
-%h1 Listing logs
+%h1 Listing Log Entries
 
+.right= link_to 'New Log', new_log_url, class: 'button_button'
 =paginate logs
 %table
   %thead
@@ -18,5 +19,6 @@
 
 =paginate logs
 %br
-
-= link_to 'New Log', new_log_url
+.right= link_to 'New Log', new_log_url, class: 'button_button'
+%br
+%br

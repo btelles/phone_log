@@ -12,8 +12,17 @@ class LogsController < ApplicationController
 
 
   def create
+    params[:log][:related_log_ids] = [] unless params[:log][:related_log_ids].present?
     if log.save
-      redirect_to logs_path
+      flash[:notice] = "Saved the log entry successfully."
+      case params[:commit]
+      when 'Save and List'
+        redirect_to logs_path
+      when 'Save and Continue Editing'
+        redirect_to edit_log_path(log)
+      when 'Save and Add Another'
+        redirect_to new_log_path
+      end
     else
       respond_with log
     end

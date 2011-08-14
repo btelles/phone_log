@@ -23,12 +23,18 @@ function addRelatedCallsDialog() {
 }
 
 function addRelatedCall(id, title, name) {
-  var input = "<input type='hidden' name='log[related_log_ids][]' value='"+id+"' />";
-  var description = "<span>"+title+"</span>"+name;
-  $('#related_calls').append("<li rel='"+id+"'>"+input+description+"</li>");
+  var input        = "<input type='hidden' name='log[related_log_ids][]' value='"+id+"' />";
+  var description  = "<a href='/logs/"+id+"/edit'>"+title+"</a> "+name;
+  var deleteButton = " <a href='#' class='delete_related_log'>Delete</a>"
+  $('#related_calls').append("<li rel='"+id+"'>"+input+description+deleteButton+"</li>");
+}
+
+function relatedCallsDeleteButtons() {
+  $('a.delete_related_log').live('click', function() { $(this).closest('li').remove(); } );
 }
 
 $(document).ready( function() {
   createAccordion();
+  relatedCallsDeleteButtons();
   addRelatedCallsDialog();
 });
