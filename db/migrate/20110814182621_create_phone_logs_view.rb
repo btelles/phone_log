@@ -1,7 +1,7 @@
 class CreatePhoneLogsView < ActiveRecord::Migration
   def up
     ActiveRecord::Base.connection.execute(<<-SQL
-CREATE OR REPLACE VIEW `phone_log_development`.`phone_logs` AS
+CREATE OR REPLACE VIEW `phone_log_#{Rails.env}`.`phone_logs` AS
 (
 SELECT
   l.opened_at as opened_date,
