@@ -4,7 +4,7 @@ class CreatePhoneLogsView < ActiveRecord::Migration
 CREATE OR REPLACE VIEW `phone_log_#{Rails.env}`.`phone_logs` AS
 (
 SELECT
-  l.opened_at as opened_date,
+  SUBTIME(l.opened_at, '0 05:00:00') as opened_date,
   l.title,
   CONCAT(e.first_name, ' ', e.last_name) AS assigned_to,
   l.bound AS in_out_bound,
