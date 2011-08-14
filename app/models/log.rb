@@ -30,7 +30,7 @@ class Log < ActiveRecord::Base
            joins("left outer join companies on companies.id = logs.company_id")
     srch = srch.where(["title like ?", "%#{params[:title_like]}%"])   if params[:title_like].present?
     srch = srch.where(["name  like ?", "%#{params[:company_like]}%"]) if params[:company_like].present?
-    srch = srch.where(["logs.id not in (?)", params[:related_logs]])       if params[:related_logs].present?
+    srch = srch.where(["logs.id not in (?)", params[:related_logs].map(&:to_i)])       if params[:related_logs].present?
     srch
   }
 
