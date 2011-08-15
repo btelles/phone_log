@@ -12,6 +12,7 @@ gem 'mysql'
 
 gem 'haml'
 gem 'sass-rails', :git => 'git://github.com/rails/sass-rails.git', :branch => '3-1-stable'
+gem 'sprockets', :git => 'git://github.com/sstephenson/sprockets.git', :branch => 'master'
 #gem 'itslog', :git => 'git://github.com/btelles/itslog.git'
 gem 'decent_exposure'
 gem 'jquery-rails'
