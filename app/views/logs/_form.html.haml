@@ -66,7 +66,7 @@
       %h3
         %a(href="#show_related_calls") Related Calls
       %div
-        =link_to "Add Related Calls", '#add_related_call', id: 'open_related_calls_dialog'
+        =link_to "Add Related Calls", '#add_related_call', id: 'open_related_calls_dialog', class: 'button_button'
         %br
         %br
         %ul#related_calls
@@ -88,7 +88,7 @@
       = hidden_field_tag 'log[related_logs][]', related.id
 
 
-    %table
+    %table.phone_logs
       %thead
         %tr
           %td Title has:
