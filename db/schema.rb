@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110814182621) do
+ActiveRecord::Schema.define(:version => 20110817032116) do
 
   create_table "companies", :force => true do |t|
     t.string   "name"
@@ -38,6 +38,7 @@ ActiveRecord::Schema.define(:version => 20110814182621) do
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "length_rating"
   end
 
   create_table "employees", :force => true do |t|
@@ -91,6 +92,25 @@ ActiveRecord::Schema.define(:version => 20110814182621) do
   create_table "logs_logs", :id => false, :force => true do |t|
     t.integer "log_1_id"
     t.integer "log_2_id"
+  end
+
+  create_table "phone_logs", :id => false, :force => true do |t|
+    t.datetime "opened_on"
+    t.string   "title"
+    t.string   "assigned_to",            :limit => 511
+    t.string   "in_out_bound"
+    t.string   "company"
+    t.string   "store_number"
+    t.string   "reason_code"
+    t.string   "additional_reason_code"
+    t.string   "product_code"
+    t.string   "escalated",              :limit => 3
+    t.string   "escalated_to",           :limit => 511
+    t.string   "duration"
+    t.string   "order_rma"
+    t.text     "notes"
+    t.string   "attachment_name"
+    t.binary   "attachment_link",        :limit => 313
   end
 
   create_table "products", :force => true do |t|
