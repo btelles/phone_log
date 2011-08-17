@@ -31,16 +31,13 @@ Feature: Manage logs
       | Customer Complaint |
       | Customer Comment   |
 
-  @javascript
   Scenario: Create a new log entry
-    Given the following log:
-      | Title | Older Call |
     Given I am on the new log page
     When  I fill in "Title" with "Call Log entry"
     And   I select "Bob Smith" from "Assigned To"
     And   I select "Outbound" from "In/Outbound"
     And   I select "Louis Marshall" from "Company"
-    And   I select "2011-07-16 03:01" as the "Opened Date" date
+    And   I select "2011-07-16 03:01" as the "Opened Date" date and time
     And   I fill in "Store Number" with "111"
     And   I select "Advise RMA Result" from "Reason Code"
     And   I select "Can I get a track #" from "Additional Reason Code"
@@ -62,7 +59,7 @@ Feature: Manage logs
     When I press "Save and List"
     Then I should see the following table rows:
       | Logged at        | Title          |
-      #| 07/16/2011 03:01 | Call Log entry |
+      | 07/16/2011 03:01 | Call Log entry |
 
   Scenario: Edit an existing log entry
     Given the following log:
@@ -90,3 +87,4 @@ Feature: Manage logs
       | Customer Complaint |
       | Customer Comment   |
       | Kudos |
+

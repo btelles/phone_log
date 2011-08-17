@@ -183,6 +183,10 @@ Then /^the "([^"]*)" field(?: within (.*))? should not contain "([^"]*)"$/ do |f
   end
 end
 
+Then /^"([^"]*)" should be selected for "([^"]*)"$/ do |value, field|
+  find_field(field).text.should =~ /#{value}/
+end
+
 Then /^the "([^"]*)" checkbox(?: within (.*))? should be checked$/ do |label, parent|
   with_scope(parent) do
     field_checked = find_field(label)['checked']
@@ -226,6 +230,8 @@ Then /^(?:|I )should have the following query string:$/ do |expected_pairs|
     assert_equal expected_params, actual_params
   end
 end
+
+
 
 Then /^show me the page$/ do
   save_and_open_page

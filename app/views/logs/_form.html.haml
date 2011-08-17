@@ -17,7 +17,10 @@
       = f.text_field :title
     .field
       = f.label :assigned_to_id
-      = f.select :assigned_to_id, Employee.options_with_id, include_blank: true
+      -if log.assigned_to_id.present?
+        = f.select :assigned_to_id, Employee.options_with_id, include_blank: true
+      -else
+        = f.select :assigned_to_id, Employee.options_with_id, selected: session[:assigned_to_id], include_blank: true
     .field
       = f.label :bound
       = f.select :bound, Log::BOUND_OPTIONS

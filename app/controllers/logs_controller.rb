@@ -14,6 +14,7 @@ class LogsController < ApplicationController
   def create
     params[:log][:related_log_ids] = [] unless params[:log][:related_log_ids].present?
     if log.save
+      session[:assigned_to_id]= params[:log][:assigned_to_id] if params[:log][:assigned_to_id].present?
       flash[:notice] = "Saved the log entry successfully."
       case params[:commit]
       when 'Save and List'
