@@ -26,9 +26,9 @@ class Log < ActiveRecord::Base
   BOUND_OPTIONS= %w{Inbound Outbound}
 
   scope :search, lambda { |params|
-    srch = select(['logs.id as id', :title, :name]).
+    srch = select(['logs.id as id', :caller, :name]).
            joins("left outer join companies on companies.id = logs.company_id")
-    srch = srch.where(["title like ?", "%#{params[:title_like]}%"])   if params[:title_like].present?
+    srch = srch.where(["caller like ?", "%#{params[:caller_like]}%"])   if params[:caller_like].present?
     srch = srch.where(["name  like ?", "%#{params[:company_like]}%"]) if params[:company_like].present?
     srch = srch.where(["logs.id not in (?)", params[:related_logs].map(&:to_i)])       if params[:related_logs].present?
     srch

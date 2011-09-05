@@ -22,18 +22,18 @@ Feature: Manage logs
 
   Scenario: View existing log entries
     Given the following logs:
-      | Title |
+      | Caller |
       | Customer Complaint |
       | Customer Comment   |
     And I am on the logs page
     Then I should see the following table rows:
-      | Title |
+      | Caller |
       | Customer Complaint |
       | Customer Comment   |
 
   Scenario: Create a new log entry
     Given I am on the new log page
-    When  I fill in "Title" with "Call Log entry"
+    When  I fill in "Caller" with "Call Log entry"
     And   I select "Bob Smith" from "Assigned To"
     And   I select "Outbound" from "In/Outbound"
     And   I select "Louis Marshall" from "Company"
@@ -49,7 +49,7 @@ Feature: Manage logs
     And   I fill in "log_notes" with "The customer's notes"
     #And   I follow "Related Calls"
     #And   I follow "Add Related Calls"
-    #And   I fill in "log_title_like" with "Older Call"
+    #And   I fill in "log_caller_like" with "Older Call"
     #And   I press "Search"
     #And   I wait for the "Older Call" table row to appear
     #And   I follow "Add"
@@ -58,32 +58,32 @@ Feature: Manage logs
     #And   I attach the file "MyAttachment.txt" to "Attachment"
     When I press "Save and List"
     Then I should see the following table rows:
-      | Logged at        | Title          |
+      | Logged at        | Caller          |
       | 07/16/2011 03:01 | Call Log entry |
 
   Scenario: Edit an existing log entry
     Given the following log:
-      | Title | Customer Complaint |
+      | Caller | Customer Complaint |
     And I am on the logs page
     And I follow "Edit"
-    And I fill in "Title" with "Some other log subject"
+    And I fill in "Caller" with "Some other log subject"
     #And I select "Brace Assembly 3" from "Product"
     #And I select "Louis Marshall" from "Client"
     And I press "Save"
     Then I should see the following table rows:
-      | Title              |
+      | Caller              |
       | Some other log subject |
 
   Scenario: Delete a log entry
     Given the following logs:
-      | Title |
+      | Caller |
       | Customer Complaint |
       | Customer Comment   |
       | Kudos |
       | Super comment|
     When I delete the 3rd log
     Then I should see the following logs:
-      | Title |
+      | Caller |
       | Customer Complaint |
       | Customer Comment   |
       | Kudos |

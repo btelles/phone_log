@@ -7,7 +7,7 @@ Feature: Logs form saves data that users repeat commonly.
       | First Name | Carla |
       | Last Name  | Smith |
     And the following log:
-      | Title | Hello this title |
+      | Caller | Hello this title |
     And I am on that log's edit page
     When  I select "Carla Smith" from "Assigned To"
     And I press "Save and Add Another"

@@ -6,6 +6,6 @@
       Try removing either the title or the company.
 -log_search.each do |log|
   %tr
-    %td.title= log.title
+    %td.title= log.caller
     %td.name= log.name
     %td.add= link_to "Add", {id: log.id}, class: 'add_related_call', rel: log.id

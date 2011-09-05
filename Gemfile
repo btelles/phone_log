@@ -2,7 +2,7 @@ source 'http://rubygems.org'
 
 gem "rake", "0.9.2"
 
-gem 'rails', :git => 'git://github.com/rails/rails.git', :branch => '3-1-stable'
+gem 'rails'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -12,7 +12,6 @@ gem 'mysql'
 
 gem 'haml'
 gem 'sass-rails', :git => 'git://github.com/rails/sass-rails.git', :branch => '3-1-stable'
-gem 'sprockets', :git => 'git://github.com/sstephenson/sprockets.git', :branch => 'master'
 #gem 'itslog', :git => 'git://github.com/btelles/itslog.git'
 gem 'decent_exposure'
 gem 'jquery-rails'

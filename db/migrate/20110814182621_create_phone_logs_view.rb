@@ -5,7 +5,7 @@ CREATE OR REPLACE VIEW `phone_log_#{Rails.env}`.`phone_logs` AS
 (
 SELECT
   SUBTIME(l.opened_at, '0 05:00:00') as opened_date,
-  l.title,
+  l.caller,
   CONCAT(e.first_name, ' ', e.last_name) AS assigned_to,
   l.bound AS in_out_bound,
   c.name AS company,

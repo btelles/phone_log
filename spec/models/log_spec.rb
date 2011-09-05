@@ -10,11 +10,11 @@ describe Log do
   specify { subject.should respond_to :duration }
 
   describe ".search" do
-    let!(:target) { Fabricate(:log, title: 'hello', company: Fabricate(:company, name: 'ACME'))}
-    let!(:second_target) {Fabricate(:log, title: 'yellow', company: Fabricate(:company, name: 'Rockets')) }
+    let!(:target) { Fabricate(:log, caller: 'hello', company: Fabricate(:company, name: 'ACME'))}
+    let!(:second_target) {Fabricate(:log, caller: 'yellow', company: Fabricate(:company, name: 'Rockets')) }
 
-    context "when searching for titles with one possible result" do
-      subject { Log.search({title_like: 'hello'}) }
+    context "when searching for callers with one possible result" do
+      subject { Log.search({caller_like: 'hello'}) }
       specify { subject.count.should == 1 }
       specify { subject.first.should == target  }
     end
@@ -27,8 +27,8 @@ describe Log do
   end
 
   describe "#related_logs" do
-    let!(:old) { Fabricate(:log, title: 'old') }
-    let!(:new) { Fabricate(:log, title: 'new') }
+    let!(:old) { Fabricate(:log, caller: 'old') }
+    let!(:new) { Fabricate(:log, caller: 'new') }
     subject { new.related_logs }
 
     before do

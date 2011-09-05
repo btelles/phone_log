@@ -13,8 +13,8 @@
       = f.label :opened_at
       = f.datetime_select :opened_at
     .field
-      = f.label :title
-      = f.text_field :title
+      = f.label :caller
+      = f.text_field :caller
     .field
       = f.label :assigned_to_id
       -if log.assigned_to_id.present?
@@ -41,7 +41,7 @@
       = f.select :product_id, Product.options_with_id, include_blank: true
     .field
       = f.label :escalated
-      = f.select :escalated, [['Yes', 1],['No', 0]]
+      = f.select :escalated, [['No', 0],['Yes', 1]]
     .field
       = f.label :escalated_to_id
       = f.select :escalated_to_id, EscalationType.options_with_id, include_blank: true
@@ -76,7 +76,7 @@
           - log.related_logs.each do |related_log|
             %li
               = hidden_field_tag 'log[related_log_ids][]', related_log.id
-              = link_to related_log.title, edit_log_path(related_log)
+              = link_to related_log.caller, edit_log_path(related_log)
               = related_log.company.try(:name)
               = link_to 'Delete', '#', class: 'delete_related_log'
 
@@ -98,7 +98,7 @@
           %td Company has:
           %td
         %tr
-          %td= text_field_tag 'log[title_like]'
+          %td= text_field_tag 'log[caller_like]'
           %td= text_field_tag 'log[company_like]'
           %td= submit_tag 'Search', id: 'search_button'
       %tbody

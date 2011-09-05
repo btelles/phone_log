@@ -69,7 +69,7 @@ ActiveRecord::Schema.define(:version => 20110817032116) do
   end
 
   create_table "logs", :force => true do |t|
-    t.string   "title"
+    t.string   "caller"
     t.integer  "assigned_to_id"
     t.string   "bound"
     t.integer  "company_id"
@@ -95,8 +95,8 @@ ActiveRecord::Schema.define(:version => 20110817032116) do
   end
 
   create_table "phone_logs", :id => false, :force => true do |t|
-    t.datetime "opened_on"
-    t.string   "title"
+    t.datetime "opened_date"
+    t.string   "caller"
     t.string   "assigned_to",            :limit => 511
     t.string   "in_out_bound"
     t.string   "company"
