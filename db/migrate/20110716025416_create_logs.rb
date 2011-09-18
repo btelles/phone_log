@@ -1,7 +1,7 @@
 class CreateLogs < ActiveRecord::Migration
   def self.up
     create_table :logs do |t|
-      t.string     :caller
+      t.string     :title
       t.references :assigned_to
       t.string     :bound
       t.references :company

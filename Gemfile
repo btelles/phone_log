@@ -18,7 +18,7 @@ gem 'jquery-rails'
 gem 'kaminari'
 gem 'devise'
 gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git', :branch => 'master'
-gem 'compass'
+gem 'compass', '>= 0.12.alpha.0'
 gem 'carrierwave', :git => 'git://github.com/jnicklas/carrierwave.git', :branch => 'master'
 gem 'capistrano'
 

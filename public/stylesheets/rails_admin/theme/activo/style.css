@@ -1,168 +1,245 @@
-@charset "UTF-8"
-
+@charset "UTF-8";
 /*  Activo's main stylesheet (alpha version!)
  *
  *  David Marquês Francisco
  *  (dfrancisc[at]gmail.com)
  *
+ */
 /*  Cross-browser mixins
- *  
- *    David Marquês Francisco
- *    (dfrancisc[at]gmail.com)
- *  
  *
- */*  Stylesheet for formtastic
- *  
- *    David Marquês Francisco
- *    (dfrancisc[at]gmail.com)
+ *  David Marquês Francisco
+ *  (dfrancisc[at]gmail.com)
  *
+ */
+/*  Stylesheet for formtastic
+ *
+ *  David Marquês Francisco
+ *  (dfrancisc[at]gmail.com)
+ *
+ */
+/* line 9, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/formtastic_changes.sass */
+#main .block .content .inner form.formtastic, #full-main .block .content .inner form.formtastic {
+  padding-right: 7px;
+}
 
-#main .block .content .inner form.formtastic, #full-main .block .content .inner form.formtastic
-  padding-right: 7px
+/* line 12, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/formtastic_changes.sass */
+form.formtastic {
+  /* COLUMNS */
+}
+/* line 13, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/formtastic_changes.sass */
+form.formtastic hr {
+  height: 1px;
+  border-bottom: solid #eaeaea 1px;
+  padding-top: 10px;
+  margin-bottom: 15px;
+  background-color: white;
+  margin-right: -5px;
+}
+/* line 21, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/formtastic_changes.sass */
+form.formtastic .wat-cf {
+  padding-top: 10px;
+}
+/* line 26, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/formtastic_changes.sass */
+form.formtastic fieldset {
+  font-size: 14px;
+  width: 100%;
+  /* LABELS */
+}
+/* line 31, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/formtastic_changes.sass */
+form.formtastic fieldset.column_left {
+  float: left;
+  width: 47%;
+  margin-left: 0px;
+}
+/* line 37, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/formtastic_changes.sass */
+form.formtastic fieldset.column_right {
+  float: right;
+  width: 48%;
+  margin-right: 0px;
+}
+/* line 45, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/formtastic_changes.sass */
+form.formtastic fieldset > ol > li {
+  /* FIELDS */
+}
+/* line 46, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/formtastic_changes.sass */
+form.formtastic fieldset > ol > li label {
+  color: #666666;
+  width: 100%;
+}
+/* line 50, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/formtastic_changes.sass */
+form.formtastic fieldset > ol > li fieldset ol {
+  padding: 20px 0 0 0;
+}
+/* line 56, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/formtastic_changes.sass */
+form.formtastic fieldset > ol > li.string input, form.formtastic fieldset > ol > li.password input, form.formtastic fieldset > ol > li.numeric input, form.formtastic fieldset > ol > li.text textarea, form.formtastic fieldset > ol > li.datepicker input {
+  width: 100%;
+  max-width: 100%;
+  border: 1px solid #dddddd;
+  padding: 2px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+/* line 65, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/formtastic_changes.sass */
+form.formtastic fieldset > ol > li.select select, form.formtastic fieldset > ol > li.file input {
+  width: 100%;
+  max-width: 100%;
+}
+/* line 70, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/formtastic_changes.sass */
+form.formtastic fieldset > ol > li.datepicker input {
+  background: url("images/icons/calendar.png") no-repeat right;
+}
+/* line 74, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/formtastic_changes.sass */
+form.formtastic fieldset > ol > li.string input:focus, form.formtastic fieldset > ol > li.password input:focus, form.formtastic fieldset > ol > li.numeric input:focus, form.formtastic fieldset > ol > li.text textarea:focus {
+  border: 1px solid #a2a294;
+}
+/* line 77, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/formtastic_changes.sass */
+form.formtastic fieldset > ol > li.datepicker input:focus {
+  border: 1px solid #a2a294;
+  background: url("images/icons/calendar-hover.png") no-repeat right;
+}
+/* line 82, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/formtastic_changes.sass */
+form.formtastic fieldset > ol > li.string input[disabled='disabled'], form.formtastic fieldset > ol > li.password input[disabled='disabled'], form.formtastic fieldset > ol > li.numeric input[disabled='disabled'], form.formtastic fieldset > ol > li.text textarea[disabled='disabled'], form.formtastic fieldset > ol > li.datepicker input[disabled='disabled'] {
+  background-color: #f6f6f6;
+  border: 1px solid #f6f6f6;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+}
+/* line 89, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/formtastic_changes.sass */
+form.formtastic fieldset > ol > li.boolean label {
+  padding-left: 0px;
+}
 
-form.formtastic
-  /* COLUMNS
-  hr
-    height: 1px
-    border-bottom: solid #eaeaea 1px
-    padding-top: 10px
-    margin-bottom: 15px
-    background-color: white
-    margin-right: -5px
-  .wat-cf
-    padding-top: 10px
-  fieldset
-    font-size: 14px
-    width: 100%
-    /* LABELS
-    &.column_left
-      float: left
-      width: 47%
-      margin-left: 0px
-    &.column_right
-      float: right
-      width: 48%
-      margin-right: 0px
-    > ol > li
-      /* FIELDS
-      label
-        color: #666666
-        width: 100%
-      fieldset ol
-        padding: 20px 0 0 0
-      &.string input, &.password input, &.numeric input, &.text textarea, &.datepicker input
-        width: 100%
-        max-width: 100%
-        border: 1px solid #dddddd
-        padding: 2px
-        box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1)
-        -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1)
-        -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1)
-      &.select select, &.file input
-        width: 100%
-        max-width: 100%
-      &.datepicker input
-        background: url("images/icons/calendar.png") no-repeat right
-      &.string input:focus, &.password input:focus, &.numeric input:focus, &.text textarea:focus
-        border: 1px solid #a2a294
-      &.datepicker input:focus
-        border: 1px solid #a2a294
-        background: url("images/icons/calendar-hover.png") no-repeat right
-      &.string input[disabled='disabled'], &.password input[disabled='disabled'], &.numeric input[disabled='disabled'], &.text textarea[disabled='disabled'], &.datepicker input[disabled='disabled']
-        background-color: #f6f6f6
-        border: 1px solid #f6f6f6
-        -webkit-box-shadow: none
-        -moz-box-shadow: none
-      &.boolean label
-        padding-left: 0px
-
-#box .block .content form.formtastic fieldset > ol > li input
+/* line 93, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/formtastic_changes.sass */
+#box .block .content form.formtastic fieldset > ol > li input {
   /* caixas (como a de login) têm tamanho fixo. Definir o
    * width de text fields dá problemas no IE. Desta forma,
-   * ficou funcional
-  width: auto
-  max-width: 430px
+   * ficou funcional */
+  width: auto;
+  max-width: 430px;
+}
 
-form.formtastic
-  /* BUTTON
-  fieldset > ol > li
-    margin-bottom: 10px
-    /* HINT
-    &.date fieldset ol li, &.time fieldset ol li, &.datetime fieldset ol li
-      height: 20px
-    &.error input
-      border: 1px solid #ffbbbb
-    &.radio fieldset ol li
-      margin-bottom: 4px
-      label
-        color: #222222
-        font-size: 13px
-        font-weight: normal
-    &.datepicker input
-      -webkit-box-shadow: none
-      -moz-box-shadow: none
-    select
-      margin-bottom: 4px
-    p.inline-hints
-      font-style: italic
-      color: #8c8c8c
-      font-size: 0.9em
-      margin: 2px 0 0 0
-  button.button, a.button
-    font-size: 12px
+/* line 100, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/formtastic_changes.sass */
+form.formtastic {
+  /* BUTTON */
+}
+/* line 101, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/formtastic_changes.sass */
+form.formtastic fieldset > ol > li {
+  margin-bottom: 10px;
+  /* HINT */
+}
+/* line 105, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/formtastic_changes.sass */
+form.formtastic fieldset > ol > li.date fieldset ol li, form.formtastic fieldset > ol > li.time fieldset ol li, form.formtastic fieldset > ol > li.datetime fieldset ol li {
+  height: 20px;
+}
+/* line 109, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/formtastic_changes.sass */
+form.formtastic fieldset > ol > li.error input {
+  border: 1px solid #ffbbbb;
+}
+/* line 113, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/formtastic_changes.sass */
+form.formtastic fieldset > ol > li.radio fieldset ol li {
+  margin-bottom: 4px;
+}
+/* line 116, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/formtastic_changes.sass */
+form.formtastic fieldset > ol > li.radio fieldset ol li label {
+  color: #222222;
+  font-size: 13px;
+  font-weight: normal;
+}
+/* line 122, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/formtastic_changes.sass */
+form.formtastic fieldset > ol > li.datepicker input {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+}
+/* line 127, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/formtastic_changes.sass */
+form.formtastic fieldset > ol > li select {
+  margin-bottom: 4px;
+}
+/* line 133, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/formtastic_changes.sass */
+form.formtastic fieldset > ol > li p.inline-hints {
+  font-style: italic;
+  color: #8c8c8c;
+  font-size: 0.9em;
+  margin: 2px 0 0 0;
+}
+/* line 142, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/formtastic_changes.sass */
+form.formtastic button.button, form.formtastic a.button {
+  font-size: 12px;
+}
 
-/* CHECK_BOXES
-
-#box .block .content form.formtastic fieldset > ol > li.check_boxes fieldset ol
-  width: 440px
-  li label
-    color: #222222
-    font-size: 13px
-    font-weight: normal
-    padding-right: 50px
+/* CHECK_BOXES */
+/* line 148, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/formtastic_changes.sass */
+#box .block .content form.formtastic fieldset > ol > li.check_boxes fieldset ol {
+  width: 440px;
+}
+/* line 150, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/formtastic_changes.sass */
+#box .block .content form.formtastic fieldset > ol > li.check_boxes fieldset ol li label {
+  color: #222222;
+  font-size: 13px;
+  font-weight: normal;
+  padding-right: 50px;
+}
 
 /*  Stylesheet for attrtastic
  *
  *  David Marquês Francisco
  *  (dfrancisc[at]gmail.com)
  *
-
-.attrtastic
-  /* COLUNAS
-  .attributes > ol
-    list-style: none
-    > li.attribute
-      margin-bottom: 10px
-      line-height: 18px
-      margin-right: -6px
-      .label
-        color: #666666
-        width: 100%
-        display: block
-        font-size: 14px
-      .value
-        background-color: #f6f6f6
-        padding: 2px
-        padding-left: 4px
-        display: block
-        min-height: 18px
-        font-size: 13px
-  hr
-    height: 1px
-    border-bottom: solid #e8e8e8 1px
-    margin-bottom: 15px
-    background-color: white
-  .attributes > ol
-    float: left
-    width: 100%
-  .column_left
-    float: left
-    width: 47%
-    margin-left: 0px
-  .column_right
-    float: right
-    width: 48%
-    margin-right: 0px
+ */
+/* line 9, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/attrtastic_changes.sass */
+.attrtastic {
+  /* COLUNAS */
+}
+/* line 10, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/attrtastic_changes.sass */
+.attrtastic .attributes > ol {
+  list-style: none;
+}
+/* line 14, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/attrtastic_changes.sass */
+.attrtastic .attributes > ol > li.attribute {
+  margin-bottom: 10px;
+  line-height: 18px;
+  margin-right: -6px;
+}
+/* line 20, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/attrtastic_changes.sass */
+.attrtastic .attributes > ol > li.attribute .label {
+  color: #666666;
+  width: 100%;
+  display: block;
+  font-size: 14px;
+}
+/* line 28, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/attrtastic_changes.sass */
+.attrtastic .attributes > ol > li.attribute .value {
+  background-color: #f6f6f6;
+  padding: 2px;
+  padding-left: 4px;
+  display: block;
+  min-height: 18px;
+  font-size: 13px;
+}
+/* line 37, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/attrtastic_changes.sass */
+.attrtastic hr {
+  height: 1px;
+  border-bottom: solid #e8e8e8 1px;
+  margin-bottom: 15px;
+  background-color: white;
+}
+/* line 47, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/attrtastic_changes.sass */
+.attrtastic .attributes > ol {
+  float: left;
+  width: 100%;
+}
+/* line 52, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/attrtastic_changes.sass */
+.attrtastic .column_left {
+  float: left;
+  width: 47%;
+  margin-left: 0px;
+}
+/* line 58, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/attrtastic_changes.sass */
+.attrtastic .column_right {
+  float: right;
+  width: 48%;
+  margin-right: 0px;
+}
 
 /*    Components included in this stylesheet that
  *    don't exist in other web-app-theme themes
@@ -187,581 +264,747 @@ form.formtastic
  *      imagens)
  *    .highlighted-title-info (informação
  *      adicional para títulos)
+ */
+/* line 71, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+body {
+  color: #111111;
+  background: #c4c4c4 url("images/bgd.png");
+  font-family: "MuseoSans500", helvetica, arial, sans-serif;
+}
 
-body
-  color: #111111
-  background: #c4c4c4 url("images/bgd.png")
-  font-family: helvetica, arial, sans-serif
+/* line 76, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+h1, h2, h3 {
+  color: #111111;
+  font-weight: normal;
+  font-family: "Museo700", helvetica, arial, sans-serif;
+}
 
-h1, h2, h3
-  color: #111111
-  font-weight: normal
-  font-family: helvetica, arial, sans-serif
+/* line 81, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+a:link, a:visited, a:hover, a:active {
+  color: #111111;
+}
 
-a
-  &:link, &:visited, &:hover, &:active
-    color: #111111
-  -moz-outline: none
+/* line 84, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+a {
+  -moz-outline: none;
+}
 
-hr
-  background: #dddddd
-  color: #dddddd
+/* line 87, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+hr {
+  background: #dddddd;
+  color: #dddddd;
+}
 
-#header
-  background-image: url("images/logo.png")
-  background-repeat: no-repeat
-  background-position: 20px 20px
-  height: 80px
-  background-color: #333333
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25)
-  box-shadow: inset 0 -5px 10px rgba(0, 0, 0, 0.25), 0 1px 1px rgba(255, 255, 255, 0.3)
-  -moz-box-shadow: inset 0 -5px 10px rgba(0, 0, 0, 0.25), 0 1px 1px rgba(255, 255, 255, 0.3)
-  -webkit-box-shadow: inset 0 -5px 10px rgba(0, 0, 0, 0.25), 0 1px 1px rgba(255, 255, 255, 0.3)
-  h1
-    padding: 15px 55px
-    font-size: 40px
-    font-style: normal
-    text-transform: normal
-    letter-spacing: -1px
-    line-height: 1.2em
-    color: white
-    a
-      &:link, &:active, &:hover, &:visited
-        color: white
+/* line 93, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+#header {
+  background-image: url("images/logo.png");
+  background-repeat: no-repeat;
+  background-position: 20px 20px;
+  height: 80px;
+  background-color: #333333;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0 -5px 10px rgba(0, 0, 0, 0.25), 0 1px 1px rgba(255, 255, 255, 0.3);
+  -moz-box-shadow: inset 0 -5px 10px rgba(0, 0, 0, 0.25), 0 1px 1px rgba(255, 255, 255, 0.3);
+  -webkit-box-shadow: inset 0 -5px 10px rgba(0, 0, 0, 0.25), 0 1px 1px rgba(255, 255, 255, 0.3);
+}
+/* line 99, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+#header h1 {
+  padding: 15px 55px;
+  font-size: 40px;
+  font-style: normal;
+  text-transform: normal;
+  letter-spacing: -1px;
+  line-height: 1.2em;
+  color: white;
+}
+/* line 108, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+#header h1 a:link, #header h1 a:active, #header h1 a:hover, #header h1 a:visited {
+  color: white;
+}
 
-#main, #full-main
-  width: 77%
-  float: left
+/* line 122, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+#main, #full-main {
+  width: 77%;
+  float: left;
+}
+/* line 127, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+#main .block, #full-main .block {
+  padding-top: 0px;
+  background-color: white;
+  text-shadow: 0 1px 0 white;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 1px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 1px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+/* line 140, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+#main .block .content, #full-main .block .content {
+  padding-top: 1px;
+}
+/* line 142, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+#main .block .content .inner, #full-main .block .content .inner {
+  padding: 0 15px 15px;
+}
+/* line 144, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+#main .block .content h2, #full-main .block .content h2 {
+  margin-left: 15px;
+  font-size: 22px;
+  text-transform: normal;
+  letter-spacing: -1px;
+  line-height: 1.2em;
+}
+/* line 150, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+#main .block .content p, #full-main .block .content p {
+  font-size: 13px;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: normal;
+  letter-spacing: normal;
+  line-height: 1.45em;
+}
+/* line 158, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+#main .block-norounded, #full-main .block-norounded {
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 1px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 1px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 1px rgba(0, 0, 0, 0.3);
+}
 
-#main .block, #full-main .block
-  padding-top: 0px
-  background-color: white
-  text-shadow: 0 1px 0 white
-  -moz-border-radius: 6px
-  -webkit-border-radius: 6px
-  border-radius: 6px
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 1px rgba(0, 0, 0, 0.3)
-  -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 1px rgba(0, 0, 0, 0.3)
-  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 1px rgba(0, 0, 0, 0.3)
+/* line 164, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+#full-main {
+  width: 100%;
+}
+/* line 168, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+#full-main .block {
+  margin-bottom: 20px;
+}
 
-#main .block .content, #full-main .block .content
-  padding-top: 1px
+/* line 174, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+#main-navigation {
+  padding-left: 165px;
+  width: auto;
+}
+/* line 179, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+#main-navigation ul li {
+  float: left;
+  padding-right: 15px;
+  margin-right: 0;
+}
+/* line 184, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+#main-navigation ul li a:link, #main-navigation ul li a:visited, #main-navigation ul li a:hover, #main-navigation ul li a:active {
+  padding: 8px 0;
+  text-decoration: none;
+  color: #eeeeee;
+}
+/* line 190, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+#main-navigation ul li.active a:link, #main-navigation ul li.active a:visited, #main-navigation ul li.active a:hover, #main-navigation ul li.active a:active {
+  color: #a4a4a4;
+}
 
-#main .block .content .inner, #full-main .block .content .inner
-  padding: 0 15px 15px
+/* line 196, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+.secondary-navigation {
+  background: #e0e0e0 url("images/boxbar-background.png") top;
+  border-bottom-width: 0px;
+  -moz-border-radius-topleft: 6px;
+  -webkit-border-top-left-radius: 6px;
+  border-top-left-radius: 6px;
+  -moz-border-radius-topright: 6px;
+  -webkit-border-top-right-radius: 6px;
+  border-top-right-radius: 6px;
+}
+/* line 202, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+.secondary-navigation li.first a, .secondary-navigation ul li.first {
+  -moz-border-radius-topleft: 6px;
+  -webkit-border-top-left-radius: 6px;
+  border-top-left-radius: 6px;
+}
+/* line 206, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+.secondary-navigation ul li a:link, .secondary-navigation ul li a:visited, .secondary-navigation ul li a:hover, .secondary-navigation ul li a:active {
+  text-decoration: none;
+  color: #111111;
+}
+/* line 210, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+.secondary-navigation ul li.text {
+  padding: 10px 15px;
+  color: #818171;
+}
+/* line 214, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+.secondary-navigation ul li.active {
+  background-color: white;
+}
+/* line 216, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+.secondary-navigation ul li.active a:hover {
+  background-color: white;
+}
 
-#main .block .content h2, #full-main .block .content h2
-  margin-left: 15px
-  font-size: 22px
-  text-transform: normal
-  letter-spacing: -1px
-  line-height: 1.2em
+/* line 222, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+#user-navigation {
+  top: auto;
+  right: 10px;
+}
 
-#main .block .content p, #full-main .block .content p
-  font-size: 13px
-  font-style: normal
-  font-weight: normal
-  text-transform: normal
-  letter-spacing: normal
-  line-height: 1.45em
+/* line 227, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+#user-navigation ul li a:link, #user-navigation ul li a:visited, #user-navigation ul li a:hover, #user-navigation ul li a:active {
+  text-decoration: none;
+  color: #111111;
+}
+/* line 230, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+#user-navigation ul li a:active img {
+  margin-top: 1px;
+}
 
-#main .block-norounded
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 1px rgba(0, 0, 0, 0.3)
-  -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 1px rgba(0, 0, 0, 0.3)
-  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 1px rgba(0, 0, 0, 0.3)
+/* line 233, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+#user-navigation ul li, .secondary-navigation ul li {
+  float: left;
+}
 
-#full-main
-  .block-norounded
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 1px rgba(0, 0, 0, 0.3)
-    -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 1px rgba(0, 0, 0, 0.3)
-    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 1px rgba(0, 0, 0, 0.3)
-  width: 100%
-  .block
-    margin-bottom: 20px
+/* line 239, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+.secondary-inner-nav {
+  background-color: #f0eff0;
+  background-image: url("images/boxbar-background.png");
+  font-size: 13px;
+  border-bottom-color: white;
+  border-bottom-width: 10px;
+  border-bottom-style: solid;
+}
+/* line 248, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+.secondary-inner-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+/* line 253, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+.secondary-inner-nav ul li {
+  float: left;
+}
+/* line 255, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+.secondary-inner-nav ul li.active {
+  background-color: white;
+}
+/* line 257, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+.secondary-inner-nav ul li.active a:hover {
+  background-color: white;
+}
+/* line 259, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+.secondary-inner-nav ul li a {
+  display: block;
+  padding: 10px 15px;
+}
+/* line 262, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+.secondary-inner-nav ul li a:link, .secondary-inner-nav ul li a:visited, .secondary-inner-nav ul li a:hover, .secondary-inner-nav ul li a:active {
+  text-decoration: none;
+  color: #261f1f;
+}
 
-#main-navigation
-  padding-left: 165px
-  width: auto
-  ul li
-    float: left
-    padding-right: 15px
-    margin-right: 0
-    a
-      &:link, &:visited, &:hover, &:active
-        padding: 8px 0
-        text-decoration: none
-        color: #eeeeee
-    &.active a
-      &:link, &:visited, &:hover, &:active
-        color: #a4a4a4
+/* line 269, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+#footer {
+  color: white;
+}
+/* line 271, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+#footer .block {
+  background: #261f1f;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+}
+/* line 274, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+#footer p {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  text-shadow: 0 1px 0 #555555;
+}
 
-.secondary-navigation
-  background: #e0e0e0 url("images/boxbar-background.png") top
-  border-bottom-width: 0px
-  -moz-border-radius-topleft: 6px
-  -webkit-border-top-left-radius: 6px
-  border-top-left-radius: 6px
-  -moz-border-radius-topright: 6px
-  -webkit-border-top-right-radius: 6px
-  border-top-right-radius: 6px
-  li.first a
-    -moz-border-radius-topleft: 6px
-    -webkit-border-top-left-radius: 6px
-    border-top-left-radius: 6px
-  ul li
-    &.first
-      -moz-border-radius-topleft: 6px
-      -webkit-border-top-left-radius: 6px
-      border-top-left-radius: 6px
-    a
-      &:link, &:visited, &:hover, &:active
-        text-decoration: none
-        color: #111111
-    &.text
-      padding: 10px 15px
-      color: #818171
-    &.active
-      background-color: white
-      a:hover
-        background-color: white
+/* line 284, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+#sidebar {
+  width: 20%;
+  float: right;
+}
+/* line 288, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+#sidebar .block {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+/* line 294, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+#sidebar .block h4 {
+  font-weight: normal;
+  font-family: "Museo700", helvetica, arial, sans-serif;
+}
+/* line 299, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+#sidebar .notice {
+  color: white;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+  background-color: rgba(0, 0, 0, 0.3);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(0, 0, 0, 0.15)), to(rgba(0, 0, 0, 0)));
+  background-image: -moz-linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0));
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.25), 0 1px 1px rgba(255, 255, 255, 0.3);
+  -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.25), 0 1px 1px rgba(255, 255, 255, 0.3);
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.25), 0 1px 1px rgba(255, 255, 255, 0.3);
+}
+/* line 314, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+#sidebar .warning {
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #222222;
+  background: #ffef4e;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 1px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 1px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 1px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+/* line 328, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+#sidebar h3 {
+  padding-left: 25px;
+  color: #111111;
+  border-bottom: 1px solid #261f1f;
+}
+/* line 334, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+#sidebar ul li {
+  background-position: 0 11px;
+  background-repeat: no-repeat;
+  background-image: url("images/arrow.png");
+  border-bottom: 1px dashed #777777;
+  list-style-type: none;
+}
+/* line 342, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+#sidebar ul li a {
+  margin-left: 10px;
+  text-decoration: none;
+  text-shadow: 0 1px 0 white;
+}
+/* line 347, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+#sidebar ul li.active a {
+  color: #a4a4a4;
+}
 
-#user-navigation
-  top: auto
-  right: 10px
-  ul li
-    a
-      &:link, &:visited, &:hover
-        text-decoration: none
-        color: #111111
-      &:active
-        text-decoration: none
-        color: #111111
-        img
-          margin-top: 1px
-    float: left
+/* line 353, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+.breadcrumb {
+  background-color: #f4f4f4;
+  -moz-border-radius-bottomleft: 6px;
+  -webkit-border-bottom-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  -moz-border-radius-bottomright: 6px;
+  -webkit-border-bottom-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+/* line 358, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+.breadcrumb ul {
+  height: 20px;
+  padding-bottom: 15px;
+  padding-top: 0px;
+  list-style-type: none;
+}
+/* line 364, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+.breadcrumb ul li {
+  color: #777777;
+  display: block;
+  padding-top: 10px;
+  padding-left: 17px;
+  margin-right: 15px;
+  background: url("images/breadcrumb.png") no-repeat 0px 12px;
+  float: left;
+}
+/* line 373, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+.breadcrumb ul li a {
+  text-decoration: none;
+  color: #777777;
+}
+/* line 376, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+.breadcrumb ul li.first {
+  padding-left: 15px;
+  background: none;
+}
+/* line 379, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+.breadcrumb ul li.active {
+  color: #a4a4a4;
+}
 
-.secondary-navigation ul li
-  float: left
+/* line 385, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+.control {
+  float: right;
+  margin-right: 9px;
+  margin-top: 11px;
+}
 
-.secondary-inner-nav
-  background-color: #f0eff0
-  background-image: url("images/boxbar-background.png")
-  font-size: 13px
-  border-bottom-color: white
-  border-bottom-width: 10px
-  border-bottom-style: solid
-  ul
-    margin: 0
-    padding: 0
-    list-style-type: none
-    li
-      float: left
-      &.active
-        background-color: white
-        a:hover
-          background-color: white
-      a
-        display: block
-        padding: 10px 15px
-        &:link, &:visited, &:hover, &:active
-          text-decoration: none
-          color: #261f1f
+/* line 394, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+.pagination a, .pagination span {
+  border: 1px solid #c3c4ba;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  margin-right: 5px;
+  padding: 6px;
+  min-width: 15px;
+  text-align: center;
+  background: #dddddd;
+  background-image: url("images/button-background.png");
+  color: #111111;
+}
+/* line 405, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+.pagination a:hover {
+  border: 1px solid #818171;
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+}
+/* line 409, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+.pagination span.current {
+  background: #261f1f;
+  color: white;
+  border: 1px solid #261f1f;
+}
 
-#footer
-  color: white
-  .block
-    background: #261f1f
-    -moz-border-radius: 6px
-    -webkit-border-radius: 6px
-    border-radius: 6px
-  p
-    margin: 0
-    padding: 0
-    text-align: center
-    text-shadow: 0 1px 0 #555555
+/* line 414, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+.pagination a:active {
+  background-image: url("images/button-background-active.png");
+  outline: none;
+}
 
-#sidebar
-  width: 20%
-  float: right
-  .block
-    padding-top: 2px
-    padding-bottom: 2px
-    -moz-border-radius: 6px
-    -webkit-border-radius: 6px
-    border-radius: 6px
-    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6)
-    h4
-      font-weight: normal
-      font-family: helvetica, arial, sans-serif
-  .notice
-    color: white
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25)
-    background-color: rgba(0, 0, 0, 0.3)
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(0, 0, 0, 0.15)), to(rgba(0, 0, 0, 0)))
-    background-image: -moz-linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0))
-    -moz-border-radius: 6px
-    -webkit-border-radius: 6px
-    border-radius: 6px
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.25), 0 1px 1px rgba(255, 255, 255, 0.3)
-    -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.25), 0 1px 1px rgba(255, 255, 255, 0.3)
-    -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.25), 0 1px 1px rgba(255, 255, 255, 0.3)
-  .warning
-    padding-left: 10px
-    padding-right: 10px
-    color: #222222
-    background: #ffef4e
-    -moz-border-radius: 6px
-    -webkit-border-radius: 6px
-    border-radius: 6px
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 1px rgba(0, 0, 0, 0.1)
-    -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 1px rgba(0, 0, 0, 0.1)
-    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 1px rgba(0, 0, 0, 0.1)
-    border: 1px solid rgba(0, 0, 0, 0.3)
-  h3
-    padding-left: 25px
-    color: #111111
-    border-bottom: 1px solid #261f1f
-  ul li
-    background-position: 0 11px
-    background-repeat: no-repeat
-    background-image: url("images/arrow.png")
-    border-bottom: 1px dashed #777777
-    list-style-type: none
-    a
-      margin-left: 10px
-      text-decoration: none
-      text-shadow: 0 1px 0 white
-    &.active a
-      color: #a4a4a4
+/* line 423, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+.table th {
+  background: #eaeaea;
+  color: #222222;
+  font-weight: normal;
+}
+/* line 427, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+.table th.last {
+  width: 80px;
+}
+/* line 429, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+.table td {
+  border-bottom: 1px solid #eaeaea;
+}
+/* line 431, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+.table td.last {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+/* line 435, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+.table tr.even {
+  background: #f8f8f8;
+}
 
-.breadcrumb
-  background-color: #f4f4f4
-  -moz-border-radius-bottomleft: 6px
-  -webkit-border-bottom-left-radius: 6px
-  border-bottom-left-radius: 6px
-  -moz-border-radius-bottomright: 6px
-  -webkit-border-bottom-right-radius: 6px
-  border-bottom-right-radius: 6px
-  ul
-    height: 20px
-    padding-bottom: 15px
-    padding-top: 0px
-    list-style-type: none
-    li
-      color: #777777
-      display: block
-      padding-top: 10px
-      padding-left: 17px
-      margin-right: 15px
-      background: url("images/breadcrumb.png") no-repeat 0px 12px
-      float: left
-      a
-        text-decoration: none
-        color: #777777
-      &.first
-        padding-left: 15px
-        background: none
-      &.active
-        color: #a4a4a4
+/* line 442, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+.form label.label {
+  font-family: "MuseoSans500", helvetica, arial, sans-serif;
+  font-weight: normal;
+  color: #666666;
+}
+/* line 447, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+.form input.text_field, .form textarea.text_area {
+  width: 100%;
+  border: 1px solid #dddddd;
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+/* line 452, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+.form input.button {
+  background: #dddddd;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #c1c1c1;
+  padding: 2px 5px;
+  cursor: pointer;
+  color: #111111;
+  font-weight: bold;
+  font-size: 11px;
+}
+/* line 461, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+.form input.button:hover {
+  border: 1px solid #666666;
+}
+/* line 464, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+.form .description {
+  font-style: italic;
+  color: #8c8c8c;
+  font-size: 0.9em;
+}
+/* line 469, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+.form .navform a {
+  color: #cc0000;
+}
 
-.control
-  float: right
-  margin-right: 9px
-  margin-top: 11px
+/* line 475, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+.search {
+  border: 1px solid #c1c1c1;
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.25);
+  -moz-border-radius: 13px;
+  -webkit-border-radius: 13px;
+  border-radius: 13px;
+  padding: 0px;
+  margin: 0px;
+  position: relative;
+  float: right;
+  width: 300px;
+  height: 25px;
+}
+/* line 487, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+.search form {
+  display: inline;
+}
 
-.pagination
-  a, span
-    border: 1px solid #c3c4ba
-    -moz-border-radius: 2px
-    -webkit-border-radius: 2px
-    border-radius: 2px
-    margin-right: 5px
-    padding: 6px
-    min-width: 15px
-    text-align: center
-    background: #dddddd
-    background-image: url("images/button-background.png")
-    color: #111111
-  a:hover
-    border: 1px solid #818171
-    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.3)
-    -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.3)
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3)
-  span.current
-    background: #261f1f
-    color: white
-    border: 1px solid #261f1f
-  a:active
-    background-image: url("images/button-background-active.png")
-    outline: none
+/* line 490, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+.search_box {
+  font-family: "MuseoSans500", helvetica, arial, sans-serif;
+  font-size: 13px;
+  border: 0px;
+  background-color: transparent;
+  position: absolute;
+  left: 0px;
+  width: 266px;
+  height: 25px;
+  padding-left: 10px;
+  -moz-border-radius-topleft: 13px;
+  -webkit-border-top-left-radius: 13px;
+  border-top-left-radius: 13px;
+  -moz-border-radius-bottomleft: 13px;
+  -webkit-border-bottom-left-radius: 13px;
+  border-bottom-left-radius: 13px;
+  outline: none;
+}
 
-.table
-  th
-    background: #eaeaea
-    color: #222222
-    font-weight: normal
-    &.last
-      width: 80px
-  td
-    border-bottom: 1px solid #eaeaea
-    &.last
-      padding-top: 0px
-      padding-bottom: 0px
-  tr.even
-    background: #f8f8f8
+/* line 505, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+.search_submit {
+  border: 0px;
+  background: transparent url("images/search-button.png") no-repeat center left;
+  position: absolute;
+  left: 273px;
+  height: 25px;
+  width: 27px;
+  cursor: pointer;
+  -moz-border-radius-topright: 13px;
+  -webkit-border-top-right-radius: 13px;
+  border-top-right-radius: 13px;
+  -moz-border-radius-bottomright: 13px;
+  -webkit-border-bottom-right-radius: 13px;
+  border-bottom-right-radius: 13px;
+}
 
-.form
-  label.label
-    font-family: helvetica, arial, sans-serif
-    font-weight: normal
-    color: #666666
-  input.text_field, textarea.text_area
-    width: 100%
-    border: 1px solid #dddddd
-    -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1)
-    -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1)
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1)
-  input.button
-    background: #dddddd
-    -moz-border-radius: 5px
-    -webkit-border-radius: 5px
-    border-radius: 5px
-    border: 1px solid #c1c1c1
-    padding: 2px 5px
-    cursor: pointer
-    color: #111111
-    font-weight: bold
-    font-size: 11px
-    &:hover
-      border: 1px solid #666666
-  .description
-    font-style: italic
-    color: #8c8c8c
-    font-size: 0.9em
-  .navform a
-    color: #cc0000
+/* line 517, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+#wrapper .ra-multiselect-search {
+  background: transparent url("images/search-button.png") no-repeat scroll 166px center;
+  border: 1px solid #c1c1c1;
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.15);
+  -moz-border-radius: 13px;
+  -webkit-border-radius: 13px;
+  border-radius: 13px;
+  float: left;
+  font-family: "MuseoSans500", helvetica, arial, sans-serif;
+  font-size: 13px;
+  height: 25px;
+  margin: 0 25px 15px 0;
+  outline: none;
+  padding: 0 25px 0 10px;
+  width: 155px;
+}
 
-.search
-  border: 1px solid #c1c1c1
-  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.25)
-  -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.25)
-  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.25)
-  -moz-border-radius: 13px
-  -webkit-border-radius: 13px
-  border-radius: 13px
-  padding: 0px
-  margin: 0px
-  position: relative
-  float: right
-  width: 300px
-  height: 25px
-  form
-    display: inline
+/* line 531, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+#wrapper .ra-multiselect-collection, .ra-multiselect-selection {
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
 
-.search_box
-  font-family: helvetica, arial, sans-serif
-  font-size: 13px
-  border: 0px
-  background-color: transparent
-  position: absolute
-  left: 0px
-  width: 266px
-  height: 25px
-  padding-left: 10px
-  -moz-border-radius-topleft: 13px
-  -webkit-border-top-left-radius: 13px
-  border-top-left-radius: 13px
-  -moz-border-radius-bottomleft: 13px
-  -webkit-border-bottom-left-radius: 13px
-  border-bottom-left-radius: 13px
-  outline: none
+/* line 540, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+.flash .message {
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  text-align: center;
+  margin: 0 auto 15px;
+  color: white;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 1px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 1px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+/* line 551, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+.flash .message p {
+  margin: 8px;
+}
+/* line 554, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+.flash .error, .flash .error-list {
+  border: 1px solid #993624;
+  background: #cc4831 url("images/messages/error.png") no-repeat 10px center;
+}
+/* line 558, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+.flash .warning {
+  border: 1px solid #bb9004;
+  background: #f9c006 url("images/messages/warning.png") no-repeat 10px center;
+}
+/* line 562, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+.flash .notice {
+  color: #28485e;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.7);
+  border: 1px solid #8a9daa;
+  background: #b8d1e2 url("images/messages/notice.png") no-repeat 10px center;
+}
+/* line 568, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+.flash .error-list {
+  text-align: left;
+}
+/* line 570, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+.flash .error-list h2 {
+  font-size: 16px;
+  text-align: center;
+}
+/* line 573, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+.flash .error-list ul {
+  padding-left: 22px;
+  line-height: 18px;
+  list-style-type: square;
+  margin-bottom: 15px;
+}
 
-.search_submit
-  border: 0px
-  background: transparent url("images/search-button.png") no-repeat center left
-  position: absolute
-  left: 273px
-  height: 25px
-  width: 27px
-  cursor: pointer
-  -moz-border-radius-topright: 13px
-  -webkit-border-top-right-radius: 13px
-  border-top-right-radius: 13px
-  -moz-border-radius-bottomright: 13px
-  -webkit-border-bottom-right-radius: 13px
-  border-bottom-right-radius: 13px
+/* line 582, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+ul.list li {
+  border-bottom-color: #dddddd;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+/* line 587, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+ul.list li .item .avatar {
+  border-color: #dddddd;
+  border-width: 1px;
+  border-style: solid;
+  padding: 2px;
+}
 
-#wrapper
-  .ra-multiselect-search
-    background: transparent url("images/search-button.png") no-repeat scroll 166px center
-    border: 1px solid #c1c1c1
-    -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.15)
-    -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.15)
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.15)
-    -moz-border-radius: 13px
-    -webkit-border-radius: 13px
-    border-radius: 13px
-    float: left
-    font-family: helvetica, arial, sans-serif
-    font-size: 13px
-    height: 25px
-    margin: 0 25px 15px 0
-    outline: none
-    padding: 0 25px 0 10px
-    width: 155px
-  .ra-multiselect-collection
-    -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1)
-    -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1)
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1)
+/* line 596, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+#box {
+  width: 480px;
+}
+/* line 599, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+#box .block {
+  background: white;
+  text-shadow: 0 1px 0 white;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 1px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 1px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 1px rgba(0, 0, 0, 0.3);
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+}
+/* line 608, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+#box .block h2 {
+  background: #261f1f;
+  color: white;
+  text-shadow: none;
+  -moz-border-radius-topleft: 6px;
+  -webkit-border-top-left-radius: 6px;
+  border-top-left-radius: 6px;
+  -moz-border-radius-topright: 6px;
+  -webkit-border-top-right-radius: 6px;
+  border-top-right-radius: 6px;
+}
 
-.ra-multiselect-selection
-  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1)
-  -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1)
-  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1)
+/* line 618, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+a.button, button.button {
+  background: #edeeed url("images/button-background.png") top;
+  border: 1px solid #c3c4ba;
+  font-family: "MuseoSans500", helvetica, arial, sans-serif;
+  font-weight: normal;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+/* line 626, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+a.button:link, a.button:visited, a.button:hover, a.button:active, button.button:link, button.button:visited, button.button:hover, button.button:active {
+  font-weight: normal;
+  background: #edeeed url("images/button-background.png") top;
+}
 
-.flash
-  .message
-    -moz-border-radius: 3px
-    -webkit-border-radius: 3px
-    border-radius: 3px
-    text-align: center
-    margin: 0 auto 15px
-    color: white
-    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3)
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 1px rgba(0, 0, 0, 0.1)
-    -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 1px rgba(0, 0, 0, 0.1)
-    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 1px rgba(0, 0, 0, 0.1)
-    p
-      margin: 8px
-  .error, .error-list
-    border: 1px solid #993624
-    background: #cc4831 url("images/messages/error.png") no-repeat 10px center
-  .warning
-    border: 1px solid #bb9004
-    background: #f9c006 url("images/messages/warning.png") no-repeat 10px center
-  .notice
-    color: #28485e
-    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.7)
-    border: 1px solid #8a9daa
-    background: #b8d1e2 url("images/messages/notice.png") no-repeat 10px center
-  .error-list
-    text-align: left
-    h2
-      font-size: 16px
-      text-align: center
-    ul
-      padding-left: 22px
-      line-height: 18px
-      list-style-type: square
-      margin-bottom: 15px
+/* line 630, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+a.button:active, button.button:active {
+  /* quando se clica no botão */
+  background: #eaeaea url("images/button-background-active.png") top;
+  outline: none;
+  margin-top: 1px;
+  margin-bottom: -1px;
+}
 
-ul.list li
-  border-bottom-color: #dddddd
-  border-bottom-width: 1px
-  border-bottom-style: solid
-  .item .avatar
-    border-color: #dddddd
-    border-width: 1px
-    border-style: solid
-    padding: 2px
+/* line 641, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+.form div.left {
+  width: 10%;
+  float: left;
+}
+/* line 644, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+.form div.right {
+  width: 85%;
+  float: right;
+}
 
-#box
-  width: 480px
-  .block
-    background: white
-    text-shadow: 0 1px 0 white
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 1px rgba(0, 0, 0, 0.3)
-    -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 1px rgba(0, 0, 0, 0.3)
-    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 1px rgba(0, 0, 0, 0.3)
-    -moz-border-radius: 6px
-    -webkit-border-radius: 6px
-    border-radius: 6px
-    h2
-      background: #261f1f
-      color: white
-      text-shadow: none
-      -moz-border-radius-topleft: 6px
-      -webkit-border-top-left-radius: 6px
-      border-top-left-radius: 6px
-      -moz-border-radius-topright: 6px
-      -webkit-border-top-right-radius: 6px
-      border-top-right-radius: 6px
+/* line 650, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+.login div.left, .signup div div.left {
+  width: 21%;
+  float: left;
+}
+/* line 653, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+.login div.right, .signup div div.right {
+  width: 74%;
+  float: right;
+}
 
-a.button, button.button
-  background: #edeeed url("images/button-background.png") top
-  border: 1px solid #c3c4ba
-  font-family: helvetica, arial, sans-serif
-  font-weight: normal
-  -moz-border-radius: 3px
-  -webkit-border-radius: 3px
-  border-radius: 3px
-  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1)
-  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1)
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1)
+/* line 664, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+.badge, .badge-grey, .badge-green, .badge-yellow, .badge-red {
+  display: inline;
+  font-size: 13px;
+  vertical-align: top;
+  padding-left: 3px;
+  padding-right: 5px;
+  margin-left: 5px;
+  font-weight: normal;
+  text-transform: lowercase;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+  font-family: "MuseoSans500", helvetica, arial, sans-serif;
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.25);
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+}
 
-a.button
-  &:link, &:visited, &:hover, &:active
-    font-weight: normal
-    background: #edeeed url("images/button-background.png") top
+/* line 679, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+.badge-grey {
+  background-color: #a4a4a4;
+  color: white;
+}
 
-button.button
-  &:link, &:visited, &:hover, &:active
-    font-weight: normal
-    background: #edeeed url("images/button-background.png") top
+/* line 684, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+.badge-green {
+  background-color: #1fdf00;
+  color: white;
+}
 
-a.button:active, button.button:active
-  /* quando se clica no botão
-  background: #eaeaea url("images/button-background-active.png") top
-  outline: none
-  margin-top: 1px
-  margin-bottom: -1px
+/* line 689, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+.badge-yellow {
+  background-color: #ffee79;
+  color: black;
+}
 
-.form div
-  &.left
-    width: 10%
-    float: left
-  &.right
-    width: 85%
-    float: right
-
-.login div.left, .signup div div.left
-  width: 21%
-  float: left
-
-.login div.right, .signup div div.right
-  width: 74%
-  float: right
-
-.badge, .badge-grey, .badge-green, .badge-yellow, .badge-red
-  display: inline
-  font-size: 13px
-  vertical-align: top
-  padding-left: 3px
-  padding-right: 5px
-  margin-left: 5px
-  font-weight: normal
-  text-transform: lowercase
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25)
-  font-family: helvetica, arial, sans-serif
-  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.25)
-  -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.25)
-  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.25)
-  -moz-border-radius: 6px
-  -webkit-border-radius: 6px
-  border-radius: 6px
-
-.badge-grey
-  background-color: #a4a4a4
-  color: white
-
-.badge-green
-  background-color: #1fdf00
-  color: white
-
-.badge-yellow
-  background-color: #ffee79
-  color: black
-
-.badge-red
-  background-color: #cc0000
-  color: white
+/* line 694, ../../../../../app/assets/stylesheets/rails_admin/theme/activo/style.sass */
+.badge-red {
+  background-color: #cc0000;
+  color: white;
+}
