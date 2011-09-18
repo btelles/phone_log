@@ -14,7 +14,7 @@ SELECT
   arc.name AS additional_reason_code,
   p.name AS product_code,
   CASE escalated WHEN 1 THEN 'Yes' ELSE 'No' END AS escalated,
-  CONCAT(esc.first_name, ' ', esc.last_name) AS escalated_to,
+  esc.name AS escalated_to,
   d.name AS duration,
   l.order_rma,
   l.notes,
@@ -27,7 +27,7 @@ LEFT OUTER JOIN companies c ON c.id = l.company_id
 LEFT OUTER JOIN reason_codes rc ON rc.id = l.reason_code_id
 LEFT OUTER JOIN reason_codes arc ON arc.id = l.additional_reason_code_id
 LEFT OUTER JOIN products p ON p.id = l.product_id
-LEFT OUTER JOIN employees esc ON esc.id = l.escalated_to_id
+LEFT OUTER JOIN escalation_types esc ON esc.id = l.escalated_to_id
 LEFT OUTER JOIN durations d ON d.id = l.duration_id
 );
 

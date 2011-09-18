@@ -105,7 +105,7 @@ ActiveRecord::Schema.define(:version => 20110918070119) do
     t.string   "additional_reason_code"
     t.string   "product_code"
     t.string   "escalated",              :limit => 3
-    t.string   "escalated_to",           :limit => 511
+    t.string   "escalated_to"
     t.string   "duration"
     t.string   "order_rma"
     t.text     "notes"
