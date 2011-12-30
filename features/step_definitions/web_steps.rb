@@ -83,7 +83,6 @@ stuff_that_should_appear.each do |descriptor, selector|
 end
 
 When /I close the dialog/ do
-  debugger
   find("a.ui-dialog-titlebar-close").click
 end
 # Use this to fill in an entire form with data from a table. Example:
